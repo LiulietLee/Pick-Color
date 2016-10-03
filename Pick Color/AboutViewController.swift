@@ -25,7 +25,7 @@ class AboutViewController: UIViewController {
     }
     
     @IBAction func githubButtonTapped() {
-        UIApplication.shared.openURL(URL(string: "https://github.com/LiulietLee/todohere")!)
+        UIApplication.shared.openURL(URL(string: "https://github.com/LiulietLee/Pick-Color")!)
     }
     
     @IBAction func facebookButtonTapped() {
