@@ -50,6 +50,19 @@ class PixelData {
         return context!
     }
     
+    func getPartOfImage(x: CGFloat, y: CGFloat) -> UIImage? {
+        if let imageWidth = image?.size.width {
+            let imageHight = image!.size.height
+            if x >= 0 && x < imageWidth && y >= 0 && y < imageHight {
+                let rect: CGRect = CGRect(x: x - 10, y: y - 10, width: 20, height: 20)
+                let imageRef = self.image!.cgImage!.cropping(to: rect)
+                let image: UIImage = UIImage(cgImage: imageRef!)
+                return image
+            }
+        }
+        return nil
+    }
+    
     func getPixelColorOfPoint(x: CGFloat, y: CGFloat) -> UIColor? {
         if let imageWidth = image?.size.width {
             let imageHight = image!.size.height

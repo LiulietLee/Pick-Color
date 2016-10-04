@@ -32,9 +32,11 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
                 selectImageButton.isHidden = true
                 imageView.image = image!
                 pixelData.image = image!
+                imageView.model = pixelData
                 let scale = self.view.frame.height / image!.size.height
                 heightOfImageView.constant = image!.size.height * scale
                 widthOfImageView.constant = image!.size.width * scale
+                updateManager()
             } else {
                 self.view.bringSubview(toFront: self.selectImageButton)
                 pickColorButton.isEnabled = false
@@ -44,7 +46,6 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     
     fileprivate var color: UIColor? {
         didSet {
-            drawCircle(self.color)
             pickColorButton.setTitleColor(self.color, for: UIControlState())
         }
     }
@@ -69,6 +70,14 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
         let r = self.view.bounds.size.width * 0.4444
         selectImageButton.layer.masksToBounds = true
         selectImageButton.layer.cornerRadius = r
+        
+        if let view = manager.imageView {
+            image = view.image
+            centerXOfImageView.constant = manager.centerXOfImageView!.constant
+            centerYOfImageView.constant = manager.centerYOfImageView!.constant
+            widthOfImageView.constant = manager.widthOfImageView!.constant
+            heightOfImageView.constant = manager.heightOfImageView!.constant
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -106,12 +115,12 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     
     // MARK: Private functions
     
-    @objc fileprivate func drawCircle(_ color: UIColor?) {
-        if color != nil {
-            
-        } else {
-            
-        }
+    fileprivate func updateManager() {
+        manager.imageView = imageView
+        manager.centerXOfImageView = centerXOfImageView
+        manager.centerYOfImageView = centerYOfImageView
+        manager.widthOfImageView = widthOfImageView
+        manager.heightOfImageView = heightOfImageView
     }
     
     @objc fileprivate func moveImage(_ sender: UIPanGestureRecognizer) {
@@ -122,6 +131,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
             centerXOfImageView.constant += translate.x
             centerYOfImageView.constant += translate.y
             sender.setTranslation(CGPoint.zero, in: self.view)
+            updateManager()
         default: break
         }
     }
@@ -134,6 +144,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
             widthOfImageView.constant *= scale
             heightOfImageView.constant *= scale
             sender.scale = 1.0
+            updateManager()
         default:
             break
         }
