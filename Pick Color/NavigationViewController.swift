@@ -19,7 +19,7 @@ class NavigationViewController: UINavigationController {
         
         let color: CGColor = UIColor.black.cgColor
         self.navigationBar.layer.shadowColor = color
-        self.navigationBar.layer.shadowOffset = CGSize(width: 0.2, height: 0.4)
+        self.navigationBar.layer.shadowOffset = CGSize(width: 0.0, height: 0.2)
         self.navigationBar.layer.shadowRadius = 1.5
         self.navigationBar.layer.shadowOpacity = 1.0
     }

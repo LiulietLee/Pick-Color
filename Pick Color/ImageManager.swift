@@ -13,11 +13,5 @@ let manager = ImageManager.shared
 class ImageManager {
     static let shared = ImageManager()
     private init () {}
-    
-     var imageView: PickerView?
-     var centerYOfImageView: NSLayoutConstraint?
-     var centerXOfImageView: NSLayoutConstraint?
-     var widthOfImageView: NSLayoutConstraint?
-     var heightOfImageView: NSLayoutConstraint?
-
+    var imageView: PickerView?
 }

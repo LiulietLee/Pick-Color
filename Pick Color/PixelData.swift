@@ -8,15 +8,10 @@
 
 import UIKit
 
-protocol PixelDataDelegate {
-    func gotPixelData(_ color: UIColor)
-}
-
 class PixelData {
     
     fileprivate var data: UnsafePointer<UInt8>? = nil
     
-    var delegate: PixelDataDelegate?
     var image: UIImage? {
         didSet {
             if let image = self.image {
@@ -74,11 +69,7 @@ class PixelData {
                 let b: CGFloat = CGFloat(data![pixelInfo + 3]) / 255
                 
                 let color = UIColor(red: r, green: g, blue: b, alpha: a)
-                
-                if delegate != nil {
-                    delegate?.gotPixelData(color)
-                }
-                
+                                
                 return color
             }
         }

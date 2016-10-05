@@ -73,10 +73,6 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
         
         if let view = manager.imageView {
             image = view.image
-            centerXOfImageView.constant = manager.centerXOfImageView!.constant
-            centerYOfImageView.constant = manager.centerYOfImageView!.constant
-            widthOfImageView.constant = manager.widthOfImageView!.constant
-            heightOfImageView.constant = manager.heightOfImageView!.constant
         }
     }
 
@@ -117,10 +113,6 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     
     fileprivate func updateManager() {
         manager.imageView = imageView
-        manager.centerXOfImageView = centerXOfImageView
-        manager.centerYOfImageView = centerYOfImageView
-        manager.widthOfImageView = widthOfImageView
-        manager.heightOfImageView = heightOfImageView
     }
     
     @objc fileprivate func moveImage(_ sender: UIPanGestureRecognizer) {

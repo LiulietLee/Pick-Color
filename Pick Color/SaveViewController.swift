@@ -46,7 +46,8 @@ class SaveViewController: UIViewController {
     }
 
     @IBAction func saveButtonTapped() {
-        if let title = textField.text {
+        if textField.text != nil && textField.text != "" {
+            let title = textField.text!
             if item == nil {
                 let colorItem = model.saveNewColor(newColor: color, title: title)
                 if delegate != nil {
