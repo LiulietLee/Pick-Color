@@ -47,10 +47,15 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     
     fileprivate var colorValues = [CGFloat](repeating: 0.0, count: 4) {
         didSet {
-            redSlider.value = Float(colorValues[0]); redColorValueLabel.text = String(describing: colorValues[0])
-            greenSlider.value = Float(colorValues[1]); greenColorValueLabel.text = String(describing: colorValues[1])
-            blueSlider.value = Float(colorValues[2]); blueColorValueLabel.text = String(describing: colorValues[2])
-            alphaSlider.value = Float(colorValues[3]); alphaValueLabel.text = String(describing: colorValues[3])
+            redSlider.value = Float(colorValues[0])
+            greenSlider.value = Float(colorValues[1])
+            blueSlider.value = Float(colorValues[2])
+            alphaSlider.value = Float(colorValues[3])
+            
+            redColorValueLabel.text = String(describing: colorValues[0])
+            greenColorValueLabel.text = String(describing: colorValues[1])
+            blueColorValueLabel.text = String(describing: colorValues[2])
+            alphaValueLabel.text = String(describing: colorValues[3])
             
             colorLabel.backgroundColor = UIColor(red: colorValues[0],
                                                  green: colorValues[1],
@@ -73,6 +78,9 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         colorLabel.layer.cornerRadius = r
         colorLabel.layer.masksToBounds = true
         constraintOfColorSlider.constant += self.view.frame.width
+        
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
+        self.view.addGestureRecognizer(pan)
     }
 
     override func didReceiveMemoryWarning() {
@@ -91,20 +99,31 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     }
     
     fileprivate func writeCode(_ language: Int8) {
-        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-        if color!.getRed(&r, green: &g, blue: &b, alpha: &a) {
-            if language == 0 {
+        //var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
+        //if color!.getRed(&r, green: &g, blue: &b, alpha: &a) {
+            switch language {
+            case 0:
                 codeLabel1.text = "UIColor(red: \(colorValues[0]), "
                 codeLabel2.text = "green: \(colorValues[1]), "
                 codeLabel3.text = "blue: \(colorValues[2]), "
                 codeLabel4.text = "alpha: \(colorValues[3]))"
-            } else {
+            case 1:
                 codeLabel1.text = "[UIColor colorWithRed:\(colorValues[0]) "
                 codeLabel2.text = "green:\(colorValues[1]) "
                 codeLabel3.text = "blue:\(colorValues[2]) "
                 codeLabel4.text = "alpha:\(colorValues[3])];"
+            case 2:
+                codeLabel1.text = "Color.FromArgb(\(colorValues[3]),  "
+                codeLabel2.text = "\(colorValues[0]), "
+                codeLabel3.text = "\(colorValues[1]), "
+                codeLabel4.text = "\(colorValues[2]));"
+            default:
+                codeLabel1.text = "R: \(colorValues[0]) "
+                codeLabel2.text = "G: \(colorValues[1]) "
+                codeLabel3.text = "B: \(colorValues[2]) "
+                codeLabel4.text = "A: \(colorValues[3]) "
             }
-        }
+        //}
     }
 
     fileprivate func hideCodeLabel(_ bool: Bool) {
@@ -182,6 +201,19 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     
     internal func colorDeleted() {
         colorItem = nil
+    }
+    
+    @objc fileprivate func panGesture(_ sender: UIPanGestureRecognizer) {
+        switch sender.state {
+        case .began: fallthrough
+        case .changed: break
+            /* todo
+            let translation = sender.translation(in: self.view).x
+            sender.setTranslation(CGPoint.zero, in: self.view)
+            */
+        default:
+            break
+        }
     }
     
     // MARK: - Navigation
