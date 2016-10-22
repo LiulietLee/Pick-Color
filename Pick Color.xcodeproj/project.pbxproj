@@ -326,6 +326,7 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = LLAMDMVSAB;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					4F011DC31D6C4A3400A0D2BD = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -571,8 +572,11 @@
 		4F011DD91D6C4A3400A0D2BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LLAMDMVSAB;
 				INFOPLIST_FILE = "Pick Color/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -588,8 +592,11 @@
 		4F011DDA1D6C4A3400A0D2BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LLAMDMVSAB;
 				INFOPLIST_FILE = "Pick Color/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

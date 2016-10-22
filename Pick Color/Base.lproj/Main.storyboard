@@ -131,7 +131,6 @@
                                     <segment title="Swift"/>
                                     <segment title="ObjC"/>
                                     <segment title="C#"/>
-                                    <segment title="ARGB"/>
                                 </segments>
                                 <color key="tintColor" red="0.40090259909629822" green="0.801006019115448" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>

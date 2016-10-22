@@ -99,31 +99,23 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     }
     
     fileprivate func writeCode(_ language: Int8) {
-        //var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-        //if color!.getRed(&r, green: &g, blue: &b, alpha: &a) {
-            switch language {
-            case 0:
-                codeLabel1.text = "UIColor(red: \(colorValues[0]), "
-                codeLabel2.text = "green: \(colorValues[1]), "
-                codeLabel3.text = "blue: \(colorValues[2]), "
-                codeLabel4.text = "alpha: \(colorValues[3]))"
-            case 1:
-                codeLabel1.text = "[UIColor colorWithRed:\(colorValues[0]) "
-                codeLabel2.text = "green:\(colorValues[1]) "
-                codeLabel3.text = "blue:\(colorValues[2]) "
-                codeLabel4.text = "alpha:\(colorValues[3])];"
-            case 2:
-                codeLabel1.text = "Color.FromArgb(\(colorValues[3]),  "
-                codeLabel2.text = "\(colorValues[0]), "
-                codeLabel3.text = "\(colorValues[1]), "
-                codeLabel4.text = "\(colorValues[2]));"
-            default:
-                codeLabel1.text = "R: \(colorValues[0]) "
-                codeLabel2.text = "G: \(colorValues[1]) "
-                codeLabel3.text = "B: \(colorValues[2]) "
-                codeLabel4.text = "A: \(colorValues[3]) "
-            }
-        //}
+        switch language {
+        case 0:
+            codeLabel1.text = "UIColor(red: \(colorValues[0]), "
+            codeLabel2.text = "green: \(colorValues[1]), "
+            codeLabel3.text = "blue: \(colorValues[2]), "
+            codeLabel4.text = "alpha: \(colorValues[3]))"
+        case 1:
+            codeLabel1.text = "[UIColor colorWithRed:\(colorValues[0]) "
+            codeLabel2.text = "green:\(colorValues[1]) "
+            codeLabel3.text = "blue:\(colorValues[2]) "
+            codeLabel4.text = "alpha:\(colorValues[3])];"
+        default:
+            codeLabel1.text = "Color.FromArgb(\(colorValues[3]),  "
+            codeLabel2.text = "\(colorValues[0]), "
+            codeLabel3.text = "\(colorValues[1]), "
+            codeLabel4.text = "\(colorValues[2]));"
+        }
     }
 
     fileprivate func hideCodeLabel(_ bool: Bool) {
@@ -146,6 +138,14 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     @IBAction func copyButtonTapped() {
         let string = "\(codeLabel1.text!)\(codeLabel2.text!)\(codeLabel3.text!)\(codeLabel4.text!)"
         UIPasteboard.general.string = string
+        
+        let snackbar = MKSnackbar(
+            withTitle: "Copyed (｀・ω・´)",
+            withDuration: nil,
+            withTitleColor: nil,
+            withActionButtonTitle: "Done",
+            withActionButtonColor: UIColor.MKColor.Blue.A100)
+        snackbar.show()
     }
 
     @IBAction func languageChanged(_ sender: UISegmentedControl) {
@@ -174,20 +174,9 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     
     @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
         if constrainOfCodeLabel.constant == 0 {
-            constrainOfCodeLabel.constant -= self.view.frame.width
-            constraintOfColorSlider.constant -= self.view.frame.width + 15
-            UIView.animate(withDuration: 0.618, animations: {
-                self.view.layoutIfNeeded()
-                }, completion: { (true) in
-                    self.hideCodeLabel(true)
-            })
+            showEditing(0.618)
         } else {
-            constrainOfCodeLabel.constant += self.view.frame.width
-            constraintOfColorSlider.constant += self.view.frame.width + 15
-            hideCodeLabel(false)
-            UIView.animate(withDuration: 0.618) {
-                self.view.layoutIfNeeded()
-            }
+            hideEditing(0.618)
         }
     }
         
@@ -203,14 +192,41 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         colorItem = nil
     }
     
+    fileprivate func showEditing(_ duration: Double) {
+        constrainOfCodeLabel.constant = -self.view.frame.width
+        constraintOfColorSlider.constant = -15
+        UIView.animate(withDuration: duration, animations: {
+            self.view.layoutIfNeeded()
+            }, completion: { (true) in
+                self.hideCodeLabel(true)
+        })
+    }
+    
+    fileprivate func hideEditing(_ duration: Double) {
+        constrainOfCodeLabel.constant = 0
+        constraintOfColorSlider.constant = self.view.frame.width
+        hideCodeLabel(false)
+        UIView.animate(withDuration: duration) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
     @objc fileprivate func panGesture(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
         case .began: fallthrough
-        case .changed: break
-            /* todo
+        case .changed:
+            hideCodeLabel(false)
             let translation = sender.translation(in: self.view).x
+            constrainOfCodeLabel.constant += translation
+            constraintOfColorSlider.constant += translation
             sender.setTranslation(CGPoint.zero, in: self.view)
-            */
+        case .ended: fallthrough
+        case .cancelled:
+            if constrainOfCodeLabel.constant < -self.view.frame.width / 2 {
+                showEditing(0.3)
+            } else {
+                hideEditing(0.3)
+            }
         default:
             break
         }
