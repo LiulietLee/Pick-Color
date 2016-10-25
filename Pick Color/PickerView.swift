@@ -27,58 +27,39 @@ class PickerView: UIImageView {
         
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.isUserInteractionEnabled = true
+        isUserInteractionEnabled = true
         
-        selectView.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: 100, height: 100))
+        selectView.frame = CGRect(origin: .zero, size: CGSize(width: 100, height: 100))
         selectView.radius = 50
         selectView.alpha = 0.0
-        self.addSubview(selectView)
+        addSubview(selectView)
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        
+
+    private func update(forTouches touches: Set<UITouch>){
         if let point = touches.first?.location(in: self) {
-            let percentX = point.x / self.frame.size.width;
-            let percentY = point.y / self.frame.size.height;
-            
-            imagePoint = CGPoint(x: self.image!.size.width * percentX, y: self.image!.size.height * percentY)
-        
+            let percentX = point.x / frame.size.width;
+            let percentY = point.y / frame.size.height;
+
+            imagePoint = CGPoint(x: image!.size.width * percentX, y: image!.size.height * percentY)
+
             selectView.alpha = 1.0
-            selectView.frame = CGRect(origin: CGPoint(x: point.x - 50, y: point.y - 120),
-                                      size: CGSize(width: 100, height: 100))
+            selectView.frame = CGRect(x: point.x - 50, y: point.y - 120, width: 100, height: 100)
             if let image = model.getPartOfImage(x: imagePoint!.x, y: imagePoint!.y) {
                 clipedImage = image
             }
 
-            if delegate != nil {
-                delegate?.theTouchingLocation(imagePoint!)
-            }
+            delegate?.theTouchingLocation(imagePoint!)
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        update(forTouches: touches)
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesMoved(touches, with: event)
-        
-        if let point = touches.first?.location(in: self) {
-            if touches.count <= 1 {
-                let percentX = point.x / self.frame.size.width;
-                let percentY = point.y / self.frame.size.height;
-                
-                imagePoint = CGPoint(x: self.image!.size.width * percentX, y: self.image!.size.height * percentY)
-
-                selectView.alpha = 1.0
-                selectView.frame = CGRect(origin: CGPoint(x: point.x - 50, y: point.y - 120),
-                                          size: CGSize(width: 100, height: 100))
-                if let image = model.getPartOfImage(x: imagePoint!.x, y: imagePoint!.y) {
-                    clipedImage = image
-                }
-                
-                if delegate != nil  {
-                    delegate?.theTouchingLocation(imagePoint!)
-                }
-            }
-        }
+        update(forTouches: touches)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {

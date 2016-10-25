@@ -27,18 +27,18 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
 
     fileprivate var image: UIImage? {
         didSet {
-            if image != nil {
-                self.view.sendSubview(toBack: self.selectImageButton)
+            if let image = image {
+                view.sendSubview(toBack: selectImageButton)
                 selectImageButton.isHidden = true
-                imageView.image = image!
-                pixelData.image = image!
+                imageView.image = image
+                pixelData.image = image
                 imageView.model = pixelData
-                let scale = self.view.frame.height / image!.size.height
-                heightOfImageView.constant = image!.size.height * scale
-                widthOfImageView.constant = image!.size.width * scale
+                let scale = view.frame.height / image.size.height
+                heightOfImageView.constant = image.size.height * scale
+                widthOfImageView.constant = image.size.width * scale
                 updateManager()
             } else {
-                self.view.bringSubview(toFront: self.selectImageButton)
+                view.bringSubview(toFront: self.selectImageButton)
                 pickColorButton.isEnabled = false
             }
         }
@@ -55,7 +55,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        menuButton.target = self.revealViewController()
+        menuButton.target = revealViewController()
         menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
         
         imagePicker.delegate = self
@@ -64,10 +64,10 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(self.scaleUpOrDownTheImageView(_:)))
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.moveImage(_:)))
         panGesture.minimumNumberOfTouches = 2
-        self.view.addGestureRecognizer(pinchGesture)
-        self.view.addGestureRecognizer(panGesture)
+        view.addGestureRecognizer(pinchGesture)
+        view.addGestureRecognizer(panGesture)
         
-        let r = self.view.bounds.size.width * 0.4444
+        let r = view.bounds.size.width * 0.4444
         selectImageButton.layer.masksToBounds = true
         selectImageButton.layer.cornerRadius = r
         
@@ -90,12 +90,10 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     }
     
     func theTouchingLocation(_ location: CGPoint) {
-        self.color = pixelData.getPixelColorOfPoint(x: location.x, y: location.y)
-        if !pickColorButton.isEnabled {
-            pickColorButton.isEnabled = true
-        }
+        color = pixelData.pixelColorAt(x: location.x, y: location.y)
+        pickColorButton.isEnabled = true
     }
-    
+
     // MARK: Button actions
     
     @IBAction func selectImageButtonTapped() {
@@ -103,7 +101,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
             imagePicker.sourceType = .photoLibrary;
             imagePicker.allowsEditing = false
             
-            self.present(imagePicker, animated: true, completion: nil)
+            present(imagePicker, animated: true, completion: nil)
         }
     }
 
@@ -117,12 +115,11 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     
     @objc fileprivate func moveImage(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
-        case .began: fallthrough
-        case .changed:
-            let translate = sender.translation(in: self.view)
+        case .began, .changed:
+            let translate = sender.translation(in: view)
             centerXOfImageView.constant += translate.x
             centerYOfImageView.constant += translate.y
-            sender.setTranslation(CGPoint.zero, in: self.view)
+            sender.setTranslation(.zero, in: view)
             updateManager()
         default: break
         }
@@ -130,8 +127,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     
     @objc fileprivate func scaleUpOrDownTheImageView(_ sender: UIPinchGestureRecognizer) {
         switch sender.state {
-        case .began: fallthrough
-        case .changed:
+        case .began, .changed:
             let scale = sender.scale
             widthOfImageView.constant *= scale
             heightOfImageView.constant *= scale

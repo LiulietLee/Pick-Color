@@ -36,10 +36,10 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     var colorItem: Colors? {
         didSet {
             if let item = colorItem {
-                self.title = item.title
+                title = item.title
                 saveBarButton.image = UIImage(named: "ic_bookmark.jpg")
             } else {
-                self.title = ""
+                title = ""
                 saveBarButton.image = UIImage(named: "ic_bookmark_border.jpg")
             }
         }
@@ -74,13 +74,13 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
             getColorValue()
             writeCode(0)
         }
-        let r = self.view.bounds.size.width * 0.25
+        let r = view.bounds.size.width * 0.25
         colorLabel.layer.cornerRadius = r
         colorLabel.layer.masksToBounds = true
-        constraintOfColorSlider.constant += self.view.frame.width
+        constraintOfColorSlider.constant += view.frame.width
         
         let pan = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
-        self.view.addGestureRecognizer(pan)
+        view.addGestureRecognizer(pan)
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,7 +97,8 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
             colorValues[3] = round(a * 1000) / 1000
         }
     }
-    
+
+    // TODO: Add `UIColor(displayP3Red:green:blue:alpha:)` and `#colorLiteral(red:green:blue:alpha)`
     fileprivate func writeCode(_ language: Int8) {
         switch language {
         case 0:
@@ -118,19 +119,21 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         }
     }
 
-    fileprivate func hideCodeLabel(_ bool: Bool) {
-        self.codeLabel1.isHidden = bool
-        self.codeLabel2.isHidden = bool
-        self.codeLabel3.isHidden = bool
-        self.codeLabel4.isHidden = bool
+    private var isCodeLabelHidden: Bool {
+        get {
+            return codeLabel1.isHidden
+        }
+        set {
+            codeLabel1.isHidden = newValue
+            codeLabel2.isHidden = newValue
+            codeLabel3.isHidden = newValue
+            codeLabel4.isHidden = newValue
+        }
     }
 
     fileprivate func saveEditedColor() {
-        if colorItem != nil {
-            colorItem!.red = colorValues[0] as NSNumber?
-            colorItem!.green = colorValues[1] as NSNumber?
-            colorItem!.blue = colorValues[2] as NSNumber?
-            colorItem!.alpha = colorValues[3] as NSNumber?
+        if let colorItem = colorItem {
+            colorItem.updateColor(fromComponents: colorValues)
             model.saveEditedColor()
         }
     }
@@ -139,44 +142,30 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         let string = "\(codeLabel1.text!)\(codeLabel2.text!)\(codeLabel3.text!)\(codeLabel4.text!)"
         UIPasteboard.general.string = string
         
-        let snackbar = MKSnackbar(
+        let snackbar = MKSnackbar (
             withTitle: "Copyed (｀・ω・´)",
             withDuration: nil,
             withTitleColor: nil,
             withActionButtonTitle: "Done",
-            withActionButtonColor: UIColor.MKColor.Blue.A100)
+            withActionButtonColor: UIColor.MKColor.Blue.A100
+        )
         snackbar.show()
     }
 
     @IBAction func languageChanged(_ sender: UISegmentedControl) {
         writeCode(Int8(sender.selectedSegmentIndex))
     }
-    
-    @IBAction func redChanged(_ sender: UISlider) {
-        colorValues[0] = round(CGFloat(sender.value) * 1000) / 1000
-        saveEditedColor()
-    }
-    
-    @IBAction func greenChanged(_ sender: UISlider) {
-        colorValues[1] = round(CGFloat(sender.value) * 1000) / 1000
-        saveEditedColor()
-    }
-    
-    @IBAction func blueChanged(_ sender: UISlider) {
-        colorValues[2] = round(CGFloat(sender.value) * 1000) / 1000
-        saveEditedColor()
-    }
-    
-    @IBAction func alphaChanged(_ sender: UISlider) {
-        colorValues[3] = round(CGFloat(sender.value) * 1000) / 1000
+
+    @IBAction func colorChanged(_ sender: UISlider) {
+        colorValues[sender.tag] = round(CGFloat(sender.value) * 1000) / 1000
         saveEditedColor()
     }
     
     @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
         if constrainOfCodeLabel.constant == 0 {
-            showEditing(0.618)
+            showEditing(duration: 0.618)
         } else {
-            hideEditing(0.618)
+            hideEditing(duration: 0.618)
         }
     }
         
@@ -192,20 +181,20 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         colorItem = nil
     }
     
-    fileprivate func showEditing(_ duration: Double) {
-        constrainOfCodeLabel.constant = -self.view.frame.width
+    fileprivate func showEditing(duration: Double) {
+        constrainOfCodeLabel.constant = -view.frame.width
         constraintOfColorSlider.constant = -15
         UIView.animate(withDuration: duration, animations: {
             self.view.layoutIfNeeded()
             }, completion: { (true) in
-                self.hideCodeLabel(true)
+                self.isCodeLabelHidden = true
         })
     }
     
-    fileprivate func hideEditing(_ duration: Double) {
+    fileprivate func hideEditing(duration: Double) {
         constrainOfCodeLabel.constant = 0
-        constraintOfColorSlider.constant = self.view.frame.width
-        hideCodeLabel(false)
+        constraintOfColorSlider.constant = view.frame.width
+        isCodeLabelHidden = false
         UIView.animate(withDuration: duration) {
             self.view.layoutIfNeeded()
         }
@@ -213,19 +202,17 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     
     @objc fileprivate func panGesture(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
-        case .began: fallthrough
-        case .changed:
-            hideCodeLabel(false)
-            let translation = sender.translation(in: self.view).x
+        case .began, .changed:
+            isCodeLabelHidden = false
+            let translation = sender.translation(in: view).x
             constrainOfCodeLabel.constant += translation
             constraintOfColorSlider.constant += translation
-            sender.setTranslation(CGPoint.zero, in: self.view)
-        case .ended: fallthrough
-        case .cancelled:
-            if constrainOfCodeLabel.constant < -self.view.frame.width / 2 {
-                showEditing(0.3)
+            sender.setTranslation(.zero, in: view)
+        case .ended, .cancelled:
+            if constrainOfCodeLabel.constant < -view.frame.width / 2 {
+                showEditing(duration: 0.3)
             } else {
-                hideEditing(0.3)
+                hideEditing(duration: 0.3)
             }
         default:
             break
@@ -241,12 +228,11 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         if segue.identifier == "save" {
             if let vc = segue.destination as? SaveViewController {
                 vc.preferredContentSize = CGSize(width: 360, height: 150)
-                vc.color = self.colorLabel.backgroundColor
+                vc.color = colorLabel.backgroundColor
                 vc.delegate = self
                 vc.item = colorItem
-                let controller = vc.popoverPresentationController
-                if controller != nil {
-                    controller?.delegate = self
+                if let controller = vc.popoverPresentationController {
+                    controller.delegate = self
                 }
             }
         }

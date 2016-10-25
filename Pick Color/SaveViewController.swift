@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 protocol SaveViewControllerDelegation {
     func colorSaved(color: Colors)
@@ -18,66 +19,49 @@ class SaveViewController: UIViewController {
 
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var textField: UITextField!
-    
+
     var delegate: SaveViewControllerDelegation?
     var color: UIColor!
     var item: Colors?
     fileprivate var model = CoreDataModel()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        if item != nil {
+        if let item = item {
             cancelButton.setTitle("delete", for: .normal)
-            cancelButton.setTitleColor(UIColor.red, for: .normal)
-            textField.text = item!.title
+            cancelButton.setTitleColor(.red, for: .normal)
+            textField.text = item.title
         }
         textField.layer.borderColor = UIColor.clear.cgColor
         textField.becomeFirstResponder()
     }
-    
+
     @IBAction func cancelButtonTapped() {
-        if item != nil {
-            model.deleteColor(item!)
-            if delegate != nil {
-                delegate?.colorDeleted()
-            }
+        if let item = item {
+            model.deleteColor(item)
+            delegate?.colorDeleted()
         }
         goBack()
     }
 
     @IBAction func saveButtonTapped() {
-        if textField.text != nil && textField.text != "" {
-            let title = textField.text!
-            if item == nil {
-                let colorItem = model.saveNewColor(newColor: color, title: title)
-                if delegate != nil {
-                    delegate?.colorSaved(color: colorItem)
-                }
-            } else {
-                item!.title = title
+        defer { goBack() }
+        guard let title = textField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
+        if title != "" {
+            if let item = item {
+                item.title = title
                 model.saveEditedColor()
-                if delegate != nil {
-                    delegate?.colorEdited(color: item!)
-                }
+                delegate?.colorEdited(color: item)
+            } else {
+                let colorItem = model.saveNewColor(color, title: title)
+                delegate?.colorSaved(color: colorItem)
             }
         }
-        
-        goBack()
     }
-    
+
     fileprivate func goBack() {
         textField.resignFirstResponder()
         self.dismiss(animated: true, completion: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
