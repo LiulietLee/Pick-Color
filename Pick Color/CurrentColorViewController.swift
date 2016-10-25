@@ -227,7 +227,6 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         // Pass the selected object to the new view controller.
         if segue.identifier == "save" {
             if let vc = segue.destination as? SaveViewController {
-                vc.preferredContentSize = CGSize(width: 360, height: 150)
                 vc.color = colorLabel.backgroundColor
                 vc.delegate = self
                 vc.item = colorItem

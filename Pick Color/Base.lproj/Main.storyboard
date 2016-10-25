@@ -337,7 +337,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bM1-xN-wNg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DXS-u9-ueu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="title here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8AW-f9-e4g" customClass="MKTextField" customModule="Pick_Color" customModuleProvider="target">
@@ -401,6 +401,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="8AW-f9-e4g" secondAttribute="leading" id="XuZ-fr-WQk"/>
                         </constraints>
                     </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="360" height="150"/>
                     <connections>
                         <outlet property="cancelButton" destination="mdq-jA-97V" id="Zw2-WH-REE"/>
                         <outlet property="textField" destination="8AW-f9-e4g" id="MlO-kA-3h3"/>
@@ -790,7 +791,7 @@
         <image name="ic_mode_edit" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="3Xw-7I-I2I"/>
         <segue reference="YvN-y7-nBG"/>
-        <segue reference="nsD-Ir-deh"/>
     </inferredMetricsTieBreakers>
 </document>
