@@ -57,12 +57,12 @@ class PixelData {
         }
         return nil
     }
-    
-    func getPixelColorOfPoint(x: CGFloat, y: CGFloat) -> UIColor? {
+
+    func pixelColorAt(x: CGFloat, y: CGFloat) -> UIColor? {
         if let imageWidth = image?.size.width {
             let imageHight = image!.size.height
             if x >= 0 && x < imageWidth && y >= 0 && y < imageHight {
-                let pixelInfo = 4 * ((Int(imageWidth) * Int(y)) + Int(x))
+                let pixelInfo = 4 * (Int(imageWidth) * Int(y) + Int(x))
                 let a: CGFloat = CGFloat(data![pixelInfo]) / 255
                 let r: CGFloat = CGFloat(data![pixelInfo + 1]) / 255
                 let g: CGFloat = CGFloat(data![pixelInfo + 2]) / 255

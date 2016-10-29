@@ -13,7 +13,7 @@ class CoreDataModel {
     fileprivate var context = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext
     
     fileprivate func saveContext() {
-        do { try context.save() } catch { print("cannot save") }
+        do { try context.save() } catch { print("save failed") }
     }
     
     func fetchColors() -> [Colors] {
@@ -29,23 +29,12 @@ class CoreDataModel {
         return colorItems
     }
     
-    func saveNewColor(newColor: UIColor, title: String) -> Colors {
-        let entity = NSEntityDescription.entity(forEntityName: "Colors", in: context)
-        let newItem = Colors(entity: entity!, insertInto: context)
-        
-        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-        if newColor.getRed(&r, green: &g, blue: &b, alpha: &a) {
-            newItem.alpha = a as NSNumber?
-            newItem.red = r as NSNumber?
-            newItem.green = g as NSNumber?
-            newItem.blue = b as NSNumber?
-            newItem.title = title
-            
-            saveContext()
-        } else {
-            print("cannot get the rgba of color")
-        }
-        
+    func saveNewColor(_ newColor: UIColor, title: String) -> Colors {
+        let entity = NSEntityDescription.entity(forEntityName: "Colors", in: context)!
+        let newItem = Colors(entity: entity, insertInto: context)
+        newItem.title = title
+        newItem.uiColor = newColor
+        saveContext()
         return newItem
     }
     
@@ -54,9 +43,7 @@ class CoreDataModel {
     }
     
     func deleteColor(_ color: Colors) {
-        let object = color as NSManagedObject
-        context.delete(object)
-        
+        context.delete(color)
         saveContext()
     }
 }

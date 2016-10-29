@@ -19,31 +19,15 @@ class AboutViewController: UIViewController {
         menu.action = #selector(SWRevealViewController.revealToggle(_:))
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func githubButtonTapped() {
-        UIApplication.shared.openURL(URL(string: "https://github.com/LiulietLee/Pick-Color")!)
-    }
-    
-    @IBAction func facebookButtonTapped() {
-        UIApplication.shared.openURL(URL(string: "https://www.facebook.com/liuliet.lee")!)
-    }
+    /// - important: need to update with button tag
+    private let links = [
+        "https://www.facebook.com/liuliet.lee",
+        "http://space.bilibili.com/4056345/#!/index",
+        "https://github.com/LiulietLee/Pick-Color"
+    ]
 
-    @IBAction func bilibiliButtonTapped() {
-        UIApplication.shared.openURL(URL(string: "http://space.bilibili.com/4056345/#!/index")!)
+    @IBAction func openLink(associatedWith button: UIButton){
+        UIApplication.shared.openURL(URL(string: links[(button.tag < links.count ? button.tag : 0)])!)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

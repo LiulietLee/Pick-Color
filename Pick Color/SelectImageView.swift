@@ -19,14 +19,14 @@ class SelectImageView: UIView {
     var radius: CGFloat = 15
     
     override func draw(_ rect: CGRect) {
-        self.layer.cornerRadius = radius
-        self.layer.masksToBounds = true
+        layer.cornerRadius = radius
+        layer.masksToBounds = true
         
-        imageView = UIImageView(frame: CGRect(origin: CGPoint.zero, size: self.frame.size))
-        self.addSubview(imageView)
-        let overImageView = UIImageView(frame: CGRect(origin: CGPoint.zero, size: self.frame.size))
+        imageView = UIImageView(frame: CGRect(origin: .zero, size: frame.size))
+        addSubview(imageView)
+        let overImageView = UIImageView(frame: CGRect(origin: .zero, size: frame.size))
         overImageView.image = UIImage(named: "search.png")
-        self.addSubview(overImageView)
+        addSubview(overImageView)
     }
 
 }
