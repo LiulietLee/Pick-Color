@@ -45,9 +45,9 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     }
     
     fileprivate var color: UIColor? {
-        didSet {
-            if color != nil {
-                pickColorButton.setTitleColor(self.color, for: UIControlState())
+        willSet {
+            if let newColor = newValue {
+                pickColorButton.setTitleColor(newColor, for: UIControlState())
             }
         }
     }
