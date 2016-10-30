@@ -46,7 +46,9 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     
     fileprivate var color: UIColor? {
         didSet {
-            pickColorButton.setTitleColor(self.color, for: UIControlState())
+            if color != nil {
+                pickColorButton.setTitleColor(self.color, for: UIControlState())
+            }
         }
     }
     
@@ -145,7 +147,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
         switch segue.identifier! {
         case "showColor":
             let vc = segue.destination as! CurrentColorViewController
-            vc.color = color
+            vc.color = pickColorButton.titleColor(for: .normal)
         default:
             break
         }
