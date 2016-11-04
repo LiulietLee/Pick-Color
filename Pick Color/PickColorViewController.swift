@@ -36,6 +36,8 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
                 let scale = view.frame.height / image.size.height
                 heightOfImageView.constant = image.size.height * scale
                 widthOfImageView.constant = image.size.width * scale
+                centerXOfImageView.constant = 0
+                centerYOfImageView.constant = 0
                 updateManager()
             } else {
                 view.bringSubview(toFront: self.selectImageButton)
