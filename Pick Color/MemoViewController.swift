@@ -15,7 +15,8 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     fileprivate var model = CoreDataModel()
     fileprivate var colors = [Colors]()
-
+    fileprivate var nothingLabel = UILabel()
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         colors = model.fetchColors()
@@ -29,6 +30,7 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         menu.target = revealViewController()
         menu.action = #selector(SWRevealViewController.revealToggle(_:))
+        setLabel()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +43,8 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if colors.count == 0 { showLabel() }
+        else { hideLabel() }
         return colors.count
     }
 
@@ -81,6 +85,34 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
             colors = [Colors]()
             tableView.reloadData()
         }
+    }
+    
+    // MARK: Show or hide label of "Nothing here~"
+    
+    fileprivate func setLabel() {
+        nothingLabel.text = "nothing here~"
+        nothingLabel.textColor = UIColor(rgb: 0x66ccff)
+        nothingLabel.font = UIFont(name: "Avenir", size: 32.0)
+        nothingLabel.translatesAutoresizingMaskIntoConstraints = false
+        nothingLabel.textAlignment = .center
+
+        self.view.addSubview(nothingLabel)
+        
+        let midXCon = NSLayoutConstraint(item: nothingLabel, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
+        let midYCon = NSLayoutConstraint(item: nothingLabel, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0)
+        
+        self.view.addConstraint(midXCon)
+        self.view.addConstraint(midYCon)
+    }
+
+    fileprivate func showLabel() {
+        nothingLabel.isHidden = false
+        self.view.bringSubview(toFront: nothingLabel)
+    }
+    
+    fileprivate func hideLabel() {
+        nothingLabel.isHidden = true
+        self.view.sendSubview(toBack: nothingLabel)
     }
 
     // MARK: - Navigation

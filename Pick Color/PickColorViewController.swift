@@ -26,8 +26,8 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     fileprivate var pixelData = PixelData()
 
     fileprivate var image: UIImage? {
-        willSet {
-            if let image = newValue {
+        didSet {
+            if let image = image {
                 view.sendSubview(toBack: selectImageButton)
                 selectImageButton.isHidden = true
                 imageView.image = image
@@ -45,9 +45,9 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     }
     
     fileprivate var color: UIColor? {
-        willSet {
-            if let newColor = newValue {
-                pickColorButton.setTitleColor(newColor, for: UIControlState())
+        didSet {
+            if color != nil {
+                pickColorButton.setTitleColor(self.color, for: UIControlState())
             }
         }
     }
