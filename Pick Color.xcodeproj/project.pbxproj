@@ -20,6 +20,8 @@
 		4F3A9D061D7AFD4D00B4A90A /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A9D051D7AFD4D00B4A90A /* PickerView.swift */; };
 		4F4FEDD81D843A9A00FA14FC /* CurrentColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FEDD71D843A9A00FA14FC /* CurrentColorViewController.swift */; };
 		4F4FEDFD1D85215300FA14FC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FEDFC1D85215300FA14FC /* AboutViewController.swift */; };
+		4F5325E51DCCB107007C0FDA /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5325E41DCCB107007C0FDA /* SourceViewController.swift */; };
+		4F5325E71DCCB71F007C0FDA /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5325E61DCCB71F007C0FDA /* TutorialViewController.swift */; };
 		4F6ABF9F1DA27FAC00D46BFF /* SelectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */; };
 		4F6ABFA11DA293BF00D46BFF /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6ABFA01DA293BF00D46BFF /* ImageManager.swift */; };
 		4F88E1A71D8A821E007FA1E8 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */; };
@@ -84,6 +86,8 @@
 		4F3A9D051D7AFD4D00B4A90A /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		4F4FEDD71D843A9A00FA14FC /* CurrentColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentColorViewController.swift; sourceTree = "<group>"; };
 		4F4FEDFC1D85215300FA14FC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		4F5325E41DCCB107007C0FDA /* SourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
+		4F5325E61DCCB71F007C0FDA /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectImageView.swift; sourceTree = "<group>"; };
 		4F6ABFA01DA293BF00D46BFF /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 				4FC5183F1D8AD7E9007FFAD9 /* MemoCell.swift */,
 				4FE9692E1DA144D700DDDB9A /* NavigationViewController.swift */,
 				4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */,
+				4F5325E41DCCB107007C0FDA /* SourceViewController.swift */,
+				4F5325E61DCCB71F007C0FDA /* TutorialViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -399,6 +405,7 @@
 				4F6ABFA11DA293BF00D46BFF /* ImageManager.swift in Sources */,
 				4FE9691F1DA0AA4E00DDDB9A /* MKImageView.swift in Sources */,
 				4FE9691A1DA0AA4E00DDDB9A /* MKButton.swift in Sources */,
+				4F5325E51DCCB107007C0FDA /* SourceViewController.swift in Sources */,
 				4F88E1BC1D8A9692007FA1E8 /* Colors.swift in Sources */,
 				4F88E1A71D8A821E007FA1E8 /* SaveViewController.swift in Sources */,
 				4FE969201DA0AA4E00DDDB9A /* MKLayer.swift in Sources */,
@@ -424,6 +431,7 @@
 				4FE9691E1DA0AA4E00DDDB9A /* MKLabel.swift in Sources */,
 				4FC5183A1D8AD71E007FFAD9 /* MemoViewController.swift in Sources */,
 				4F011DE41D6C4AF100A0D2BD /* SWRevealViewController.m in Sources */,
+				4F5325E71DCCB71F007C0FDA /* TutorialViewController.swift in Sources */,
 				4F88E1BD1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
