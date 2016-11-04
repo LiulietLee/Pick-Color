@@ -10,6 +10,7 @@ import UIKit
 
 class CurrentColorViewController: UIViewController, UIPopoverPresentationControllerDelegate, SaveViewControllerDelegation {
 
+    @IBOutlet weak var panView: UIView!
     @IBOutlet weak var saveBarButton: UIBarButtonItem!
     @IBOutlet weak var codeLabel1: UILabel!
     @IBOutlet weak var codeLabel2: UILabel!
@@ -80,7 +81,7 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         constraintOfColorSlider.constant += view.frame.width
         
         let pan = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
-        view.addGestureRecognizer(pan)
+        panView.addGestureRecognizer(pan)
     }
 
     override func didReceiveMemoryWarning() {
