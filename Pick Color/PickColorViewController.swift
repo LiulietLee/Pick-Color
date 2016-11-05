@@ -68,8 +68,11 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(self.scaleUpOrDownTheImageView(_:)))
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.moveImage(_:)))
         panGesture.minimumNumberOfTouches = 2
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.resetImage(_:)))
+        tapGesture.numberOfTapsRequired = 2
         view.addGestureRecognizer(pinchGesture)
         view.addGestureRecognizer(panGesture)
+        view.addGestureRecognizer(tapGesture)
         
         let r = view.bounds.size.width * 0.4444
         selectImageButton.layer.masksToBounds = true
@@ -135,10 +138,28 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
             let scale = sender.scale
             widthOfImageView.constant *= scale
             heightOfImageView.constant *= scale
+            centerXOfImageView.constant *= scale
+            centerYOfImageView.constant *= scale
             sender.scale = 1.0
             updateManager()
         default:
             break
+        }
+    }
+    
+    @objc fileprivate func resetImage(_ sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            if let image = self.image {
+                let scale = view.frame.height / image.size.height
+                heightOfImageView.constant = image.size.height * scale
+                widthOfImageView.constant = image.size.width * scale
+                centerXOfImageView.constant = 0
+                centerYOfImageView.constant = 0
+                updateManager()
+                UIView.animate(withDuration: 0.618, animations: {
+                    self.view.layoutIfNeeded()
+                })
+            }
         }
     }
     
