@@ -10,7 +10,6 @@ import UIKit
 
 class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var menu: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
     fileprivate let project = [
@@ -23,9 +22,6 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menu.target = revealViewController()
-        menu.action = #selector(SWRevealViewController.revealToggle(_:))
-
         tableView.dataSource = self
         tableView.delegate = self
     }

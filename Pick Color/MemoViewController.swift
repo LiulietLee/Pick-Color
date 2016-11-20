@@ -73,8 +73,8 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         dialog.title = "WARNING"
         dialog.message = "Do you really want to delete ALL the colors?"
-        dialog.setPositiveButton(withTitle: "Yes", target: self, action: #selector(self.deleteAllItems))
-        dialog.setNegativeButton(withTitle: "No")
+        dialog.setPositiveButton(withTitle: "DELETE", target: self, action: #selector(self.deleteAllItems))
+        dialog.setNegativeButton(withTitle: "CANCEL")
 
         dialog.show()
     }

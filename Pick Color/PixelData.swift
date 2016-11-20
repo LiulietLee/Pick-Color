@@ -11,13 +11,20 @@ import UIKit
 class PixelData {
     
     fileprivate var data: UnsafePointer<UInt8>? = nil
+    fileprivate var context: CGContext?
     
     var image: UIImage? {
         didSet {
             if let image = self.image {
                 let cgimage = image.cgImage
-                let context = createBitmapContext(cgimage!)
-                let pixelData = context.data?.assumingMemoryBound(to: UInt8.self)
+                let pointer = context?.data
+                
+                if pointer != nil {
+                    free(pointer)
+                }
+                
+                context = createBitmapContext(cgimage!)
+                let pixelData = context!.data?.assumingMemoryBound(to: UInt8.self)
                 self.data = UnsafePointer<UInt8>(pixelData)
             } else {
                 self.data = nil
@@ -50,9 +57,12 @@ class PixelData {
             let imageHight = image!.size.height
             if x >= 0 && x < imageWidth && y >= 0 && y < imageHight {
                 let rect: CGRect = CGRect(x: x - 10, y: y - 10, width: 20, height: 20)
-                let imageRef = self.image!.cgImage!.cropping(to: rect)
-                let image: UIImage = UIImage(cgImage: imageRef!)
-                return image
+                if let imageRef = self.image!.cgImage!.cropping(to: rect) {
+                    let image: UIImage = UIImage(cgImage: imageRef)
+                    return image
+                } else {
+                    return nil
+                }
             }
         }
         return nil

@@ -31,7 +31,7 @@
                                     <constraint firstAttribute="height" constant="200" id="wEu-kD-grz"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heB-Ri-Baa" customClass="MKButton" customModule="Pick_Color" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heB-Ri-Baa">
                                 <rect key="frame" x="112.5" y="597" width="150" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -573,29 +573,6 @@
                                             <segue destination="aNX-7K-Rdx" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="EOn-Zl-3rE"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wD9-Lw-G1n" customClass="MKTableViewCell" customModule="Pick_Color" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="260" width="375" height="65"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wD9-Lw-G1n" id="yr7-vm-WAG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idp-Ub-D2U">
-                                                    <rect key="frame" x="24" y="16" width="71" height="33"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Idp-Ub-D2U" firstAttribute="leading" secondItem="yr7-vm-WAG" secondAttribute="leadingMargin" constant="16" id="7x6-Q4-dEQ"/>
-                                                <constraint firstItem="Idp-Ub-D2U" firstAttribute="centerY" secondItem="yr7-vm-WAG" secondAttribute="centerY" id="xzO-6s-xIc"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="xMY-P2-9yd" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="NlY-EU-Rs4"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -814,7 +791,7 @@
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Github"/>
                                 <connections>
-                                    <action selector="openLinkWithAssociatedWith:" destination="dff-W8-uue" eventType="touchUpInside" id="avu-r2-ix0"/>
+                                    <segue destination="igq-Wg-3At" kind="show" id="djL-cm-yQV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you can find it on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-yR-zPF">
@@ -928,35 +905,14 @@
                             <constraint firstItem="0oT-eR-nVn" firstAttribute="top" secondItem="eBQ-DX-VCy" secondAttribute="bottom" id="zOK-nz-Q0t"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="open source project" id="w71-EM-8QV">
-                        <barButtonItem key="leftBarButtonItem" image="ic_menu" id="pmr-Ik-e27"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="open source project" id="w71-EM-8QV"/>
                     <connections>
-                        <outlet property="menu" destination="pmr-Ik-e27" id="dAM-TQ-Je5"/>
                         <outlet property="tableView" destination="eBQ-DX-VCy" id="f4s-72-6YC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlT-Xq-EfL" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2030" y="-2669"/>
-        </scene>
-        <!--Navigation View Controller-->
-        <scene sceneID="pJi-WT-hs2">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xMY-P2-9yd" customClass="NavigationViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bZD-zI-4SD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="igq-Wg-3At" kind="relationship" relationship="rootViewController" id="30r-IZ-bQu"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O3n-76-9aF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1218" y="-2669"/>
+            <point key="canvasLocation" x="2801" y="-1194"/>
         </scene>
         <!--tutorial-->
         <scene sceneID="lXj-4i-vJ4">
@@ -1003,7 +959,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0z-2f-xHo" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2026" y="-1944"/>
+            <point key="canvasLocation" x="2028" y="-1943"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="Vny-8y-jgI">
@@ -1021,7 +977,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Be-4t-6fB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1218" y="-1944"/>
+            <point key="canvasLocation" x="1262" y="-1943"/>
         </scene>
     </scenes>
     <resources>
@@ -1034,6 +990,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Yk2-5y-Ue1"/>
-        <segue reference="nsD-Ir-deh"/>
+        <segue reference="3Xw-7I-I2I"/>
     </inferredMetricsTieBreakers>
 </document>
