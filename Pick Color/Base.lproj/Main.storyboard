@@ -550,29 +550,6 @@
                                             <segue destination="6HT-BV-cxV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="k2Z-7o-G90"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="X1h-5V-qQM" customClass="MKTableViewCell" customModule="Pick_Color" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="195" width="375" height="65"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X1h-5V-qQM" id="wpl-0X-WM4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tutorial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yM5-UR-osH">
-                                                    <rect key="frame" x="24" y="16" width="77" height="33"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="yM5-UR-osH" firstAttribute="leading" secondItem="wpl-0X-WM4" secondAttribute="leadingMargin" constant="16" id="DgJ-Yi-OMI"/>
-                                                <constraint firstItem="yM5-UR-osH" firstAttribute="centerY" secondItem="wpl-0X-WM4" secondAttribute="centerY" id="IB1-YQ-VSj"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="aNX-7K-Rdx" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="EOn-Zl-3rE"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -743,14 +720,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you can speak chinese, " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4Q-hU-PI4">
-                                <rect key="frame" x="50" y="228" width="205" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are a bilibilier like me, " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4Q-hU-PI4">
+                                <rect key="frame" x="50" y="228" width="231" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you wanna get the source code, " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqa-xf-j0X">
-                                <rect key="frame" x="50" y="294" width="277.5" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you wanna help me to improve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqa-xf-j0X">
+                                <rect key="frame" x="50" y="294" width="264.5" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -761,32 +738,32 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="please tap here →" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDJ-Ag-hTk">
-                                <rect key="frame" x="50" y="195" width="147.5" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="here is my" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDJ-Ag-hTk">
+                                <rect key="frame" x="50" y="195" width="82" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sW-Nq-9RI">
-                                <rect key="frame" x="205.5" y="189" width="75" height="37"/>
+                                <rect key="frame" x="140" y="189" width="80" height="37"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="facebook"/>
+                                <state key="normal" title="Facebook"/>
                                 <connections>
                                     <action selector="openLinkWithAssociatedWith:" destination="dff-W8-uue" eventType="touchUpInside" id="0WK-8u-5vU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngu-1S-eCR">
-                                <rect key="frame" x="230" y="255" width="48" height="37"/>
+                                <rect key="frame" x="230" y="255" width="49" height="37"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="bilibili"/>
+                                <state key="normal" title="Bilibili"/>
                                 <connections>
                                     <action selector="openLinkWithAssociatedWith:" destination="dff-W8-uue" eventType="touchUpInside" id="Bfg-Tt-5TC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHb-ys-p0X">
-                                <rect key="frame" x="197.5" y="321" width="56" height="37"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHb-ys-p0X">
+                                <rect key="frame" x="272" y="321" width="56" height="37"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Github"/>
@@ -794,12 +771,21 @@
                                     <segue destination="igq-Wg-3At" kind="show" id="djL-cm-yQV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you can find it on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-yR-zPF">
-                                <rect key="frame" x="50" y="327" width="139.5" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this app, you can find it on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-yR-zPF">
+                                <rect key="frame" x="50" y="327" width="214" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd0-TL-pe4">
+                                <rect key="frame" x="228" y="189" width="73" height="37"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Google+"/>
+                                <connections>
+                                    <action selector="openLinkWithAssociatedWith:" destination="dff-W8-uue" eventType="touchUpInside" id="2dP-va-2zL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -812,6 +798,7 @@
                             <constraint firstItem="ngu-1S-eCR" firstAttribute="centerY" secondItem="biJ-HO-bnw" secondAttribute="centerY" id="I0q-hB-nd0"/>
                             <constraint firstItem="z4Q-hU-PI4" firstAttribute="leading" secondItem="SDJ-Ag-hTk" secondAttribute="leading" id="JdJ-fh-VmK"/>
                             <constraint firstAttribute="trailing" secondItem="Rzx-3S-cB6" secondAttribute="trailing" id="Jv5-0I-vm4"/>
+                            <constraint firstItem="8sW-Nq-9RI" firstAttribute="centerY" secondItem="hd0-TL-pe4" secondAttribute="centerY" id="MZc-XP-AJM"/>
                             <constraint firstItem="ngu-1S-eCR" firstAttribute="leading" secondItem="biJ-HO-bnw" secondAttribute="trailing" constant="8" id="ObR-Gp-80w"/>
                             <constraint firstItem="Rzx-3S-cB6" firstAttribute="leading" secondItem="1YN-2D-kxV" secondAttribute="leading" id="PGy-AN-S3t"/>
                             <constraint firstItem="SDJ-Ag-hTk" firstAttribute="top" secondItem="16l-vQ-Hi4" secondAttribute="bottom" constant="8" id="PSf-ZU-hcA"/>
@@ -821,6 +808,7 @@
                             <constraint firstItem="Rzx-3S-cB6" firstAttribute="top" secondItem="1YN-2D-kxV" secondAttribute="top" id="cRb-qC-pre"/>
                             <constraint firstItem="cqa-xf-j0X" firstAttribute="leading" secondItem="biJ-HO-bnw" secondAttribute="leading" id="chy-74-jC9"/>
                             <constraint firstItem="z4Q-hU-PI4" firstAttribute="top" secondItem="SDJ-Ag-hTk" secondAttribute="bottom" constant="8" id="cxL-8j-wWe"/>
+                            <constraint firstItem="hd0-TL-pe4" firstAttribute="leading" secondItem="8sW-Nq-9RI" secondAttribute="trailing" constant="8" id="ek7-N3-DAz"/>
                             <constraint firstItem="biJ-HO-bnw" firstAttribute="leading" secondItem="z4Q-hU-PI4" secondAttribute="leading" id="eqF-k6-BMB"/>
                             <constraint firstItem="sHb-ys-p0X" firstAttribute="leading" secondItem="ddd-yR-zPF" secondAttribute="trailing" constant="8" id="f5Q-gJ-tGe"/>
                             <constraint firstItem="ddd-yR-zPF" firstAttribute="leading" secondItem="cqa-xf-j0X" secondAttribute="leading" id="fvX-3H-G30"/>
@@ -860,7 +848,7 @@
             </objects>
             <point key="canvasLocation" x="1262" y="-1193"/>
         </scene>
-        <!--open source project-->
+        <!--Github-->
         <scene sceneID="gkP-nB-3NE">
             <objects>
                 <viewController id="igq-Wg-3At" customClass="SourceViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
@@ -905,7 +893,7 @@
                             <constraint firstItem="0oT-eR-nVn" firstAttribute="top" secondItem="eBQ-DX-VCy" secondAttribute="bottom" id="zOK-nz-Q0t"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="open source project" id="w71-EM-8QV"/>
+                    <navigationItem key="navigationItem" title="Github" id="w71-EM-8QV"/>
                     <connections>
                         <outlet property="tableView" destination="eBQ-DX-VCy" id="f4s-72-6YC"/>
                     </connections>
@@ -913,71 +901,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlT-Xq-EfL" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2801" y="-1194"/>
-        </scene>
-        <!--tutorial-->
-        <scene sceneID="lXj-4i-vJ4">
-            <objects>
-                <viewController id="K3m-dy-m0q" customClass="TutorialViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sWR-cQ-ZOa"/>
-                        <viewControllerLayoutGuide type="bottom" id="tk2-Fx-6qX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JgY-7D-NlV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I'll do this tomorrow..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goX-r0-6ZI">
-                                <rect key="frame" x="16" y="72" width="163" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or the day after tomorrow..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwF-AE-Nfn">
-                                <rect key="frame" x="16" y="101" width="208" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or few weeks later..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEm-zo-0eb">
-                                <rect key="frame" x="16" y="130" width="152" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="tutorial" id="pMv-pN-RCW">
-                        <barButtonItem key="leftBarButtonItem" image="ic_menu" id="3eS-8S-dJw"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="menu" destination="3eS-8S-dJw" id="8ey-3W-zD9"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R0z-2f-xHo" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2028" y="-1943"/>
-        </scene>
-        <!--Navigation View Controller-->
-        <scene sceneID="Vny-8y-jgI">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aNX-7K-Rdx" customClass="NavigationViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3vF-ae-8MW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="K3m-dy-m0q" kind="relationship" relationship="rootViewController" id="8Sb-KV-iXA"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Be-4t-6fB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1262" y="-1943"/>
         </scene>
     </scenes>
     <resources>

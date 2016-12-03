@@ -13,7 +13,7 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     
     fileprivate let project = [
-        ["LiulietLee/This app", "https://github.com/LiulietLee/Pick-Color"],
+        ["LiulietLee/Pick Color", "https://github.com/LiulietLee/Pick-Color"],
         ["LiulietLee/LLDialog", "https://github.com/LiulietLee/LLDialog"],
         ["nghialv/MaterialKit", "https://github.com/nghialv/MaterialKit"],
         ["John-Lluch/SWRevealViewController", "https://github.com/John-Lluch/SWRevealViewController"]

@@ -28,7 +28,7 @@ class SaveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let item = item {
-            cancelButton.setTitle("delete", for: .normal)
+            cancelButton.setTitle(deleteString, for: .normal)
             cancelButton.setTitleColor(.red, for: .normal)
             textField.text = item.title
         }

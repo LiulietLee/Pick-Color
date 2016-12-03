@@ -23,7 +23,7 @@ class AboutViewController: UIViewController {
     private let links = [
         "https://www.facebook.com/liuliet.lee",
         "http://space.bilibili.com/4056345/#!/index",
-        "https://github.com/LiulietLee/Pick-Color"
+        "https://plus.google.com/u/0/+LiulietLee"
     ]
 
     @IBAction func openLink(associatedWith button: UIButton){

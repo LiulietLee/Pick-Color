@@ -71,10 +71,10 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func deleteButtonTapped(_ sender: UIBarButtonItem) {
         let dialog = LLDialog()
 
-        dialog.title = "WARNING"
-        dialog.message = "Do you really want to delete ALL the colors?"
-        dialog.setPositiveButton(withTitle: "DELETE", target: self, action: #selector(self.deleteAllItems))
-        dialog.setNegativeButton(withTitle: "CANCEL")
+        dialog.title = titleOfDialogString
+        dialog.message = messageOfDialogString
+        dialog.setPositiveButton(withTitle: titleOfPositiveButtonString, target: self, action: #selector(self.deleteAllItems))
+        dialog.setNegativeButton(withTitle: titleOfNegativeButtonString)
 
         dialog.show()
     }
@@ -90,7 +90,7 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: Show or hide label of "Nothing here~"
     
     fileprivate func setLabel() {
-        nothingLabel.text = "nothing here~"
+        nothingLabel.text = messageOfNothingLabelString
         nothingLabel.textColor = UIColor(rgb: 0x66ccff)
         nothingLabel.font = UIFont(name: "Avenir", size: 32.0)
         nothingLabel.translatesAutoresizingMaskIntoConstraints = false

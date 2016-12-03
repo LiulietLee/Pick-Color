@@ -144,10 +144,10 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         UIPasteboard.general.string = string
         
         let snackbar = MKSnackbar (
-            withTitle: "Copyed (｀・ω・´)",
+            withTitle: titleOfSnackbarString,
             withDuration: nil,
             withTitleColor: nil,
-            withActionButtonTitle: "Done",
+            withActionButtonTitle: doneString,
             withActionButtonColor: UIColor.MKColor.Blue.A100
         )
         snackbar.show()
