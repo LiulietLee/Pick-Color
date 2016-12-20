@@ -174,7 +174,7 @@ open class MKSwitchLayer: CALayer {
             updateColors()
         }
     }
-    open var parent: MKSwitch?
+    open weak var parent: MKSwitch?
     open var rippleAnimationDuration: CFTimeInterval = 0.35
 
     fileprivate var trackLayer: CAShapeLayer?
@@ -210,6 +210,11 @@ open class MKSwitchLayer: CALayer {
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+
+    deinit {
+        shadowLayer?.recycle()
+        rippleLayer?.recycle()
     }
 
     fileprivate func setup() {
@@ -264,9 +269,9 @@ open class MKSwitchLayer: CALayer {
 
         thumbFrame = CGRect(x: subX, y: 0, width: kMKThumbRadius * 2, height: kMKThumbRadius * 2)
         if let
-        thumbHolder = thumbHolder,
-        let thumbBackground = thumbBackground,
-        let thumbLayer = thumbLayer {
+            thumbHolder = thumbHolder,
+            let thumbBackground = thumbBackground,
+            let thumbLayer = thumbLayer {
             thumbHolder.frame = thumbFrame!
             thumbBackground.frame = thumbHolder.bounds
             thumbLayer.frame = thumbHolder.bounds
@@ -276,9 +281,9 @@ open class MKSwitchLayer: CALayer {
 
     fileprivate func updateColors() {
         if let trackLayer = trackLayer,
-        let thumbLayer = thumbLayer,
-        let rippleLayer = rippleLayer,
-        let parent = parent {
+            let thumbLayer = thumbLayer,
+            let rippleLayer = rippleLayer,
+            let parent = parent {
             if !enabled {
                 if let disabledColorPallete = disabledColorPallete {
                     trackLayer.fillColor = disabledColorPallete.trackColor.cgColor
@@ -286,20 +291,20 @@ open class MKSwitchLayer: CALayer {
                 }
             } else if parent.on {
                 if let
-                onColorPallete = onColorPallete {
+                    onColorPallete = onColorPallete {
                     trackLayer.fillColor = onColorPallete.trackColor.cgColor
                     thumbLayer.fillColor = onColorPallete.thumbColor.cgColor
                     rippleLayer.setRippleColor(onColorPallete.thumbColor, withRippleAlpha: 0.1,
-                        withBackgroundAlpha: 0.1)
+                                               withBackgroundAlpha: 0.1)
                 }
             } else {
                 if let
-                offColorPallete = offColorPallete {
+                    offColorPallete = offColorPallete {
                     trackLayer.fillColor = offColorPallete.trackColor.cgColor
                     thumbLayer.fillColor = offColorPallete.thumbColor.cgColor
                     rippleLayer.setRippleColor(offColorPallete.thumbColor,
-                        withRippleAlpha: 0.1,
-                        withBackgroundAlpha: 0.1)
+                                               withRippleAlpha: 0.1,
+                                               withBackgroundAlpha: 0.1)
                 }
             }
         }
@@ -325,8 +330,8 @@ open class MKSwitchLayer: CALayer {
     open func onTouchDown(_ touchLocation: CGPoint) {
         if enabled {
             if let
-            rippleLayer = rippleLayer, let shadowLayer = shadowLayer,
-            let thumbBackground = thumbBackground, let thumbLayer = thumbLayer {
+                rippleLayer = rippleLayer, let shadowLayer = shadowLayer,
+                let thumbBackground = thumbBackground, let thumbLayer = thumbLayer {
                 rippleLayer.startEffects(atLocation: self.convert(touchLocation, to: thumbBackground))
                 shadowLayer.startEffects(atLocation: self.convert(touchLocation, to: thumbLayer))
 
@@ -386,7 +391,7 @@ open class MKSwitchLayer: CALayer {
 open class MKSwitchColorPallete {
     open var thumbColor: UIColor
     open var trackColor: UIColor
-
+    
     init(thumbColor: UIColor, trackColor: UIColor) {
         self.thumbColor = thumbColor
         self.trackColor = trackColor
