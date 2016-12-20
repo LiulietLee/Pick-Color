@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-protocol SaveViewControllerDelegation {
+protocol SaveViewControllerDelegate: class {
     func colorSaved(color: Colors)
     func colorDeleted()
     func colorEdited(color: Colors)
@@ -20,7 +20,7 @@ class SaveViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var textField: UITextField!
 
-    var delegate: SaveViewControllerDelegation?
+    weak var delegate: SaveViewControllerDelegate?
     var color: UIColor!
     var item: Colors?
     fileprivate var model = CoreDataModel()

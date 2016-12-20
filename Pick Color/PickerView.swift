@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol PickerViewDelegation {
+protocol PickerViewDelegate: class {
     func theTouchingLocation(_ location: CGPoint)
 }
 
@@ -22,7 +22,7 @@ class PickerView: UIImageView {
         }
     }
     
-    var delegate: PickerViewDelegation?
+    weak var delegate: PickerViewDelegate?
     var model: PixelData!
         
     required init?(coder aDecoder: NSCoder) {
