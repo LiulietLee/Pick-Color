@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PickColorViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, PickerViewDelegation {
+class PickColorViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, PickerViewDelegate {
 
     // MARK: Properties
     
@@ -53,9 +53,9 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
             }
         }
     }
-    
+
     // MARK: Lifecycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -87,7 +87,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     // MARK: Delegation
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {

@@ -12,11 +12,11 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate let project = [
-        ["LiulietLee/Pick Color", "https://github.com/LiulietLee/Pick-Color"],
-        ["LiulietLee/LLDialog", "https://github.com/LiulietLee/LLDialog"],
-        ["nghialv/MaterialKit", "https://github.com/nghialv/MaterialKit"],
-        ["John-Lluch/SWRevealViewController", "https://github.com/John-Lluch/SWRevealViewController"]
+    fileprivate let project: [ (name: String, url: String) ] = [
+        ("LiulietLee/Pick Color", "https://github.com/LiulietLee/Pick-Color"),
+        ("LiulietLee/LLDialog", "https://github.com/LiulietLee/LLDialog"),
+        ("ApolloZhu/MaterialKit", "https://github.com/ApolloZhu/MaterialKit"),
+        ("John-Lluch/SWRevealViewController", "https://github.com/John-Lluch/SWRevealViewController")
     ]
     
     override func viewDidLoad() {
@@ -41,23 +41,13 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = project[indexPath.row][0]
+        cell.textLabel?.text = project[indexPath.row].name
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        UIApplication.shared.openURL(URL(string: project[indexPath.row][1])!)
+        UIApplication.shared.openURL(URL(string: project[indexPath.row].url)!)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

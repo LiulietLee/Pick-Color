@@ -41,8 +41,8 @@ open class MKLayer: CALayer, CAAnimationDelegate {
     }
     open var backgroundAnimationEnabled: Bool = true
 
-    fileprivate var superView: UIView?
-    fileprivate var superLayer: CALayer?
+    fileprivate weak var superView: UIView?
+    fileprivate weak var superLayer: CALayer?
     fileprivate var rippleLayer: CAShapeLayer?
     fileprivate var backgroundLayer: CAShapeLayer?
     fileprivate var maskLayer: CAShapeLayer?
@@ -70,6 +70,11 @@ open class MKLayer: CALayer, CAAnimationDelegate {
         super.init(coder: aDecoder)
         self.superLayer = self.superlayer
         self.setup()
+    }
+
+    public func recycle() {
+        superLayer?.removeObserver(self, forKeyPath: "bounds")
+        superLayer?.removeObserver(self, forKeyPath: "cornerRadius")
     }
 
     open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -134,7 +139,7 @@ open class MKLayer: CALayer, CAAnimationDelegate {
         effectIsRunning = false
         if rippleEnabled {
             if let rippleLayer = self.rippleLayer,
-            let backgroundLayer = self.backgroundLayer {
+                let backgroundLayer = self.backgroundLayer {
                 rippleLayer.removeAllAnimations()
                 backgroundLayer.removeAllAnimations()
                 rippleLayer.opacity = 0
@@ -144,13 +149,13 @@ open class MKLayer: CALayer, CAAnimationDelegate {
     }
 
     open func setRippleColor(_ color: UIColor,
-        withRippleAlpha rippleAlpha: CGFloat = 0.3,
-        withBackgroundAlpha backgroundAlpha: CGFloat = 0.3) {
-            if let rippleLayer = self.rippleLayer,
+                             withRippleAlpha rippleAlpha: CGFloat = 0.3,
+                             withBackgroundAlpha backgroundAlpha: CGFloat = 0.3) {
+        if let rippleLayer = self.rippleLayer,
             let backgroundLayer = self.backgroundLayer {
-                rippleLayer.fillColor = color.withAlphaComponent(rippleAlpha).cgColor
-                backgroundLayer.fillColor = color.withAlphaComponent(backgroundAlpha).cgColor
-            }
+            rippleLayer.fillColor = color.withAlphaComponent(rippleAlpha).cgColor
+            backgroundLayer.fillColor = color.withAlphaComponent(backgroundAlpha).cgColor
+        }
     }
 
     // MARK: Touches
@@ -232,7 +237,7 @@ open class MKLayer: CALayer, CAAnimationDelegate {
 
     fileprivate func clearEffects() {
         if let rippleLayer = self.rippleLayer,
-        let backgroundLayer = self.backgroundLayer {
+            let backgroundLayer = self.backgroundLayer {
             rippleLayer.timeOffset = 0
             rippleLayer.speed = 1
 
@@ -259,8 +264,8 @@ open class MKLayer: CALayer, CAAnimationDelegate {
         self.removeAllAnimations()
         self.opacity = 1
         if let rippleLayer = self.rippleLayer,
-        let backgroundLayer = self.backgroundLayer,
-        let superLayer = self.superLayer {
+            let backgroundLayer = self.backgroundLayer,
+            let superLayer = self.superLayer {
             rippleLayer.removeAllAnimations()
             backgroundLayer.removeAllAnimations()
 

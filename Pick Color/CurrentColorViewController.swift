@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CurrentColorViewController: UIViewController, UIPopoverPresentationControllerDelegate, SaveViewControllerDelegation {
+class CurrentColorViewController: UIViewController, UIPopoverPresentationControllerDelegate, SaveViewControllerDelegate {
 
     @IBOutlet weak var panView: UIView!
     @IBOutlet weak var saveBarButton: UIBarButtonItem!
