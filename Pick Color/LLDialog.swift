@@ -48,6 +48,8 @@ class LLDialog: UIView {
 
         UIView.animate(withDuration: 0.3) { self.cover.alpha = 0.6 }
         UIView.animate(withDuration: 0.3) { self.alpha = 1.0 }
+        
+        positiveButton.setTitleColor(.red, for: .normal)
     }
 
     /// Add shadow to the view.
@@ -179,8 +181,6 @@ class LLDialog: UIView {
         let negativeButtonWidth = negativeButton.frame.width
         place(button: &positiveButton, x: positiveButtonX, y: buttonY)
         place(button: &negativeButton, x: positiveButtonX - 8 - negativeButtonWidth, y: buttonY)
-        
-        positiveButton.setTitleColor(UIColor.red, for: .normal)
     }
 
     // MARK: Button actions
@@ -224,13 +224,22 @@ class LLDialog: UIView {
             self.cover.alpha = 0.0
         }
         
-        UIView.animate(withDuration: 0.0, delay: 0.3, options: .curveEaseInOut, animations: { 
-            self.cover.removeFromSuperview()
-            self.removeFromSuperview()
-            }, completion: nil)
-
+        if #available(iOS 10.0, *) {
+            _ = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) { (timer) in
+                self.removeSelf()
+            }
+        } else {
+            _ = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(removeSelf), userInfo: nil, repeats: false)
+        }
+        
         NotificationCenter.default.removeObserver(self, name: .UIDeviceOrientationDidChange, object: nil)
     }
+    
+    @objc private func removeSelf() {
+        self.cover.removeFromSuperview()
+        self.removeFromSuperview()
+    }
+
 }
 
 extension String {

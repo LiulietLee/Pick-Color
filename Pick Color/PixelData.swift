@@ -13,17 +13,14 @@ class PixelData {
     fileprivate var data: UnsafePointer<UInt8>? = nil
     fileprivate var context: CGContext?
     
-    var image: UIImage? {
+    var image: CGImage? {
         didSet {
             if let image = self.image {
-                let cgimage = image.cgImage
                 let pointer = context?.data
-                
                 if pointer != nil {
                     free(pointer)
                 }
-                
-                context = createBitmapContext(cgimage!)
+                context = createBitmapContext(image)
                 let pixelData = context!.data?.assumingMemoryBound(to: UInt8.self)
                 self.data = UnsafePointer<UInt8>(pixelData)
             } else {
@@ -35,7 +32,7 @@ class PixelData {
     fileprivate func createBitmapContext(_ image: CGImage) -> CGContext {
         let width = image.width
         let height = image.height
-        
+
         let bitmapBytesPerRow = width * 4
         let bitmapByteCount = bitmapBytesPerRow * Int(height)
         
@@ -45,19 +42,18 @@ class PixelData {
         let bitmapInfo = CGImageAlphaInfo.premultipliedFirst.rawValue
         
         let context = CGContext(data: bitmapData, width: width, height: height, bitsPerComponent: 8, bytesPerRow: bitmapBytesPerRow, space: colorSpace, bitmapInfo: bitmapInfo)
-        
         let rect = CGRect(x: 0, y: 0, width: width, height: height)
         context?.draw(image, in: rect)
         
         return context!
     }
     
-    func getPartOfImage(x: CGFloat, y: CGFloat) -> UIImage? {
-        if let imageWidth = image?.size.width {
-            let imageHight = image!.size.height
+    func getPartOfImage(x: Int, y: Int) -> UIImage? {
+        if let imageWidth = image?.width {
+            let imageHight = image!.height
             if x >= 0 && x < imageWidth && y >= 0 && y < imageHight {
                 let rect: CGRect = CGRect(x: x - 10, y: y - 10, width: 20, height: 20)
-                if let imageRef = self.image!.cgImage!.cropping(to: rect) {
+                if let imageRef = self.image!.cropping(to: rect) {
                     let image: UIImage = UIImage(cgImage: imageRef)
                     return image
                 } else {
@@ -68,9 +64,9 @@ class PixelData {
         return nil
     }
 
-    func pixelColorAt(x: CGFloat, y: CGFloat) -> UIColor? {
-        if let imageWidth = image?.size.width {
-            let imageHight = image!.size.height
+    func pixelColorAt(x: Int, y: Int) -> UIColor? {
+        if let imageWidth = image?.width {
+            let imageHight = image!.height
             if x >= 0 && x < imageWidth && y >= 0 && y < imageHight {
                 let pixelInfo = 4 * (Int(imageWidth) * Int(y) + Int(x))
                 let a: CGFloat = CGFloat(data![pixelInfo]) / 255

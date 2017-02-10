@@ -40,7 +40,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="pick this color"/>
+                                <state key="normal" title="pickColor();"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="8"/>

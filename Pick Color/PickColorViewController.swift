@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class PickColorViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, PickerViewDelegate {
 
     // MARK: Properties
@@ -31,7 +32,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
                 view.sendSubview(toBack: selectImageButton)
                 selectImageButton.isHidden = true
                 imageView.image = image
-                pixelData.image = image
+                pixelData.image = image.cgImage
                 imageView.model = pixelData
                 let scale = view.frame.height / image.size.height
                 heightOfImageView.constant = image.size.height * scale
@@ -97,7 +98,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     }
     
     func theTouchingLocation(_ location: CGPoint) {
-        color = pixelData.pixelColorAt(x: location.x, y: location.y)
+        color = pixelData.pixelColorAt(x: Int(location.x), y: Int(location.y))
         pickColorButton.isEnabled = true
     }
 

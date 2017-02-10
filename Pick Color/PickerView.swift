@@ -35,7 +35,7 @@ class PickerView: UIImageView {
         addSubview(selectView)
     }
 
-    private func update(forTouches touches: Set<UITouch>){
+    private func update(forTouches touches: Set<UITouch>) {
         if let point = touches.first?.location(in: self) {
             let percentX = point.x / frame.size.width;
             let percentY = point.y / frame.size.height;
@@ -44,7 +44,7 @@ class PickerView: UIImageView {
 
             selectView.alpha = 1.0
             selectView.frame = CGRect(x: point.x - 50, y: point.y - 120, width: 100, height: 100)
-            if let image = model.getPartOfImage(x: imagePoint!.x, y: imagePoint!.y) {
+            if let image = model.getPartOfImage(x: Int(imagePoint!.x), y: Int(imagePoint!.y)) {
                 clipedImage = image
             }
 

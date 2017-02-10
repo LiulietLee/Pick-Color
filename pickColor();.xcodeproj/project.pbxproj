@@ -27,10 +27,10 @@
 		4F88E1A71D8A821E007FA1E8 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */; };
 		4F88E1BC1D8A9692007FA1E8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88E1BA1D8A9692007FA1E8 /* Colors.swift */; };
 		4F88E1BD1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88E1BB1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift */; };
+		4FA58F6F1DF1A805004776C3 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA58F6E1DF1A805004776C3 /* LocalizedStrings.swift */; };
 		4FC5183A1D8AD71E007FFAD9 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC518391D8AD71E007FFAD9 /* MemoViewController.swift */; };
 		4FC518401D8AD7E9007FFAD9 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC5183F1D8AD7E9007FFAD9 /* MemoCell.swift */; };
-		4FE1FD481E4DE0B000E6C0FB /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1FD471E4DE0B000E6C0FB /* LocalizedStrings.swift */; };
-		4FE1FD4A1E4DE0C000E6C0FB /* LLDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1FD491E4DE0C000E6C0FB /* LLDialog.swift */; };
+		4FE968E21D9FE45700DDDB9A /* LLDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE968E11D9FE45700DDDB9A /* LLDialog.swift */; };
 		4FE969171DA0AA4E00DDDB9A /* MKCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE969061DA0AA4E00DDDB9A /* MKCardView.swift */; };
 		4FE969181DA0AA4E00DDDB9A /* MKNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE969071DA0AA4E00DDDB9A /* MKNavigationBar.swift */; };
 		4FE969191DA0AA4E00DDDB9A /* MKActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE969081DA0AA4E00DDDB9A /* MKActivityIndicator.swift */; };
@@ -94,10 +94,10 @@
 		4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		4F88E1BA1D8A9692007FA1E8 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4F88E1BB1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Colors+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4FA58F6E1DF1A805004776C3 /* LocalizedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		4FC518391D8AD71E007FFAD9 /* MemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
 		4FC5183F1D8AD7E9007FFAD9 /* MemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
-		4FE1FD471E4DE0B000E6C0FB /* LocalizedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
-		4FE1FD491E4DE0C000E6C0FB /* LLDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLDialog.swift; sourceTree = "<group>"; };
+		4FE968E11D9FE45700DDDB9A /* LLDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLDialog.swift; sourceTree = "<group>"; };
 		4FE969061DA0AA4E00DDDB9A /* MKCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKCardView.swift; sourceTree = "<group>"; };
 		4FE969071DA0AA4E00DDDB9A /* MKNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKNavigationBar.swift; sourceTree = "<group>"; };
 		4FE969081DA0AA4E00DDDB9A /* MKActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKActivityIndicator.swift; sourceTree = "<group>"; };
@@ -149,6 +149,7 @@
 				4F011DAE1D6C4A3400A0D2BD /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		4F011DAE1D6C4A3400A0D2BD /* Products */ = {
 			isa = PBXGroup;
@@ -224,7 +225,7 @@
 				4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */,
 				4F5325E41DCCB107007C0FDA /* SourceViewController.swift */,
 				4F5325E61DCCB71F007C0FDA /* TutorialViewController.swift */,
-				4FE1FD471E4DE0B000E6C0FB /* LocalizedStrings.swift */,
+				4FA58F6E1DF1A805004776C3 /* LocalizedStrings.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -247,7 +248,7 @@
 			children = (
 				4F011DE21D6C4AF100A0D2BD /* SWRevealViewController.h */,
 				4F011DE31D6C4AF100A0D2BD /* SWRevealViewController.m */,
-				4FE1FD491E4DE0C000E6C0FB /* LLDialog.swift */,
+				4FE968E11D9FE45700DDDB9A /* LLDialog.swift */,
 				4FE969061DA0AA4E00DDDB9A /* MKCardView.swift */,
 				4FE969071DA0AA4E00DDDB9A /* MKNavigationBar.swift */,
 				4FE969081DA0AA4E00DDDB9A /* MKActivityIndicator.swift */,
@@ -416,7 +417,6 @@
 				4F4FEDFD1D85215300FA14FC /* AboutViewController.swift in Sources */,
 				4F3A9D061D7AFD4D00B4A90A /* PickerView.swift in Sources */,
 				4FE969241DA0AA4E00DDDB9A /* MKSwitch.swift in Sources */,
-				4FE1FD4A1E4DE0C000E6C0FB /* LLDialog.swift in Sources */,
 				4F011DB11D6C4A3400A0D2BD /* AppDelegate.swift in Sources */,
 				4FC518401D8AD7E9007FFAD9 /* MemoCell.swift in Sources */,
 				4FE9691C1DA0AA4E00DDDB9A /* MKTextField.swift in Sources */,
@@ -430,8 +430,9 @@
 				4F011DB91D6C4A3400A0D2BD /* Pick_Color.xcdatamodeld in Sources */,
 				4FE969231DA0AA4E00DDDB9A /* MKSnackbar.swift in Sources */,
 				4FE969191DA0AA4E00DDDB9A /* MKActivityIndicator.swift in Sources */,
+				4FE968E21D9FE45700DDDB9A /* LLDialog.swift in Sources */,
 				4F011DE81D6C530000A0D2BD /* PixelData.swift in Sources */,
-				4FE1FD481E4DE0B000E6C0FB /* LocalizedStrings.swift in Sources */,
+				4FA58F6F1DF1A805004776C3 /* LocalizedStrings.swift in Sources */,
 				4FE9691E1DA0AA4E00DDDB9A /* MKLabel.swift in Sources */,
 				4FC5183A1D8AD71E007FFAD9 /* MemoViewController.swift in Sources */,
 				4F011DE41D6C4AF100A0D2BD /* SWRevealViewController.m in Sources */,
