@@ -32,7 +32,7 @@ class PixelData {
     fileprivate func createBitmapContext(_ image: CGImage) -> CGContext {
         let width = image.width
         let height = image.height
-
+        
         let bitmapBytesPerRow = width * 4
         let bitmapByteCount = bitmapBytesPerRow * Int(height)
         
@@ -63,7 +63,7 @@ class PixelData {
         }
         return nil
     }
-
+    
     func pixelColorAt(x: Int, y: Int) -> UIColor? {
         if let imageWidth = image?.width {
             let imageHight = image!.height
@@ -75,7 +75,7 @@ class PixelData {
                 let b: CGFloat = CGFloat(data![pixelInfo + 3]) / 255
                 
                 let color = UIColor(red: r, green: g, blue: b, alpha: a)
-                                
+                
                 return color
             }
         }

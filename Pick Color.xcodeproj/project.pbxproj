@@ -16,11 +16,12 @@
 		4F011DE41D6C4AF100A0D2BD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F011DE31D6C4AF100A0D2BD /* SWRevealViewController.m */; };
 		4F011DE61D6C4C7F00A0D2BD /* PickColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F011DE51D6C4C7F00A0D2BD /* PickColorViewController.swift */; };
 		4F011DE81D6C530000A0D2BD /* PixelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F011DE71D6C530000A0D2BD /* PixelData.swift */; };
+		4F1B21911E91FBFA00481669 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B21901E91FBFA00481669 /* SourceViewController.swift */; };
+		4F1B21931E91FDFA00481669 /* ProjectUrlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */; };
 		4F3A47EB1D71C468009D7601 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A47EA1D71C468009D7601 /* CoreDataModel.swift */; };
 		4F3A9D061D7AFD4D00B4A90A /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A9D051D7AFD4D00B4A90A /* PickerView.swift */; };
 		4F4FEDD81D843A9A00FA14FC /* CurrentColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FEDD71D843A9A00FA14FC /* CurrentColorViewController.swift */; };
 		4F4FEDFD1D85215300FA14FC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FEDFC1D85215300FA14FC /* AboutViewController.swift */; };
-		4F5325E51DCCB107007C0FDA /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5325E41DCCB107007C0FDA /* SourceViewController.swift */; };
 		4F5325E71DCCB71F007C0FDA /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5325E61DCCB71F007C0FDA /* TutorialViewController.swift */; };
 		4F6ABF9F1DA27FAC00D46BFF /* SelectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */; };
 		4F6ABFA11DA293BF00D46BFF /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6ABFA01DA293BF00D46BFF /* ImageManager.swift */; };
@@ -66,7 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4F011DAD1D6C4A3400A0D2BD /* Pick Color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pick Color.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F011DAD1D6C4A3400A0D2BD /* pickColor();.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "pickColor();.app"; path = "Pick Color.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F011DB01D6C4A3400A0D2BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F011DB51D6C4A3400A0D2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F011DB81D6C4A3400A0D2BD /* Pick_Color.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pick_Color.xcdatamodel; sourceTree = "<group>"; };
@@ -83,11 +84,12 @@
 		4F011DE31D6C4AF100A0D2BD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		4F011DE51D6C4C7F00A0D2BD /* PickColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickColorViewController.swift; sourceTree = "<group>"; };
 		4F011DE71D6C530000A0D2BD /* PixelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelData.swift; sourceTree = "<group>"; };
+		4F1B21901E91FBFA00481669 /* SourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
+		4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectUrlCell.swift; sourceTree = "<group>"; };
 		4F3A47EA1D71C468009D7601 /* CoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		4F3A9D051D7AFD4D00B4A90A /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		4F4FEDD71D843A9A00FA14FC /* CurrentColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentColorViewController.swift; sourceTree = "<group>"; };
 		4F4FEDFC1D85215300FA14FC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		4F5325E41DCCB107007C0FDA /* SourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
 		4F5325E61DCCB71F007C0FDA /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectImageView.swift; sourceTree = "<group>"; };
 		4F6ABFA01DA293BF00D46BFF /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
@@ -153,7 +155,7 @@
 		4F011DAE1D6C4A3400A0D2BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F011DAD1D6C4A3400A0D2BD /* Pick Color.app */,
+				4F011DAD1D6C4A3400A0D2BD /* pickColor();.app */,
 				4F011DC41D6C4A3400A0D2BD /* Pick ColorTests.xctest */,
 				4F011DCF1D6C4A3400A0D2BD /* Pick ColorUITests.xctest */,
 			);
@@ -195,7 +197,6 @@
 				4F011DE11D6C4AF000A0D2BD /* Pick Color-Bridging-Header.h */,
 				4F011DB01D6C4A3400A0D2BD /* AppDelegate.swift */,
 				4F011DBF1D6C4A3400A0D2BD /* Info.plist */,
-				4FE969321DA147D700DDDB9A /* Assets.xcassets */,
 			);
 			name = Supporting;
 			sourceTree = "<group>";
@@ -203,6 +204,7 @@
 		4F3A47F11D72B006009D7601 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				4FE969321DA147D700DDDB9A /* Assets.xcassets */,
 				4F011DB41D6C4A3400A0D2BD /* Main.storyboard */,
 				4F011DBC1D6C4A3400A0D2BD /* LaunchScreen.storyboard */,
 				4FE969051DA0A70E00DDDB9A /* Material Design */,
@@ -219,12 +221,13 @@
 				4F4FEDFC1D85215300FA14FC /* AboutViewController.swift */,
 				4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */,
 				4FC518391D8AD71E007FFAD9 /* MemoViewController.swift */,
-				4FC5183F1D8AD7E9007FFAD9 /* MemoCell.swift */,
 				4FE9692E1DA144D700DDDB9A /* NavigationViewController.swift */,
 				4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */,
-				4F5325E41DCCB107007C0FDA /* SourceViewController.swift */,
 				4F5325E61DCCB71F007C0FDA /* TutorialViewController.swift */,
 				4FE1FD471E4DE0B000E6C0FB /* LocalizedStrings.swift */,
+				4F1B21901E91FBFA00481669 /* SourceViewController.swift */,
+				4FC5183F1D8AD7E9007FFAD9 /* MemoCell.swift */,
+				4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -282,7 +285,7 @@
 			);
 			name = "Pick Color";
 			productName = "Pick Color";
-			productReference = 4F011DAD1D6C4A3400A0D2BD /* Pick Color.app */;
+			productReference = 4F011DAD1D6C4A3400A0D2BD /* pickColor();.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4F011DC31D6C4A3400A0D2BD /* Pick ColorTests */ = {
@@ -333,19 +336,19 @@
 				TargetAttributes = {
 					4F011DAC1D6C4A3400A0D2BD = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = LLAMDMVSAB;
+						DevelopmentTeam = ANB6MDJTLF;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					4F011DC31D6C4A3400A0D2BD = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = LLAMDMVSAB;
+						DevelopmentTeam = ANB6MDJTLF;
 						LastSwiftMigration = 0800;
 						TestTargetID = 4F011DAC1D6C4A3400A0D2BD;
 					};
 					4F011DCE1D6C4A3400A0D2BD = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = LLAMDMVSAB;
+						DevelopmentTeam = ANB6MDJTLF;
 						LastSwiftMigration = 0800;
 						TestTargetID = 4F011DAC1D6C4A3400A0D2BD;
 					};
@@ -408,13 +411,13 @@
 				4F6ABFA11DA293BF00D46BFF /* ImageManager.swift in Sources */,
 				4FE9691F1DA0AA4E00DDDB9A /* MKImageView.swift in Sources */,
 				4FE9691A1DA0AA4E00DDDB9A /* MKButton.swift in Sources */,
-				4F5325E51DCCB107007C0FDA /* SourceViewController.swift in Sources */,
 				4F88E1BC1D8A9692007FA1E8 /* Colors.swift in Sources */,
 				4F88E1A71D8A821E007FA1E8 /* SaveViewController.swift in Sources */,
 				4FE969201DA0AA4E00DDDB9A /* MKLayer.swift in Sources */,
 				4F3A47EB1D71C468009D7601 /* CoreDataModel.swift in Sources */,
 				4F4FEDFD1D85215300FA14FC /* AboutViewController.swift in Sources */,
 				4F3A9D061D7AFD4D00B4A90A /* PickerView.swift in Sources */,
+				4F1B21911E91FBFA00481669 /* SourceViewController.swift in Sources */,
 				4FE969241DA0AA4E00DDDB9A /* MKSwitch.swift in Sources */,
 				4FE1FD4A1E4DE0C000E6C0FB /* LLDialog.swift in Sources */,
 				4F011DB11D6C4A3400A0D2BD /* AppDelegate.swift in Sources */,
@@ -437,6 +440,7 @@
 				4F011DE41D6C4AF100A0D2BD /* SWRevealViewController.m in Sources */,
 				4F5325E71DCCB71F007C0FDA /* TutorialViewController.swift in Sources */,
 				4F88E1BD1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift in Sources */,
+				4F1B21931E91FDFA00481669 /* ProjectUrlCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,9 +516,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jiahuan Shi (ANB6MDJTLF)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ANB6MDJTLF;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -534,6 +540,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "3f0055f9-26e7-45fc-a158-82e97802b709";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -561,9 +568,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jiahuan Shi (ANB6MDJTLF)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ANB6MDJTLF;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -576,6 +585,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "3f0055f9-26e7-45fc-a158-82e97802b709";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -590,12 +600,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = LLAMDMVSAB;
+				DEVELOPMENT_TEAM = ANB6MDJTLF;
 				INFOPLIST_FILE = "Pick Color/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Future-Code-Institute.Pick-Color";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Future-Code-Institute.Pick-Color";
+				PRODUCT_NAME = "Pick Color";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pick Color/Pick Color-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -610,12 +621,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = LLAMDMVSAB;
+				DEVELOPMENT_TEAM = ANB6MDJTLF;
 				INFOPLIST_FILE = "Pick Color/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Future-Code-Institute.Pick-Color";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Future-Code-Institute.Pick-Color";
+				PRODUCT_NAME = "Pick Color";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pick Color/Pick Color-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

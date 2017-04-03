@@ -23,7 +23,7 @@ class NavigationViewController: UINavigationController {
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         
         navigationBar.layer.shadowColor = UIColor.black.cgColor
-        navigationBar.layer.shadowOffset = CGSize(width: 0.0, height: 0.2)
+        navigationBar.layer.shadowOffset = CGSize(width: 0.2, height: 0.2)
         navigationBar.layer.shadowRadius = 1.5
         navigationBar.layer.shadowOpacity = 1.0
     }

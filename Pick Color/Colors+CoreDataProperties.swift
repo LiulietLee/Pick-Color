@@ -39,10 +39,10 @@ extension Colors {
         get {
             if let red = red, let green = green, let blue = blue, let alpha = alpha{
                 return UIColor(
-                    red: red as CGFloat,
-                    green: green as CGFloat,
-                    blue: blue as CGFloat,
-                    alpha: alpha as CGFloat)
+                    red: red as! CGFloat,
+                    green: green as! CGFloat,
+                    blue: blue as! CGFloat,
+                    alpha: alpha as! CGFloat)
             }
             return nil
         }

@@ -75,7 +75,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
         view.addGestureRecognizer(panGesture)
         view.addGestureRecognizer(tapGesture)
         
-        let r = view.bounds.size.width * 0.4444
+        let r = view.bounds.size.width * 0.375
         selectImageButton.layer.masksToBounds = true
         selectImageButton.layer.cornerRadius = r
         

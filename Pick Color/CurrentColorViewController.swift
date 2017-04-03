@@ -58,10 +58,17 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
             blueColorValueLabel.text = String(describing: colorValues[2])
             alphaValueLabel.text = String(describing: colorValues[3])
             
-            colorLabel.backgroundColor = UIColor(red: colorValues[0],
-                                                 green: colorValues[1],
-                                                 blue: colorValues[2],
-                                                 alpha: colorValues[3])
+            if #available(iOS 10.0, *) {
+                colorLabel.backgroundColor = UIColor(displayP3Red: colorValues[0],
+                                                     green: colorValues[1],
+                                                     blue: colorValues[2],
+                                                     alpha: colorValues[3])
+            } else {
+                colorLabel.backgroundColor = UIColor(red: colorValues[0],
+                                                     green: colorValues[1],
+                                                     blue: colorValues[2],
+                                                     alpha: colorValues[3])
+            }
             
             writeCode(Int8(languageExangeControl.selectedSegmentIndex))
         }
@@ -99,7 +106,6 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         }
     }
 
-    // TODO: Add `UIColor(displayP3Red:green:blue:alpha:)` and `#colorLiteral(red:green:blue:alpha)`
     fileprivate func writeCode(_ language: Int8) {
         switch language {
         case 0:
@@ -112,11 +118,16 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
             codeLabel2.text = "green:\(colorValues[1]) "
             codeLabel3.text = "blue:\(colorValues[2]) "
             codeLabel4.text = "alpha:\(colorValues[3])];"
-        default:
+        case 2:
             codeLabel1.text = "Color.FromArgb(\(colorValues[3]),  "
             codeLabel2.text = "\(colorValues[0]), "
             codeLabel3.text = "\(colorValues[1]), "
             codeLabel4.text = "\(colorValues[2]));"
+        default:
+            codeLabel1.text = "new Color(\(Int(colorValues[0] * 255)), "
+            codeLabel2.text = "\(Int(colorValues[1] * 255)), "
+            codeLabel3.text = "\(Int(colorValues[2] * 255)), "
+            codeLabel4.text = "\(Int(colorValues[3] * 255)));"
         }
     }
 

@@ -90,7 +90,7 @@ open class MKActivityIndicator: UIView {
             arcCenter: center,
             radius: radius,
             startAngle: 0,
-            endAngle: CGFloat(2 * M_PI),
+            endAngle: CGFloat(2 * Double.pi),
             clockwise: true)
             .cgPath
     }
@@ -101,7 +101,7 @@ open class MKActivityIndicator: UIView {
         let rotationAnim = CABasicAnimation(keyPath: "transform.rotation")
         rotationAnim.fromValue = 0
         rotationAnim.duration = 4
-        rotationAnim.toValue = 2 * M_PI
+        rotationAnim.toValue = 2 * Double.pi
         rotationAnim.repeatCount = Float.infinity
         rotationAnim.isRemovedOnCompletion = false
 
