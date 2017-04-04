@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class PickColorViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, PickerViewDelegate {
 
     // MARK: Properties
