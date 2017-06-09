@@ -14,7 +14,7 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var menu: UIBarButtonItem!
     
     fileprivate let project: [ (name: String, url: String) ] = [
-        ("LiulietLee/Pick Color", "https://github.com/LiulietLee/Pick-Color"),
+        ("LiulietLee/Pick-Color", "https://github.com/LiulietLee/Pick-Color"),
         ("LiulietLee/LLDialog", "https://github.com/LiulietLee/LLDialog"),
         ("ApolloZhu/MaterialKit", "https://github.com/ApolloZhu/MaterialKit"),
         ("John-Lluch/SWRevealViewController", "https://github.com/John-Lluch/SWRevealViewController")

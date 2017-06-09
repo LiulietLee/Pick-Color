@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZlD-Cn-Cj0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZlD-Cn-Cj0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,7 +16,7 @@
         <!--pick color-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PickColorViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PickColorViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -25,7 +25,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WwQ-Tj-b0f" customClass="PickerView" customModule="Pick_Color" customModuleProvider="target">
+                            <imageView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WwQ-Tj-b0f" customClass="PickerView" customModule="pickColor___" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="7mj-aW-LJy"/>
@@ -52,7 +52,7 @@
                                     <segue destination="8EA-kK-m3p" kind="show" identifier="showColor" id="3Xw-7I-I2I"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpK-zf-ezd" customClass="MKButton" customModule="Pick_Color" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpK-zf-ezd" customClass="MKButton" customModule="pickColor___" customModuleProvider="target">
                                 <rect key="frame" x="47" y="193" width="281" height="281"/>
                                 <color key="backgroundColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -62,9 +62,6 @@
                                 <size key="titleShadowOffset" width="2" height="4"/>
                                 <state key="normal" title="select an image"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="166"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="elevation">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
@@ -115,7 +112,7 @@
         <!--Current Color View Controller-->
         <scene sceneID="2tf-MZ-exn">
             <objects>
-                <viewController id="8EA-kK-m3p" customClass="CurrentColorViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8EA-kK-m3p" customClass="CurrentColorViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V2h-2a-aih"/>
                         <viewControllerLayoutGuide type="bottom" id="3L3-6V-tzh"/>
@@ -202,7 +199,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztu-b7-9rW" customClass="MKButton" customModule="Pick_Color" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztu-b7-9rW" customClass="MKButton" customModule="pickColor___" customModuleProvider="target">
                                 <rect key="frame" x="127.5" y="597" width="120" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3wU-bh-uFB"/>
@@ -367,7 +364,7 @@
         <!--Save View Controller-->
         <scene sceneID="1XF-RY-pSe">
             <objects>
-                <viewController id="bT3-Ab-dkG" customClass="SaveViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bT3-Ab-dkG" customClass="SaveViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IlH-Wk-qPa"/>
                         <viewControllerLayoutGuide type="bottom" id="bM1-xN-wNg"/>
@@ -376,7 +373,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="360" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="title here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8AW-f9-e4g" customClass="MKTextField" customModule="Pick_Color" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="title here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8AW-f9-e4g" customClass="MKTextField" customModule="pickColor___" customModuleProvider="target">
                                 <rect key="frame" x="16" y="44" width="328" height="60"/>
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -393,7 +390,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-jA-97V" customClass="MKButton" customModule="Pick_Color" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-jA-97V" customClass="MKButton" customModule="pickColor___" customModuleProvider="target">
                                 <rect key="frame" x="16" y="112" width="90" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="DNv-iM-Gmd"/>
@@ -410,7 +407,7 @@
                                     <action selector="cancelButtonTapped" destination="bT3-Ab-dkG" eventType="touchUpInside" id="mYu-Wj-RYV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-qc-8P8" customClass="MKButton" customModule="Pick_Color" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-qc-8P8" customClass="MKButton" customModule="pickColor___" customModuleProvider="target">
                                 <rect key="frame" x="264" y="112" width="80" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Kud-4p-grZ"/>
@@ -483,7 +480,7 @@
                         <sections>
                             <tableViewSection id="M1v-IT-NCS">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7IX-2L-In6" customClass="MKTableViewCell" customModule="Pick_Color" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7IX-2L-In6" customClass="MKTableViewCell" customModule="pickColor___" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7IX-2L-In6" id="lj4-dc-3xn">
@@ -506,7 +503,7 @@
                                             <segue destination="YF9-U1-MnU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Yk2-5y-Ue1"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gXy-aF-tua" customClass="MKTableViewCell" customModule="Pick_Color" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gXy-aF-tua" customClass="MKTableViewCell" customModule="pickColor___" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="65" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gXy-aF-tua" id="aPp-00-GGi">
@@ -529,7 +526,7 @@
                                             <segue destination="geP-4x-gMr" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="3fl-y2-GDN"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3j4-R2-bsj" customClass="MKTableViewCell" customModule="Pick_Color" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3j4-R2-bsj" customClass="MKTableViewCell" customModule="pickColor___" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="130" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3j4-R2-bsj" id="Mzr-ic-Tnr">
@@ -552,15 +549,15 @@
                                             <segue destination="6HT-BV-cxV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="k2Z-7o-G90"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0qk-cM-f70" customClass="MKTableViewCell" customModule="Pick_Color" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0qk-cM-f70" customClass="MKTableViewCell" customModule="pickColor___" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="195" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0qk-cM-f70" id="vnb-dE-4HI">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="open source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVo-Hp-hCF">
-                                                    <rect key="frame" x="24" y="16" width="134" height="33"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVo-Hp-hCF">
+                                                    <rect key="frame" x="24" y="16" width="79" height="33"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -591,7 +588,7 @@
         <!--Navigation View Controller-->
         <scene sceneID="fY7-Zg-kNZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YF9-U1-MnU" customClass="NavigationViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YF9-U1-MnU" customClass="NavigationViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mqp-PP-onW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -609,7 +606,7 @@
         <!--memo-->
         <scene sceneID="PJq-R1-Sml">
             <objects>
-                <viewController id="wxf-ej-2YP" customClass="MemoViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wxf-ej-2YP" customClass="MemoViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7lI-iB-BZb"/>
                         <viewControllerLayoutGuide type="bottom" id="ctN-9H-wZ3"/>
@@ -622,7 +619,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="oN7-F9-REW" customClass="MemoCell" customModule="Pick_Color" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="oN7-F9-REW" customClass="MemoCell" customModule="pickColor___" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oN7-F9-REW" id="xAL-Oi-vwE">
@@ -697,7 +694,7 @@
         <!--Navigation View Controller-->
         <scene sceneID="ycI-vg-JIj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="geP-4x-gMr" customClass="NavigationViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="geP-4x-gMr" customClass="NavigationViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZJe-MS-cTX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -715,7 +712,7 @@
         <!--about-->
         <scene sceneID="5zj-bU-Ka9">
             <objects>
-                <viewController id="dff-W8-uue" customClass="AboutViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dff-W8-uue" customClass="AboutViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t2g-zc-9T2"/>
                         <viewControllerLayoutGuide type="bottom" id="KGM-9W-xCM"/>
@@ -831,7 +828,7 @@
         <!--Navigation View Controller-->
         <scene sceneID="WBU-ui-Lgl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6HT-BV-cxV" customClass="NavigationViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6HT-BV-cxV" customClass="NavigationViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="alD-wS-x5K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -846,10 +843,10 @@
             </objects>
             <point key="canvasLocation" x="1262" y="-1193"/>
         </scene>
-        <!--open source-->
+        <!--github-->
         <scene sceneID="3Pd-vd-bcg">
             <objects>
-                <viewController id="rd7-xj-QSf" customClass="SourceViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rd7-xj-QSf" customClass="SourceViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dW7-Ik-vxV"/>
                         <viewControllerLayoutGuide type="bottom" id="fFA-rf-AKX"/>
@@ -862,7 +859,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Bxv-75-SrB" customClass="ProjectUrlCell" customModule="Pick_Color" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Bxv-75-SrB" customClass="ProjectUrlCell" customModule="pickColor___" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bxv-75-SrB" id="Bu9-ap-izm">
@@ -896,7 +893,7 @@
                             <constraint firstItem="yfo-3M-lY2" firstAttribute="bottom" secondItem="fFA-rf-AKX" secondAttribute="top" id="oar-2U-QrW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="open source" id="knI-xm-VDJ">
+                    <navigationItem key="navigationItem" title="github" id="knI-xm-VDJ">
                         <barButtonItem key="leftBarButtonItem" image="ic_menu" id="iTV-D6-UFv"/>
                     </navigationItem>
                     <connections>
@@ -911,7 +908,7 @@
         <!--Navigation View Controller-->
         <scene sceneID="EpH-q6-9Ze">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="an2-xA-Twn" customClass="NavigationViewController" customModule="Pick_Color" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="an2-xA-Twn" customClass="NavigationViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qab-nd-RlM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
