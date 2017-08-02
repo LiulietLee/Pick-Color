@@ -30,6 +30,7 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         menu.target = revealViewController()
         menu.action = #selector(SWRevealViewController.revealToggle(_:))
+        view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         setLabel()
     }
 

@@ -22,7 +22,6 @@
 		4F3A9D061D7AFD4D00B4A90A /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A9D051D7AFD4D00B4A90A /* PickerView.swift */; };
 		4F4FEDD81D843A9A00FA14FC /* CurrentColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FEDD71D843A9A00FA14FC /* CurrentColorViewController.swift */; };
 		4F4FEDFD1D85215300FA14FC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FEDFC1D85215300FA14FC /* AboutViewController.swift */; };
-		4F5325E71DCCB71F007C0FDA /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5325E61DCCB71F007C0FDA /* TutorialViewController.swift */; };
 		4F6ABF9F1DA27FAC00D46BFF /* SelectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */; };
 		4F6ABFA11DA293BF00D46BFF /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6ABFA01DA293BF00D46BFF /* ImageManager.swift */; };
 		4F88E1A71D8A821E007FA1E8 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */; };
@@ -67,7 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4F011DAD1D6C4A3400A0D2BD /* pickColor();.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pickColor();.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F011DAD1D6C4A3400A0D2BD /* pickColor();.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "pickColor();.app"; path = PickColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F011DB01D6C4A3400A0D2BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F011DB51D6C4A3400A0D2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F011DB81D6C4A3400A0D2BD /* Pick_Color.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pick_Color.xcdatamodel; sourceTree = "<group>"; };
@@ -90,7 +89,6 @@
 		4F3A9D051D7AFD4D00B4A90A /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		4F4FEDD71D843A9A00FA14FC /* CurrentColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentColorViewController.swift; sourceTree = "<group>"; };
 		4F4FEDFC1D85215300FA14FC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		4F5325E61DCCB71F007C0FDA /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectImageView.swift; sourceTree = "<group>"; };
 		4F6ABFA01DA293BF00D46BFF /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +192,7 @@
 		4F3A47F01D72AFF1009D7601 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				4FE1FD471E4DE0B000E6C0FB /* LocalizedStrings.swift */,
 				4F011DE11D6C4AF000A0D2BD /* Pick Color-Bridging-Header.h */,
 				4F011DB01D6C4A3400A0D2BD /* AppDelegate.swift */,
 				4F011DBF1D6C4A3400A0D2BD /* Info.plist */,
@@ -223,8 +222,6 @@
 				4FC518391D8AD71E007FFAD9 /* MemoViewController.swift */,
 				4FE9692E1DA144D700DDDB9A /* NavigationViewController.swift */,
 				4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */,
-				4F5325E61DCCB71F007C0FDA /* TutorialViewController.swift */,
-				4FE1FD471E4DE0B000E6C0FB /* LocalizedStrings.swift */,
 				4F1B21901E91FBFA00481669 /* SourceViewController.swift */,
 				4FC5183F1D8AD7E9007FFAD9 /* MemoCell.swift */,
 				4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */,
@@ -438,7 +435,6 @@
 				4FE9691E1DA0AA4E00DDDB9A /* MKLabel.swift in Sources */,
 				4FC5183A1D8AD71E007FFAD9 /* MemoViewController.swift in Sources */,
 				4F011DE41D6C4AF100A0D2BD /* SWRevealViewController.m in Sources */,
-				4F5325E71DCCB71F007C0FDA /* TutorialViewController.swift in Sources */,
 				4F88E1BD1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift in Sources */,
 				4F1B21931E91FDFA00481669 /* ProjectUrlCell.swift in Sources */,
 			);

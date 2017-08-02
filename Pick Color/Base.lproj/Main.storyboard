@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZlD-Cn-Cj0">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZlD-Cn-Cj0">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -16,24 +16,24 @@
         <!--pick color-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PickColorViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PickColorViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WwQ-Tj-b0f" customClass="PickerView" customModule="pickColor___" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                            <imageView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WwQ-Tj-b0f" customClass="PickerView" customModule="PickColor" customModuleProvider="target">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="7mj-aW-LJy"/>
                                     <constraint firstAttribute="height" constant="200" id="wEu-kD-grz"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heB-Ri-Baa">
-                                <rect key="frame" x="112.5" y="597" width="150" height="50"/>
+                                <rect key="frame" x="85" y="498" width="150" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Acm-u5-PUq"/>
@@ -52,8 +52,8 @@
                                     <segue destination="8EA-kK-m3p" kind="show" identifier="showColor" id="3Xw-7I-I2I"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpK-zf-ezd" customClass="MKButton" customModule="pickColor___" customModuleProvider="target">
-                                <rect key="frame" x="47" y="193" width="281" height="281"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpK-zf-ezd" customClass="MKButton" customModule="PickColor" customModuleProvider="target">
+                                <rect key="frame" x="40" y="164" width="240" height="240"/>
                                 <color key="backgroundColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qpK-zf-ezd" secondAttribute="height" id="fvh-Db-Pag"/>
@@ -112,21 +112,21 @@
         <!--Current Color View Controller-->
         <scene sceneID="2tf-MZ-exn">
             <objects>
-                <viewController id="8EA-kK-m3p" customClass="CurrentColorViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8EA-kK-m3p" customClass="CurrentColorViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V2h-2a-aih"/>
                         <viewControllerLayoutGuide type="bottom" id="3L3-6V-tzh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="J3L-e8-Y7U">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cc2-zd-Nra" userLabel="PanView">
-                                <rect key="frame" x="16" y="98" width="343" height="491"/>
+                                <rect key="frame" x="16" y="87" width="288" height="403"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URm-wj-rkh">
-                                <rect key="frame" x="94" y="98" width="187.5" height="187.5"/>
+                                <rect key="frame" x="80" y="87" width="160" height="160"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="URm-wj-rkh" secondAttribute="height" multiplier="1:1" id="EAB-LO-qu3"/>
@@ -136,45 +136,46 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzY-Th-J7t">
-                                <rect key="frame" x="320.5" y="388.5" width="31" height="30.5"/>
+                                <rect key="frame" x="274.5" y="314" width="31" height="31"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zg1-ld-1It">
-                                <rect key="frame" x="320.5" y="434.5" width="31" height="30.5"/>
+                                <rect key="frame" x="274.5" y="360" width="31" height="31"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQU-gK-XW0">
-                                <rect key="frame" x="320.5" y="480.5" width="31" height="30.5"/>
+                                <rect key="frame" x="274.5" y="406" width="31" height="31"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMr-2o-XFE">
-                                <rect key="frame" x="320.5" y="526.5" width="31" height="30.5"/>
+                                <rect key="frame" x="274.5" y="452" width="31" height="31"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DeZ-si-o3A">
-                                <rect key="frame" x="16" y="293.5" width="343" height="18"/>
+                                <rect key="frame" x="16" y="255" width="288" height="7"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNw-vq-3Ld">
-                                <rect key="frame" x="16" y="72" width="343" height="18"/>
+                                <rect key="frame" x="16" y="72" width="288" height="7"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zjv-SG-TFq">
-                                <rect key="frame" x="66" y="319.5" width="243" height="29"/>
+                                <rect key="frame" x="8" y="270" width="304" height="29"/>
                                 <segments>
                                     <segment title="Swift" width="60"/>
                                     <segment title="ObjC" width="60"/>
                                     <segment title="C#" width="60"/>
                                     <segment title="Java" width="60"/>
+                                    <segment title="CSS" width="60"/>
                                 </segments>
                                 <color key="tintColor" red="0.40090259909629822" green="0.801006019115448" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -182,25 +183,25 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIColor(red: r," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzf-NU-2ev">
-                                <rect key="frame" x="119" y="388.5" width="137" height="30.5"/>
+                                <rect key="frame" x="91.5" y="314" width="137" height="31"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="green: g," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXu-d0-jfi">
-                                <rect key="frame" x="167" y="427" width="89" height="30.5"/>
+                                <rect key="frame" x="139.5" y="353" width="89" height="31"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="blue: b," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zul-yt-rie">
-                                <rect key="frame" x="167" y="464.5" width="75" height="30.5"/>
+                                <rect key="frame" x="139.5" y="391" width="75" height="31"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztu-b7-9rW" customClass="MKButton" customModule="pickColor___" customModuleProvider="target">
-                                <rect key="frame" x="127.5" y="597" width="120" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztu-b7-9rW" customClass="MKButton" customModule="PickColor" customModuleProvider="target">
+                                <rect key="frame" x="100" y="498" width="120" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3wU-bh-uFB"/>
                                     <constraint firstAttribute="width" constant="120" id="rvE-A3-mj4"/>
@@ -218,45 +219,45 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alpha: a)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRk-B6-U5S">
-                                <rect key="frame" x="167" y="503" width="83.5" height="30.5"/>
+                                <rect key="frame" x="139.5" y="430" width="84" height="31"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ocz-bj-y4q">
-                                <rect key="frame" x="60.5" y="388" width="254" height="31"/>
+                                <rect key="frame" x="51.5" y="314" width="217" height="31"/>
                                 <color key="tintColor" red="0.97647058819999999" green="0.17254901959999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="colorChanged:" destination="8EA-kK-m3p" eventType="valueChanged" id="pin-Yo-LWY"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RAU-ap-BX1">
-                                <rect key="frame" x="60.5" y="434" width="254" height="31"/>
+                                <rect key="frame" x="51.5" y="360" width="217" height="31"/>
                                 <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="colorChanged:" destination="8EA-kK-m3p" eventType="valueChanged" id="NqZ-89-h9K"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oK3-SX-ykx">
-                                <rect key="frame" x="60.5" y="480" width="254" height="31"/>
+                                <rect key="frame" x="51.5" y="406" width="217" height="31"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="colorChanged:" destination="8EA-kK-m3p" eventType="valueChanged" id="gKk-V0-4R6"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fk5-QK-G3B">
-                                <rect key="frame" x="60.5" y="526" width="254" height="31"/>
+                                <rect key="frame" x="51.5" y="452" width="217" height="31"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
                                     <action selector="colorChanged:" destination="8EA-kK-m3p" eventType="valueChanged" id="BO5-Cx-60m"/>
                                 </connections>
                             </slider>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBj-Tr-FBY">
-                                <rect key="frame" x="16" y="355.5" width="343" height="25"/>
+                                <rect key="frame" x="16" y="306" width="288" height="0.0"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2C-pT-3fA">
-                                <rect key="frame" x="16" y="564" width="343" height="25"/>
+                                <rect key="frame" x="16" y="490" width="288" height="0.0"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -364,7 +365,7 @@
         <!--Save View Controller-->
         <scene sceneID="1XF-RY-pSe">
             <objects>
-                <viewController id="bT3-Ab-dkG" customClass="SaveViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bT3-Ab-dkG" customClass="SaveViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IlH-Wk-qPa"/>
                         <viewControllerLayoutGuide type="bottom" id="bM1-xN-wNg"/>
@@ -373,7 +374,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="360" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="title here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8AW-f9-e4g" customClass="MKTextField" customModule="pickColor___" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="title here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8AW-f9-e4g" customClass="MKTextField" customModule="PickColor" customModuleProvider="target">
                                 <rect key="frame" x="16" y="44" width="328" height="60"/>
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -390,7 +391,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-jA-97V" customClass="MKButton" customModule="pickColor___" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-jA-97V" customClass="MKButton" customModule="PickColor" customModuleProvider="target">
                                 <rect key="frame" x="16" y="112" width="90" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="DNv-iM-Gmd"/>
@@ -407,7 +408,7 @@
                                     <action selector="cancelButtonTapped" destination="bT3-Ab-dkG" eventType="touchUpInside" id="mYu-Wj-RYV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-qc-8P8" customClass="MKButton" customModule="pickColor___" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-qc-8P8" customClass="MKButton" customModule="PickColor" customModuleProvider="target">
                                 <rect key="frame" x="264" y="112" width="80" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Kud-4p-grZ"/>
@@ -456,7 +457,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5go-oc-5CN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bqr-Oc-Zoz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -474,17 +475,17 @@
             <objects>
                 <tableViewController id="wM4-fy-iw8" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="65" sectionHeaderHeight="28" sectionFooterHeight="28" id="WS5-b4-HoC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
                             <tableViewSection id="M1v-IT-NCS">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7IX-2L-In6" customClass="MKTableViewCell" customModule="pickColor___" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7IX-2L-In6" customClass="MKTableViewCell" customModule="PickColor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7IX-2L-In6" id="lj4-dc-3xn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43j-qL-8QF">
@@ -503,15 +504,15 @@
                                             <segue destination="YF9-U1-MnU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Yk2-5y-Ue1"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gXy-aF-tua" customClass="MKTableViewCell" customModule="pickColor___" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="65" width="375" height="65"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gXy-aF-tua" customClass="MKTableViewCell" customModule="PickColor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="65" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gXy-aF-tua" id="aPp-00-GGi">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="memo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRO-uF-vle">
-                                                    <rect key="frame" x="24" y="16" width="68.5" height="33"/>
+                                                    <rect key="frame" x="24" y="16" width="69" height="33"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -526,15 +527,15 @@
                                             <segue destination="geP-4x-gMr" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="3fl-y2-GDN"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3j4-R2-bsj" customClass="MKTableViewCell" customModule="pickColor___" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="130" width="375" height="65"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3j4-R2-bsj" customClass="MKTableViewCell" customModule="PickColor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="130" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3j4-R2-bsj" id="Mzr-ic-Tnr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="about" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPa-qD-6jf">
-                                                    <rect key="frame" x="24" y="16" width="63.5" height="33"/>
+                                                    <rect key="frame" x="24" y="16" width="64" height="33"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -549,11 +550,11 @@
                                             <segue destination="6HT-BV-cxV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="k2Z-7o-G90"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0qk-cM-f70" customClass="MKTableViewCell" customModule="pickColor___" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="195" width="375" height="65"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0qk-cM-f70" customClass="MKTableViewCell" customModule="PickColor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="195" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0qk-cM-f70" id="vnb-dE-4HI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVo-Hp-hCF">
@@ -588,7 +589,7 @@
         <!--Navigation View Controller-->
         <scene sceneID="fY7-Zg-kNZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YF9-U1-MnU" customClass="NavigationViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YF9-U1-MnU" customClass="NavigationViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mqp-PP-onW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -606,28 +607,28 @@
         <!--memo-->
         <scene sceneID="PJq-R1-Sml">
             <objects>
-                <viewController id="wxf-ej-2YP" customClass="MemoViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wxf-ej-2YP" customClass="MemoViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7lI-iB-BZb"/>
                         <viewControllerLayoutGuide type="bottom" id="ctN-9H-wZ3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uT9-9I-Lqk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G9h-QL-9Mc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="oN7-F9-REW" customClass="MemoCell" customModule="pickColor___" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="55"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="oN7-F9-REW" customClass="MemoCell" customModule="PickColor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oN7-F9-REW" id="xAL-Oi-vwE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fv-an-MPh">
-                                                    <rect key="frame" x="8" y="12.5" width="30" height="30"/>
+                                                    <rect key="frame" x="8" y="13" width="30" height="30"/>
                                                     <color key="backgroundColor" red="1" green="0.80000000000000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="7QG-27-wTO"/>
@@ -638,7 +639,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="color name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jp-dt-gy2">
-                                                    <rect key="frame" x="62" y="13" width="105.5" height="29"/>
+                                                    <rect key="frame" x="62" y="13" width="106" height="29"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -664,8 +665,8 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="G9h-QL-9Mc" secondAttribute="trailing" id="1py-LT-Ztb"/>
                             <constraint firstItem="G9h-QL-9Mc" firstAttribute="bottom" secondItem="ctN-9H-wZ3" secondAttribute="top" id="WzX-Wj-fbP"/>
+                            <constraint firstItem="G9h-QL-9Mc" firstAttribute="top" secondItem="7lI-iB-BZb" secondAttribute="bottom" id="eCx-CA-aol"/>
                             <constraint firstItem="G9h-QL-9Mc" firstAttribute="top" secondItem="7lI-iB-BZb" secondAttribute="bottom" id="fY7-Xl-Be8"/>
-                            <constraint firstItem="G9h-QL-9Mc" firstAttribute="top" secondItem="uT9-9I-Lqk" secondAttribute="top" id="p0q-J3-zjO"/>
                             <constraint firstItem="G9h-QL-9Mc" firstAttribute="leading" secondItem="uT9-9I-Lqk" secondAttribute="leading" id="rqI-Z9-Taz"/>
                         </constraints>
                         <variation key="default">
@@ -689,12 +690,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdz-9e-7gS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2029.5999999999999" y="-436.73163418290858"/>
+            <point key="canvasLocation" x="2029.5" y="-437.5"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="ycI-vg-JIj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="geP-4x-gMr" customClass="NavigationViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="geP-4x-gMr" customClass="NavigationViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZJe-MS-cTX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -712,56 +713,56 @@
         <!--about-->
         <scene sceneID="5zj-bU-Ka9">
             <objects>
-                <viewController id="dff-W8-uue" customClass="AboutViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dff-W8-uue" customClass="AboutViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t2g-zc-9T2"/>
                         <viewControllerLayoutGuide type="bottom" id="KGM-9W-xCM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1YN-2D-kxV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Rzx-3S-cB6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(｡･∀･)ﾉﾞ Hi hi, here's Liuliet.Lee," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoc-va-35r">
-                                <rect key="frame" x="46" y="96" width="260" height="25"/>
+                                <rect key="frame" x="18.5" y="96" width="260" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the developer of this simple app." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c67-D8-Gje">
-                                <rect key="frame" x="46" y="129" width="266" height="25"/>
+                                <rect key="frame" x="18.5" y="129" width="266" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you wanna make friends with me," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16l-vQ-Hi4">
-                                <rect key="frame" x="46" y="162" width="283" height="25"/>
+                                <rect key="frame" x="18.5" y="162" width="283" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are a bilibilier like me, " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4Q-hU-PI4">
-                                <rect key="frame" x="46" y="228" width="231" height="25"/>
+                                <rect key="frame" x="18.5" y="228" width="231" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you can follow me on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biJ-HO-bnw">
-                                <rect key="frame" x="46" y="261" width="172" height="25"/>
+                                <rect key="frame" x="18.5" y="261" width="172" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="here is my" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDJ-Ag-hTk">
-                                <rect key="frame" x="46" y="195" width="82" height="25"/>
+                                <rect key="frame" x="18.5" y="195" width="82" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sW-Nq-9RI">
-                                <rect key="frame" x="136" y="189" width="80" height="37"/>
+                                <rect key="frame" x="108.5" y="189" width="80" height="37"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Facebook"/>
@@ -770,7 +771,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngu-1S-eCR">
-                                <rect key="frame" x="226" y="255" width="49" height="37"/>
+                                <rect key="frame" x="198.5" y="255" width="49" height="37"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Bilibili"/>
@@ -779,7 +780,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd0-TL-pe4">
-                                <rect key="frame" x="224" y="189" width="73" height="37"/>
+                                <rect key="frame" x="196.5" y="189" width="73" height="37"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Google+"/>
@@ -828,7 +829,7 @@
         <!--Navigation View Controller-->
         <scene sceneID="WBU-ui-Lgl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6HT-BV-cxV" customClass="NavigationViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6HT-BV-cxV" customClass="NavigationViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="alD-wS-x5K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -843,31 +844,31 @@
             </objects>
             <point key="canvasLocation" x="1262" y="-1193"/>
         </scene>
-        <!--github-->
+        <!--Github-->
         <scene sceneID="3Pd-vd-bcg">
             <objects>
-                <viewController id="rd7-xj-QSf" customClass="SourceViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rd7-xj-QSf" customClass="SourceViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dW7-Ik-vxV"/>
                         <viewControllerLayoutGuide type="bottom" id="fFA-rf-AKX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rYy-6M-T2I">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yfo-3M-lY2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Bxv-75-SrB" customClass="ProjectUrlCell" customModule="pickColor___" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="55"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Bxv-75-SrB" customClass="ProjectUrlCell" customModule="PickColor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bxv-75-SrB" id="Bu9-ap-izm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="project url" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVb-Dj-ff5">
-                                                    <rect key="frame" x="8" y="16.5" width="73" height="22"/>
+                                                    <rect key="frame" x="8" y="17" width="73" height="22"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -893,7 +894,7 @@
                             <constraint firstItem="yfo-3M-lY2" firstAttribute="bottom" secondItem="fFA-rf-AKX" secondAttribute="top" id="oar-2U-QrW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="github" id="knI-xm-VDJ">
+                    <navigationItem key="navigationItem" title="Github" id="knI-xm-VDJ">
                         <barButtonItem key="leftBarButtonItem" image="ic_menu" id="iTV-D6-UFv"/>
                     </navigationItem>
                     <connections>
@@ -908,7 +909,7 @@
         <!--Navigation View Controller-->
         <scene sceneID="EpH-q6-9Ze">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="an2-xA-Twn" customClass="NavigationViewController" customModule="pickColor___" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="an2-xA-Twn" customClass="NavigationViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qab-nd-RlM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -933,7 +934,7 @@
         <image name="ic_mode_edit" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3Xw-7I-I2I"/>
         <segue reference="Yk2-5y-Ue1"/>
+        <segue reference="nsD-Ir-deh"/>
     </inferredMetricsTieBreakers>
 </document>

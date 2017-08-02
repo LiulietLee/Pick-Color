@@ -28,6 +28,7 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         menu.target = self.revealViewController()
         menu.action = #selector(SWRevealViewController.revealToggle(_:))
+        view.addGestureRecognizer(revealViewController().panGestureRecognizer())
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

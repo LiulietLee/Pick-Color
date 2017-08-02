@@ -90,19 +90,14 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         let pan = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
         panView.addGestureRecognizer(pan)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     fileprivate func getColorValue() {
         var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
         if color!.getRed(&r, green: &g, blue: &b, alpha: &a) {
-            colorValues[0] = round(r * 1000) / 1000
-            colorValues[1] = round(g * 1000) / 1000
-            colorValues[2] = round(b * 1000) / 1000
-            colorValues[3] = round(a * 1000) / 1000
+            colorValues[0] = max(min(round(r * 1000) / 1000, 1.0), 0.0)
+            colorValues[1] = max(min(round(g * 1000) / 1000, 1.0), 0.0)
+            colorValues[2] = max(min(round(b * 1000) / 1000, 1.0), 0.0)
+            colorValues[3] = max(min(round(a * 1000) / 1000, 1.0), 0.0)
         }
     }
 
@@ -123,11 +118,16 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
             codeLabel2.text = "\(colorValues[0]), "
             codeLabel3.text = "\(colorValues[1]), "
             codeLabel4.text = "\(colorValues[2]));"
-        default:
+        case 3:
             codeLabel1.text = "new Color(\(Int(colorValues[0] * 255)), "
             codeLabel2.text = "\(Int(colorValues[1] * 255)), "
             codeLabel3.text = "\(Int(colorValues[2] * 255)), "
             codeLabel4.text = "\(Int(colorValues[3] * 255)));"
+        default:
+            codeLabel1.text = "RGBA(\(Int(colorValues[0] * 255)), "
+            codeLabel2.text = "\(Int(colorValues[1] * 255)), "
+            codeLabel3.text = "\(Int(colorValues[2] * 255)), "
+            codeLabel4.text = "\(colorValues[3]));"
         }
     }
 

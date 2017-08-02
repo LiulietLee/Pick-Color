@@ -48,8 +48,6 @@ class LLDialog: UIView {
 
         UIView.animate(withDuration: 0.3) { self.cover.alpha = 0.6 }
         UIView.animate(withDuration: 0.3) { self.alpha = 1.0 }
-        
-        positiveButton.setTitleColor(.red, for: .normal)
     }
 
     /// Add shadow to the view.

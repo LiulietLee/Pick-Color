@@ -24,10 +24,13 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     
     fileprivate var imagePicker = UIImagePickerController()
     fileprivate var pixelData = PixelData()
-
+    fileprivate var pan: UIPanGestureRecognizer? = nil
     fileprivate var image: UIImage? {
         willSet {
             if let image = newValue {
+                if (pan != nil) {
+                    view.removeGestureRecognizer(pan!)
+                }
                 view.sendSubview(toBack: selectImageButton)
                 selectImageButton.isHidden = true
                 imageView.image = image
@@ -40,6 +43,10 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
                 centerYOfImageView.constant = 0
                 updateManager()
             } else {
+                if (pan == nil) {
+                    pan = revealViewController().panGestureRecognizer()
+                }
+                view.addGestureRecognizer(pan!)
                 view.bringSubview(toFront: self.selectImageButton)
                 pickColorButton.isEnabled = false
             }
@@ -61,7 +68,11 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
 
         menuButton.target = revealViewController()
         menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-        
+        if (pan == nil) {
+            pan = revealViewController().panGestureRecognizer()
+        }
+        view.addGestureRecognizer(pan!)
+
         imagePicker.delegate = self
         imageView.delegate = self
         
@@ -81,11 +92,29 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
         if let view = manager.imageView {
             image = view.image
         }
+        
+        if !isAppAlreadyLaunchedOnce() {
+            firstLaunch()
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func isAppAlreadyLaunchedOnce() -> Bool {
+        let defaults = UserDefaults.standard
+        
+        if defaults.string(forKey: "isAppAlreadyLaunchedOnce") != nil{
+            return true
+        } else {
+            defaults.set(true, forKey: "isAppAlreadyLaunchedOnce")
+            return false
+        }
+    }
+
+    func firstLaunch() {
+        let dialog = LLDialog()
+        dialog.title = "Hint"
+        dialog.message = "This app selects pixel of screenshot and saved image."
+        dialog.setPositiveButton(withTitle: "I see", target: nil, action: nil)
+        dialog.show()
     }
 
     // MARK: Delegation
