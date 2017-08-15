@@ -10,16 +10,12 @@ import UIKit
 
 class PixelData {
     
-    fileprivate var data: UnsafePointer<UInt8>? = nil
+    fileprivate var data: UnsafePointer<UInt8>!
     fileprivate var context: CGContext?
     
     var image: CGImage? {
         didSet {
             if let image = self.image {
-                let pointer = context?.data
-                if pointer != nil {
-                    free(pointer)
-                }
                 context = createBitmapContext(image)
                 let pixelData = context!.data?.assumingMemoryBound(to: UInt8.self)
                 self.data = UnsafePointer<UInt8>(pixelData)
@@ -33,15 +29,11 @@ class PixelData {
         let width = image.width
         let height = image.height
         
-        let bitmapBytesPerRow = width * 4
-        let bitmapByteCount = bitmapBytesPerRow * Int(height)
-        
         let colorSpace = CGColorSpaceCreateDeviceRGB()
+        let bitmapInfo = CGImageAlphaInfo.last.rawValue
+        let bitsPerComp = image.bitsPerComponent
         
-        let bitmapData = malloc(bitmapByteCount)
-        let bitmapInfo = CGImageAlphaInfo.premultipliedFirst.rawValue
-        
-        let context = CGContext(data: bitmapData, width: width, height: height, bitsPerComponent: 8, bytesPerRow: bitmapBytesPerRow, space: colorSpace, bitmapInfo: bitmapInfo)
+        let context = CGContext(data: nil, width: width, height: height, bitsPerComponent: bitsPerComp, bytesPerRow: 0, space: colorSpace, bitmapInfo: bitmapInfo)
         let rect = CGRect(x: 0, y: 0, width: width, height: height)
         context?.draw(image, in: rect)
         
@@ -68,11 +60,11 @@ class PixelData {
         if let imageWidth = image?.width {
             let imageHight = image!.height
             if x >= 0 && x < imageWidth && y >= 0 && y < imageHight {
-                let pixelInfo = 4 * (Int(imageWidth) * Int(y) + Int(x))
-                let a: CGFloat = CGFloat(data![pixelInfo]) / 255
-                let r: CGFloat = CGFloat(data![pixelInfo + 1]) / 255
-                let g: CGFloat = CGFloat(data![pixelInfo + 2]) / 255
-                let b: CGFloat = CGFloat(data![pixelInfo + 3]) / 255
+                let pixelInfo = 4 * (imageWidth * y + x)
+                let a = CGFloat(data[pixelInfo]) / 255
+                let r = CGFloat(data[pixelInfo + 1]) / 255
+                let g = CGFloat(data[pixelInfo + 2]) / 255
+                let b = CGFloat(data[pixelInfo + 3]) / 255
                 
                 let color = UIColor(red: r, green: g, blue: b, alpha: a)
                 
