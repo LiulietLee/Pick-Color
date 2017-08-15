@@ -28,12 +28,16 @@ class PixelData {
     fileprivate func createBitmapContext(_ image: CGImage) -> CGContext {
         let width = image.width
         let height = image.height
-        
+
+        let bitmapBytesPerRow = width * 4
+        let bitmapByteCount = bitmapBytesPerRow * Int(height)
+        let bitmapData = malloc(bitmapByteCount)
+
         let colorSpace = CGColorSpaceCreateDeviceRGB()
-        let bitmapInfo = CGImageAlphaInfo.last.rawValue
+        let bitmapInfo = CGImageAlphaInfo.premultipliedFirst.rawValue
         let bitsPerComp = image.bitsPerComponent
         
-        let context = CGContext(data: nil, width: width, height: height, bitsPerComponent: bitsPerComp, bytesPerRow: 0, space: colorSpace, bitmapInfo: bitmapInfo)
+        let context = CGContext(data: bitmapData, width: width, height: height, bitsPerComponent: bitsPerComp, bytesPerRow: bitmapBytesPerRow, space: colorSpace, bitmapInfo: bitmapInfo)
         let rect = CGRect(x: 0, y: 0, width: width, height: height)
         context?.draw(image, in: rect)
         

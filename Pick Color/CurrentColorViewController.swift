@@ -196,20 +196,22 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     fileprivate func showEditing(duration: Double) {
         constrainOfCodeLabel.constant = -view.frame.width
         constraintOfColorSlider.constant = -15
-        UIView.animate(withDuration: duration, animations: {
+        UIView.animate(withDuration: duration, delay: 0.0, options: [.curveEaseOut], animations: { 
             self.view.layoutIfNeeded()
-            }, completion: { (true) in
+        }) { finish in
+            if finish {
                 self.isCodeLabelHidden = true
-        })
+            }
+        }
     }
     
     fileprivate func hideEditing(duration: Double) {
         constrainOfCodeLabel.constant = 0
         constraintOfColorSlider.constant = view.frame.width
         isCodeLabelHidden = false
-        UIView.animate(withDuration: duration) {
+        UIView.animate(withDuration: duration, delay: 0.0, options: [.curveEaseOut], animations: {
             self.view.layoutIfNeeded()
-        }
+        }, completion: nil)
     }
     
     @objc fileprivate func panGesture(_ sender: UIPanGestureRecognizer) {
@@ -233,10 +235,7 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
         if segue.identifier == "save" {
             if let vc = segue.destination as? SaveViewController {
                 vc.color = colorLabel.backgroundColor
