@@ -78,7 +78,7 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
         super.viewDidLoad()
 
         if color != nil {
-            colorLabel.backgroundColor = color
+            colorLabel.backgroundColor = color            
             getColorValue()
             writeCode(0)
         }
@@ -124,7 +124,7 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
             codeLabel3.text = "\(Int(colorValues[2] * 255)), "
             codeLabel4.text = "\(Int(colorValues[3] * 255)));"
         default:
-            codeLabel1.text = "RGBA(\(Int(colorValues[0] * 255)), "
+            codeLabel1.text = "rgba(\(Int(colorValues[0] * 255)), "
             codeLabel2.text = "\(Int(colorValues[1] * 255)), "
             codeLabel3.text = "\(Int(colorValues[2] * 255)), "
             codeLabel4.text = "\(colorValues[3]));"
@@ -238,7 +238,7 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "save" {
             if let vc = segue.destination as? SaveViewController {
-                vc.color = colorLabel.backgroundColor
+                vc.color = color!                
                 vc.delegate = self
                 vc.item = colorItem
                 if let controller = vc.popoverPresentationController {

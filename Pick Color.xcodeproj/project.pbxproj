@@ -16,6 +16,9 @@
 		4F011DE41D6C4AF100A0D2BD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F011DE31D6C4AF100A0D2BD /* SWRevealViewController.m */; };
 		4F011DE61D6C4C7F00A0D2BD /* PickColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F011DE51D6C4C7F00A0D2BD /* PickColorViewController.swift */; };
 		4F011DE81D6C530000A0D2BD /* PixelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F011DE71D6C530000A0D2BD /* PixelData.swift */; };
+		4F12E30F1F502273004F6667 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F12E30E1F502273004F6667 /* TutorialViewController.swift */; };
+		4F12E3111F5022A0004F6667 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F12E3101F5022A0004F6667 /* TutorialPageViewController.swift */; };
+		4F12E3131F5022B6004F6667 /* TutorialContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F12E3121F5022B6004F6667 /* TutorialContentViewController.swift */; };
 		4F1B21911E91FBFA00481669 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B21901E91FBFA00481669 /* SourceViewController.swift */; };
 		4F1B21931E91FDFA00481669 /* ProjectUrlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */; };
 		4F3A47EB1D71C468009D7601 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A47EA1D71C468009D7601 /* CoreDataModel.swift */; };
@@ -83,6 +86,9 @@
 		4F011DE31D6C4AF100A0D2BD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		4F011DE51D6C4C7F00A0D2BD /* PickColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickColorViewController.swift; sourceTree = "<group>"; };
 		4F011DE71D6C530000A0D2BD /* PixelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelData.swift; sourceTree = "<group>"; };
+		4F12E30E1F502273004F6667 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		4F12E3101F5022A0004F6667 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		4F12E3121F5022B6004F6667 /* TutorialContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialContentViewController.swift; sourceTree = "<group>"; };
 		4F1B21901E91FBFA00481669 /* SourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
 		4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectUrlCell.swift; sourceTree = "<group>"; };
 		4F3A47EA1D71C468009D7601 /* CoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
@@ -209,6 +215,7 @@
 				4FC5183F1D8AD7E9007FFAD9 /* MemoCell.swift */,
 				4F3A9D051D7AFD4D00B4A90A /* PickerView.swift */,
 				4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */,
+				4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */,
 				4FE969051DA0A70E00DDDB9A /* Material Design */,
 			);
 			name = UserInterface;
@@ -223,8 +230,10 @@
 				4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */,
 				4FC518391D8AD71E007FFAD9 /* MemoViewController.swift */,
 				4FE9692E1DA144D700DDDB9A /* NavigationViewController.swift */,
-				4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */,
 				4F1B21901E91FBFA00481669 /* SourceViewController.swift */,
+				4F12E30E1F502273004F6667 /* TutorialViewController.swift */,
+				4F12E3101F5022A0004F6667 /* TutorialPageViewController.swift */,
+				4F12E3121F5022B6004F6667 /* TutorialContentViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -417,6 +426,7 @@
 				4F1B21911E91FBFA00481669 /* SourceViewController.swift in Sources */,
 				4FE969241DA0AA4E00DDDB9A /* MKSwitch.swift in Sources */,
 				4FE1FD4A1E4DE0C000E6C0FB /* LLDialog.swift in Sources */,
+				4F12E3111F5022A0004F6667 /* TutorialPageViewController.swift in Sources */,
 				4F011DB11D6C4A3400A0D2BD /* AppDelegate.swift in Sources */,
 				4FC518401D8AD7E9007FFAD9 /* MemoCell.swift in Sources */,
 				4FE9691C1DA0AA4E00DDDB9A /* MKTextField.swift in Sources */,
@@ -425,6 +435,7 @@
 				4FE969211DA0AA4E00DDDB9A /* MKColor.swift in Sources */,
 				4FE9692F1DA144D700DDDB9A /* NavigationViewController.swift in Sources */,
 				4F6ABF9F1DA27FAC00D46BFF /* SelectImageView.swift in Sources */,
+				4F12E30F1F502273004F6667 /* TutorialViewController.swift in Sources */,
 				4FE969181DA0AA4E00DDDB9A /* MKNavigationBar.swift in Sources */,
 				4FE9691B1DA0AA4E00DDDB9A /* MKCollectionViewCell.swift in Sources */,
 				4F011DB91D6C4A3400A0D2BD /* Pick_Color.xcdatamodeld in Sources */,
@@ -434,6 +445,7 @@
 				4FE1FD481E4DE0B000E6C0FB /* LocalizedStrings.swift in Sources */,
 				4FE9691E1DA0AA4E00DDDB9A /* MKLabel.swift in Sources */,
 				4FC5183A1D8AD71E007FFAD9 /* MemoViewController.swift in Sources */,
+				4F12E3131F5022B6004F6667 /* TutorialContentViewController.swift in Sources */,
 				4F011DE41D6C4AF100A0D2BD /* SWRevealViewController.m in Sources */,
 				4F88E1BD1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift in Sources */,
 				4F1B21931E91FDFA00481669 /* ProjectUrlCell.swift in Sources */,

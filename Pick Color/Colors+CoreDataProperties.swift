@@ -37,7 +37,7 @@ extension Colors {
 
     var uiColor: UIColor? {
         get {
-            if let red = red, let green = green, let blue = blue, let alpha = alpha{
+            if let red = red, let green = green, let blue = blue, let alpha = alpha {
                 return UIColor(
                     red: red as! CGFloat,
                     green: green as! CGFloat,
@@ -47,13 +47,14 @@ extension Colors {
             return nil
         }
         set {
-            if let newValue = newValue{
+            if let newValue = newValue {
                 var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
                 if newValue.getRed(&r, green: &g, blue: &b, alpha: &a) {
                     alpha = a as NSNumber?
                     red = r as NSNumber?
                     green = g as NSNumber?
                     blue = b as NSNumber?
+                    print(r)
                 } else {
                     print("Unable to get rgba values from \(newValue)")
                 }

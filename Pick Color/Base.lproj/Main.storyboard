@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZlD-Cn-Cj0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZlD-Cn-Cj0">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -61,15 +61,6 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
                                 <size key="titleShadowOffset" width="2" height="4"/>
                                 <state key="normal" title="select an image"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="elevation">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="0.0" height="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAnimationEnabled" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectImageButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="z4J-sN-22N"/>
                                 </connections>
@@ -88,11 +79,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="pick color" id="yfs-gy-uev">
                         <barButtonItem key="leftBarButtonItem" image="ic_menu" id="7Iu-gJ-jeY"/>
-                        <barButtonItem key="rightBarButtonItem" image="ic_insert_photo" id="Ysc-oA-WtE">
-                            <connections>
-                                <action selector="selectImageButtonTapped" destination="BYZ-38-t0r" id="jSd-2j-cuW"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="ic_insert_photo" id="Ysc-oA-WtE">
+                                <connections>
+                                    <action selector="selectImageButtonTapped" destination="BYZ-38-t0r" id="jSd-2j-cuW"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="ic_help_outline" id="hYp-8d-22Y">
+                                <connections>
+                                    <segue destination="6qZ-eD-3wR" kind="presentation" id="NOc-gS-HaK"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="centerXOfImageView" destination="fc1-bO-Zxk" id="2Bg-s3-FuM"/>
@@ -108,6 +106,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1262" y="337"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="zr3-Yk-RIo">
+            <objects>
+                <viewController id="6qZ-eD-3wR" customClass="TutorialViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xcr-la-XQY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ieq-eU-rzK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s54-ka-28M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sys-ch-MkX" customClass="MKButton" customModule="PickColor">
+                                <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="vl9-KR-1Qj"/>
+                                </constraints>
+                                <state key="normal" image="ic_goback"/>
+                                <connections>
+                                    <action selector="goBack" destination="6qZ-eD-3wR" eventType="touchUpInside" id="QTK-vn-zZf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sys-ch-MkX" firstAttribute="leading" secondItem="s54-ka-28M" secondAttribute="leading" id="CZf-4m-C74"/>
+                            <constraint firstAttribute="trailing" secondItem="sys-ch-MkX" secondAttribute="trailing" id="FDL-AA-aWm"/>
+                            <constraint firstItem="Ieq-eU-rzK" firstAttribute="top" secondItem="sys-ch-MkX" secondAttribute="bottom" id="OZq-ro-ZWc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Bz-DD-i3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="1061"/>
+        </scene>
+        <!--Tutorial Page View Controller-->
+        <scene sceneID="7JP-gi-Eu8">
+            <objects>
+                <pageViewController storyboardIdentifier="page" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="yO2-kQ-pCp" customClass="TutorialPageViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGp-MV-aA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2029" y="1061"/>
+        </scene>
+        <!--Tutorial Content View Controller-->
+        <scene sceneID="EWO-4c-kEz">
+            <objects>
+                <viewController storyboardIdentifier="content" id="HdP-9T-tXM" customClass="TutorialContentViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gmu-Yt-5Kc"/>
+                        <viewControllerLayoutGuide type="bottom" id="4mM-VH-dfS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g8f-Te-Ttk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nr1-1U-Urc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtU-Ss-P8P">
+                                <rect key="frame" x="16" y="84" width="288" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nr1-1U-Urc" firstAttribute="leading" secondItem="g8f-Te-Ttk" secondAttribute="leading" id="2wG-us-Tje"/>
+                            <constraint firstItem="gtU-Ss-P8P" firstAttribute="top" secondItem="gmu-Yt-5Kc" secondAttribute="bottom" constant="64" id="JV8-0S-Op8"/>
+                            <constraint firstItem="nr1-1U-Urc" firstAttribute="top" secondItem="g8f-Te-Ttk" secondAttribute="top" id="O7J-5a-hpg"/>
+                            <constraint firstItem="gtU-Ss-P8P" firstAttribute="leading" secondItem="g8f-Te-Ttk" secondAttribute="leadingMargin" id="R5S-Bg-eNy"/>
+                            <constraint firstAttribute="trailing" secondItem="nr1-1U-Urc" secondAttribute="trailing" id="S0g-o6-w8g"/>
+                            <constraint firstItem="4mM-VH-dfS" firstAttribute="top" secondItem="nr1-1U-Urc" secondAttribute="bottom" id="fnj-0D-QBf"/>
+                            <constraint firstItem="gtU-Ss-P8P" firstAttribute="trailing" secondItem="g8f-Te-Ttk" secondAttribute="trailingMargin" id="uGF-kn-4Ha"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="nr1-1U-Urc" id="QU8-FL-Owa"/>
+                        <outlet property="label" destination="gtU-Ss-P8P" id="Jnc-cJ-UFj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipm-9q-MrA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2836.875" y="1060.5633802816901"/>
         </scene>
         <!--Current Color View Controller-->
         <scene sceneID="2tf-MZ-exn">
@@ -929,12 +1012,14 @@
         <image name="background" width="320" height="568"/>
         <image name="ic_bookmark_border" width="24" height="24"/>
         <image name="ic_delete" width="24" height="24"/>
+        <image name="ic_goback" width="24" height="24"/>
+        <image name="ic_help_outline" width="24" height="24"/>
         <image name="ic_insert_photo" width="24" height="24"/>
         <image name="ic_menu" width="24" height="24"/>
         <image name="ic_mode_edit" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="3Xw-7I-I2I"/>
         <segue reference="Yk2-5y-Ue1"/>
-        <segue reference="nsD-Ir-deh"/>
     </inferredMetricsTieBreakers>
 </document>

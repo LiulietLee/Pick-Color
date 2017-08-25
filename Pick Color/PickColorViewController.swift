@@ -28,7 +28,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     fileprivate var image: UIImage? {
         willSet {
             if let image = newValue {
-                if (pan != nil) {
+                if pan != nil {
                     view.removeGestureRecognizer(pan!)
                 }
                 view.sendSubview(toBack: selectImageButton)
@@ -42,8 +42,9 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
                 centerXOfImageView.constant = 0
                 centerYOfImageView.constant = 0
                 updateManager()
+                self.view.backgroundColor = .black
             } else {
-                if (pan == nil) {
+                if pan == nil {
                     pan = revealViewController().panGestureRecognizer()
                 }
                 view.addGestureRecognizer(pan!)
@@ -68,7 +69,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
 
         menuButton.target = revealViewController()
         menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-        if (pan == nil) {
+        if pan == nil {
             pan = revealViewController().panGestureRecognizer()
         }
         view.addGestureRecognizer(pan!)
@@ -119,9 +120,10 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
 
     // MARK: Delegation
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        self.image = image
-        
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            self.image = image
+        } else { print("pick image failed") }
         self.dismiss(animated: true, completion: nil)
     }
     

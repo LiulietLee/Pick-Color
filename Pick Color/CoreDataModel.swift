@@ -29,7 +29,7 @@ class CoreDataModel {
         return colorItems
     }
     
-    func saveNewColor(_ newColor: UIColor, title: String) -> Colors {        
+    func saveNewColor(_ newColor: UIColor, title: String) -> Colors {                
         let entity = NSEntityDescription.entity(forEntityName: "Colors", in: context)!
         let newItem = Colors(entity: entity, insertInto: context)
         newItem.title = title
