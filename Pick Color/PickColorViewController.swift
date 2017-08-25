@@ -27,17 +27,17 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     fileprivate var pan: UIPanGestureRecognizer? = nil
     fileprivate var image: UIImage? {
         didSet {
-            if let rawIamge = image {
+            if let rawImage = image {
                 if (pan != nil) {
                     view.removeGestureRecognizer(pan!)
                 }
                 
-                if rawIamge.imageOrientation == .up {
-                    image = rawIamge
+                if rawImage.imageOrientation == .up {
+                    image = rawImage
                 } else {
-                    UIGraphicsBeginImageContextWithOptions(rawIamge.size, false, rawIamge.scale)
+                    UIGraphicsBeginImageContextWithOptions(rawImage.size, false, rawImage.scale)
                     defer { UIGraphicsEndImageContext() }
-                    rawIamge.draw(in: CGRect(origin: .zero, size: rawIamge.size))
+                    rawImage.draw(in: CGRect(origin: .zero, size: rawImage.size))
                     image = UIGraphicsGetImageFromCurrentImageContext()
                 }
                 
@@ -103,29 +103,6 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
         if let view = manager.imageView {
             image = view.image
         }
-        
-        if !isAppAlreadyLaunchedOnce() {
-            firstLaunch()
-        }
-    }
-
-    func isAppAlreadyLaunchedOnce() -> Bool {
-        let defaults = UserDefaults.standard
-        
-        if defaults.string(forKey: "isAppAlreadyLaunchedOnce") != nil{
-            return true
-        } else {
-            defaults.set(true, forKey: "isAppAlreadyLaunchedOnce")
-            return false
-        }
-    }
-
-    func firstLaunch() {
-        let dialog = LLDialog()
-        dialog.title = "Hint"
-        dialog.message = "This app selects pixel of screenshot and saved image."
-        dialog.setPositiveButton(withTitle: "I see", target: nil, action: nil)
-        dialog.show()
     }
 
     // MARK: Delegation

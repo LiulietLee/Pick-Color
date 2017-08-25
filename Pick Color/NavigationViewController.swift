@@ -9,11 +9,6 @@
 import UIKit
 
 class NavigationViewController: UINavigationController {
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        UIApplication.shared.statusBarStyle = .lightContent
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +16,6 @@ class NavigationViewController: UINavigationController {
         navigationBar.barTintColor = UIColor(rgb: 0x66ccff)
         navigationBar.tintColor = .white
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
-        
-//        navigationBar.layer.shadowColor = UIColor.black.cgColor
-//        navigationBar.layer.shadowOffset = CGSize(width: 0.2, height: 0.2)
-//        navigationBar.layer.shadowRadius = 1.5
-//        navigationBar.layer.shadowOpacity = 1.0
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        UIApplication.shared.statusBarStyle = .default
     }
     
 }
