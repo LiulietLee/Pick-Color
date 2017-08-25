@@ -19,6 +19,11 @@
 		4F12E30F1F502273004F6667 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F12E30E1F502273004F6667 /* TutorialViewController.swift */; };
 		4F12E3111F5022A0004F6667 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F12E3101F5022A0004F6667 /* TutorialPageViewController.swift */; };
 		4F12E3131F5022B6004F6667 /* TutorialContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F12E3121F5022B6004F6667 /* TutorialContentViewController.swift */; };
+		4F12E3151F505669004F6667 /* SwiftGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F12E3141F505669004F6667 /* SwiftGif.swift */; };
+		4F12E31C1F5056DA004F6667 /* tut1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4F12E3171F5056DA004F6667 /* tut1.gif */; };
+		4F12E31D1F5056DA004F6667 /* tut2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4F12E3181F5056DA004F6667 /* tut2.gif */; };
+		4F12E31E1F5056DA004F6667 /* tut3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4F12E3191F5056DA004F6667 /* tut3.gif */; };
+		4F12E31F1F5056DA004F6667 /* tut4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4F12E31A1F5056DA004F6667 /* tut4.gif */; };
 		4F1B21911E91FBFA00481669 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B21901E91FBFA00481669 /* SourceViewController.swift */; };
 		4F1B21931E91FDFA00481669 /* ProjectUrlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */; };
 		4F3A47EB1D71C468009D7601 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A47EA1D71C468009D7601 /* CoreDataModel.swift */; };
@@ -89,6 +94,11 @@
 		4F12E30E1F502273004F6667 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		4F12E3101F5022A0004F6667 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
 		4F12E3121F5022B6004F6667 /* TutorialContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialContentViewController.swift; sourceTree = "<group>"; };
+		4F12E3141F505669004F6667 /* SwiftGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGif.swift; sourceTree = "<group>"; };
+		4F12E3171F5056DA004F6667 /* tut1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tut1.gif; sourceTree = "<group>"; };
+		4F12E3181F5056DA004F6667 /* tut2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tut2.gif; sourceTree = "<group>"; };
+		4F12E3191F5056DA004F6667 /* tut3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tut3.gif; sourceTree = "<group>"; };
+		4F12E31A1F5056DA004F6667 /* tut4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tut4.gif; sourceTree = "<group>"; };
 		4F1B21901E91FBFA00481669 /* SourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
 		4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectUrlCell.swift; sourceTree = "<group>"; };
 		4F3A47EA1D71C468009D7601 /* CoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
@@ -195,6 +205,17 @@
 			path = "Pick ColorUITests";
 			sourceTree = "<group>";
 		};
+		4F12E3161F5056C3004F6667 /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				4F12E3171F5056DA004F6667 /* tut1.gif */,
+				4F12E3181F5056DA004F6667 /* tut2.gif */,
+				4F12E3191F5056DA004F6667 /* tut3.gif */,
+				4F12E31A1F5056DA004F6667 /* tut4.gif */,
+			);
+			name = Gifs;
+			sourceTree = "<group>";
+		};
 		4F3A47F01D72AFF1009D7601 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +237,7 @@
 				4F3A9D051D7AFD4D00B4A90A /* PickerView.swift */,
 				4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */,
 				4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */,
+				4F12E3161F5056C3004F6667 /* Gifs */,
 				4FE969051DA0A70E00DDDB9A /* Material Design */,
 			);
 			name = UserInterface;
@@ -247,6 +269,7 @@
 				4F88E1BB1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift */,
 				4F011DB71D6C4A3400A0D2BD /* Pick_Color.xcdatamodeld */,
 				4F6ABFA01DA293BF00D46BFF /* ImageManager.swift */,
+				4F12E3141F505669004F6667 /* SwiftGif.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -387,7 +410,11 @@
 			files = (
 				4F011DBE1D6C4A3400A0D2BD /* LaunchScreen.storyboard in Resources */,
 				4FE969331DA147D700DDDB9A /* Assets.xcassets in Resources */,
+				4F12E31D1F5056DA004F6667 /* tut2.gif in Resources */,
+				4F12E31C1F5056DA004F6667 /* tut1.gif in Resources */,
+				4F12E31E1F5056DA004F6667 /* tut3.gif in Resources */,
 				4F011DB61D6C4A3400A0D2BD /* Main.storyboard in Resources */,
+				4F12E31F1F5056DA004F6667 /* tut4.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +467,7 @@
 				4FE9691B1DA0AA4E00DDDB9A /* MKCollectionViewCell.swift in Sources */,
 				4F011DB91D6C4A3400A0D2BD /* Pick_Color.xcdatamodeld in Sources */,
 				4FE969231DA0AA4E00DDDB9A /* MKSnackbar.swift in Sources */,
+				4F12E3151F505669004F6667 /* SwiftGif.swift in Sources */,
 				4FE969191DA0AA4E00DDDB9A /* MKActivityIndicator.swift in Sources */,
 				4F011DE81D6C530000A0D2BD /* PixelData.swift in Sources */,
 				4FE1FD481E4DE0B000E6C0FB /* LocalizedStrings.swift in Sources */,

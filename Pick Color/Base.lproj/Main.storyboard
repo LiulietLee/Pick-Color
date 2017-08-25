@@ -87,7 +87,7 @@
                             </barButtonItem>
                             <barButtonItem image="ic_help_outline" id="hYp-8d-22Y">
                                 <connections>
-                                    <segue destination="6qZ-eD-3wR" kind="presentation" id="NOc-gS-HaK"/>
+                                    <segue destination="6qZ-eD-3wR" kind="presentation" identifier="tut" id="NOc-gS-HaK"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -120,9 +120,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sys-ch-MkX" customClass="MKButton" customModule="PickColor">
-                                <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                                <rect key="frame" x="0.0" y="488" width="320" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="vl9-KR-1Qj"/>
+                                    <constraint firstAttribute="height" constant="80" id="vl9-KR-1Qj"/>
                                 </constraints>
                                 <state key="normal" image="ic_goback"/>
                                 <connections>
@@ -145,7 +145,7 @@
         <!--Tutorial Page View Controller-->
         <scene sceneID="7JP-gi-Eu8">
             <objects>
-                <pageViewController storyboardIdentifier="page" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="yO2-kQ-pCp" customClass="TutorialPageViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="page" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yO2-kQ-pCp" customClass="TutorialPageViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGp-MV-aA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2029" y="1061"/>
@@ -166,8 +166,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtU-Ss-P8P">
-                                <rect key="frame" x="16" y="84" width="288" height="27.5"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <rect key="frame" x="16" y="120" width="288" height="29"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -175,7 +175,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nr1-1U-Urc" firstAttribute="leading" secondItem="g8f-Te-Ttk" secondAttribute="leading" id="2wG-us-Tje"/>
-                            <constraint firstItem="gtU-Ss-P8P" firstAttribute="top" secondItem="gmu-Yt-5Kc" secondAttribute="bottom" constant="64" id="JV8-0S-Op8"/>
+                            <constraint firstItem="gtU-Ss-P8P" firstAttribute="top" secondItem="gmu-Yt-5Kc" secondAttribute="bottom" constant="100" id="JV8-0S-Op8"/>
                             <constraint firstItem="nr1-1U-Urc" firstAttribute="top" secondItem="g8f-Te-Ttk" secondAttribute="top" id="O7J-5a-hpg"/>
                             <constraint firstItem="gtU-Ss-P8P" firstAttribute="leading" secondItem="g8f-Te-Ttk" secondAttribute="leadingMargin" id="R5S-Bg-eNy"/>
                             <constraint firstAttribute="trailing" secondItem="nr1-1U-Urc" secondAttribute="trailing" id="S0g-o6-w8g"/>

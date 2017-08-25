@@ -13,7 +13,7 @@ class TutorialContentViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    var image = UIImage()
+    var gifName = String()
     var text = String()
     var index = Int()
     
@@ -21,17 +21,7 @@ class TutorialContentViewController: UIViewController {
         super.viewDidLoad()
         
         label.text = text
-        imageView.image = image
+        imageView.loadGif(name: gifName)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

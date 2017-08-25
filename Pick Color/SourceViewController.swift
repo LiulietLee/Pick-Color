@@ -17,7 +17,8 @@ class SourceViewController: UIViewController, UITableViewDelegate, UITableViewDa
         ("LiulietLee/Pick-Color", "https://github.com/LiulietLee/Pick-Color"),
         ("LiulietLee/LLDialog", "https://github.com/LiulietLee/LLDialog"),
         ("ApolloZhu/MaterialKit", "https://github.com/ApolloZhu/MaterialKit"),
-        ("John-Lluch/SWRevealViewController", "https://github.com/John-Lluch/SWRevealViewController")
+        ("John-Lluch/SWRevealViewController", "https://github.com/John-Lluch/SWRevealViewController"),
+        ("bahlo/SwiftGif", "https://github.com/bahlo/SwiftGif")
     ]
     
     override func viewDidLoad() {

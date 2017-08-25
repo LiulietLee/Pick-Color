@@ -26,19 +26,29 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     fileprivate var pixelData = PixelData()
     fileprivate var pan: UIPanGestureRecognizer? = nil
     fileprivate var image: UIImage? {
-        willSet {
-            if let image = newValue {
-                if pan != nil {
+        didSet {
+            if let rawIamge = image {
+                if (pan != nil) {
                     view.removeGestureRecognizer(pan!)
                 }
+                
+                if rawIamge.imageOrientation == .up {
+                    image = rawIamge
+                } else {
+                    UIGraphicsBeginImageContextWithOptions(rawIamge.size, false, rawIamge.scale)
+                    defer { UIGraphicsEndImageContext() }
+                    rawIamge.draw(in: CGRect(origin: .zero, size: rawIamge.size))
+                    image = UIGraphicsGetImageFromCurrentImageContext()
+                }
+                
                 view.sendSubview(toBack: selectImageButton)
                 selectImageButton.isHidden = true
                 imageView.image = image
-                pixelData.image = image.cgImage
+                pixelData.image = image!.cgImage
                 imageView.model = pixelData
-                let scale = view.frame.height / image.size.height
-                heightOfImageView.constant = image.size.height * scale
-                widthOfImageView.constant = image.size.width * scale
+                let scale = view.frame.height / image!.size.height
+                heightOfImageView.constant = image!.size.height * scale
+                widthOfImageView.constant = image!.size.width * scale
                 centerXOfImageView.constant = 0
                 centerYOfImageView.constant = 0
                 updateManager()

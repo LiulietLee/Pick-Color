@@ -12,8 +12,13 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
 
     fileprivate var pageController = UIPageViewController()
     
-    fileprivate let images = [UIImage()]
-    fileprivate let labels = [String()]
+    fileprivate let gifs = ["tut1", "tut2", "tut3", "tut4"]
+    fileprivate let labels = [
+        "zoom in or out with two fingers",
+        "move around with two fingers",
+        "pick color with one finger",
+        "double-tap to reset the image's position",
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,20 +35,20 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     fileprivate func viewControllerAt(index: Int) -> TutorialContentViewController {
-        if index >= images.count || index < 0 {
+        if index >= gifs.count || index < 0 {
             return TutorialContentViewController()
         }
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "content") as! TutorialContentViewController
         vc.index = index
-        vc.image = images[index]
+        vc.gifName = gifs[index]
         vc.text = labels[index]
         return vc
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         let vc = viewController as! TutorialContentViewController
-        if vc.index == images.count - 1 {
+        if vc.index == gifs.count - 1 {
             return nil
         }
         return viewControllerAt(index: vc.index + 1)
@@ -62,7 +67,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
-        return images.count
+        return gifs.count
     }
 
     @IBAction func goBack() {
