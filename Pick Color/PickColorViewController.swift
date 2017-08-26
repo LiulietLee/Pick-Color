@@ -52,7 +52,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
                 centerXOfImageView.constant = 0
                 centerYOfImageView.constant = 0
                 updateManager()
-                self.view.backgroundColor = .black
+                self.view.backgroundColor = UIColor(red: 0.12, green: 0.12, blue: 0.12, alpha: 1.00)
             } else {
                 if pan == nil {
                     pan = revealViewController().panGestureRecognizer()

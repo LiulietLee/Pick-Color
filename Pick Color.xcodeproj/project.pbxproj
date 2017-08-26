@@ -24,6 +24,7 @@
 		4F12E31D1F5056DA004F6667 /* tut2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4F12E3181F5056DA004F6667 /* tut2.gif */; };
 		4F12E31E1F5056DA004F6667 /* tut3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4F12E3191F5056DA004F6667 /* tut3.gif */; };
 		4F12E31F1F5056DA004F6667 /* tut4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4F12E31A1F5056DA004F6667 /* tut4.gif */; };
+		4F12E3221F51142C004F6667 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F12E3211F51142C004F6667 /* MenuTableViewController.swift */; };
 		4F1B21911E91FBFA00481669 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B21901E91FBFA00481669 /* SourceViewController.swift */; };
 		4F1B21931E91FDFA00481669 /* ProjectUrlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */; };
 		4F3A47EB1D71C468009D7601 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A47EA1D71C468009D7601 /* CoreDataModel.swift */; };
@@ -99,6 +100,7 @@
 		4F12E3181F5056DA004F6667 /* tut2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tut2.gif; sourceTree = "<group>"; };
 		4F12E3191F5056DA004F6667 /* tut3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tut3.gif; sourceTree = "<group>"; };
 		4F12E31A1F5056DA004F6667 /* tut4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tut4.gif; sourceTree = "<group>"; };
+		4F12E3211F51142C004F6667 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		4F1B21901E91FBFA00481669 /* SourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
 		4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectUrlCell.swift; sourceTree = "<group>"; };
 		4F3A47EA1D71C468009D7601 /* CoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				4F12E30E1F502273004F6667 /* TutorialViewController.swift */,
 				4F12E3101F5022A0004F6667 /* TutorialPageViewController.swift */,
 				4F12E3121F5022B6004F6667 /* TutorialContentViewController.swift */,
+				4F12E3211F51142C004F6667 /* MenuTableViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 			files = (
 				4F4FEDD81D843A9A00FA14FC /* CurrentColorViewController.swift in Sources */,
 				4FE9691D1DA0AA4E00DDDB9A /* MKTableViewCell.swift in Sources */,
+				4F12E3221F51142C004F6667 /* MenuTableViewController.swift in Sources */,
 				4F6ABFA11DA293BF00D46BFF /* ImageManager.swift in Sources */,
 				4FE9691F1DA0AA4E00DDDB9A /* MKImageView.swift in Sources */,
 				4FE9691A1DA0AA4E00DDDB9A /* MKButton.swift in Sources */,
