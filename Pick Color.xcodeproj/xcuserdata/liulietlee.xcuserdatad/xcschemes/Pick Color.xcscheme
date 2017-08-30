@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4F011DAC1D6C4A3400A0D2BD"
-               BuildableName = "PickColor.app"
+               BuildableName = "Pick Color.app"
                BlueprintName = "Pick Color"
                ReferencedContainer = "container:Pick Color.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F011DAC1D6C4A3400A0D2BD"
-            BuildableName = "PickColor.app"
+            BuildableName = "Pick Color.app"
             BlueprintName = "Pick Color"
             ReferencedContainer = "container:Pick Color.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F011DAC1D6C4A3400A0D2BD"
-            BuildableName = "PickColor.app"
+            BuildableName = "Pick Color.app"
             BlueprintName = "Pick Color"
             ReferencedContainer = "container:Pick Color.xcodeproj">
          </BuildableReference>
@@ -102,7 +102,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F011DAC1D6C4A3400A0D2BD"
-            BuildableName = "PickColor.app"
+            BuildableName = "Pick Color.app"
             BlueprintName = "Pick Color"
             ReferencedContainer = "container:Pick Color.xcodeproj">
          </BuildableReference>
