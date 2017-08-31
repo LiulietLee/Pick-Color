@@ -13,7 +13,7 @@ class TutorialContentViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    var gifName = String()
+    var gif = UIImage()
     var text = String()
     var index = Int()
     
@@ -21,7 +21,7 @@ class TutorialContentViewController: UIViewController {
         super.viewDidLoad()
         
         label.text = text
-        imageView.loadGif(name: gifName)
+        imageView.image = gif
     }
 
 }

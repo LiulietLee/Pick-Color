@@ -103,6 +103,35 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
         if let view = manager.imageView {
             image = view.image
         }
+        
+        if !isAppAlreadyLaunchedOnce() {
+            firstLaunch()
+        }
+    }
+    
+    fileprivate func isAppAlreadyLaunchedOnce() -> Bool {
+        let defaults = UserDefaults.standard
+        
+        if defaults.string(forKey: "isAppAlreadyLaunchedOnce") != nil{
+            return true
+        } else {
+            defaults.set(true, forKey: "isAppAlreadyLaunchedOnce")
+            return false
+        }
+    }
+    
+    fileprivate func firstLaunch() {
+        let dialog = LLDialog()
+        dialog.title = "(=・ω・=)"
+        dialog.message = "Do you want to watch a short tutorial?"
+        dialog.setPositiveButton(withTitle: "Yes", target: self, action: #selector(watchTutorial))
+        dialog.setNegativeButton(withTitle: "No")
+        dialog.show()
+    }
+    
+    @objc fileprivate func watchTutorial() {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "tutorial") as! TutorialViewController
+        self.present(vc, animated: true, completion: nil)
     }
 
     // MARK: Delegation

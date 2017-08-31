@@ -12,7 +12,13 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
 
     fileprivate var pageController = UIPageViewController()
     
-    fileprivate let gifs = ["tut1", "tut2", "tut3", "tut4"]
+    fileprivate let gifs = [
+        UIImage.gif(name: "tut1"),
+        UIImage.gif(name: "tut2"),
+        UIImage.gif(name: "tut3"),
+        UIImage.gif(name: "tut4")
+    ]
+    
     fileprivate let labels = [
         "Zoom in or out with two fingers",
         "Move around with two fingers",
@@ -41,7 +47,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "content") as! TutorialContentViewController
         vc.index = index
-        vc.gifName = gifs[index]
+        vc.gif = gifs[index]!
         vc.text = labels[index]
         return vc
     }
