@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZlD-Cn-Cj0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZlD-Cn-Cj0">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
+            <string>Avenir-Roman</string>
+        </array>
+        <array key="Menlo.ttc">
+            <string>Menlo-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Pick Color-->
         <scene sceneID="tne-QT-ifu">
@@ -455,11 +465,11 @@
                         <viewControllerLayoutGuide type="bottom" id="bM1-xN-wNg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DXS-u9-ueu">
-                        <rect key="frame" x="0.0" y="0.0" width="360" height="150"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="title here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8AW-f9-e4g" customClass="MKTextField" customModule="PickColor" customModuleProvider="target">
-                                <rect key="frame" x="16" y="44" width="328" height="60"/>
+                                <rect key="frame" x="16" y="44" width="288" height="60"/>
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="MJr-1Z-W5s"/>
@@ -493,7 +503,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-qc-8P8" customClass="MKButton" customModule="PickColor" customModuleProvider="target">
-                                <rect key="frame" x="264" y="112" width="80" height="45"/>
+                                <rect key="frame" x="224" y="112" width="80" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Kud-4p-grZ"/>
                                 </constraints>
@@ -696,7 +706,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YF9-U1-MnU" customClass="NavigationViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mqp-PP-onW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -802,7 +812,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="geP-4x-gMr" customClass="NavigationViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZJe-MS-cTX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -908,7 +918,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6HT-BV-cxV" customClass="NavigationViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="alD-wS-x5K">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -988,7 +998,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="an2-xA-Twn" customClass="NavigationViewController" customModule="PickColor" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qab-nd-RlM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1013,6 +1023,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Yk2-5y-Ue1"/>
-        <segue reference="nsD-Ir-deh"/>
+        <segue reference="3Xw-7I-I2I"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -217,13 +217,14 @@ class CurrentColorViewController: UIViewController, UIPopoverPresentationControl
     @objc fileprivate func panGesture(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
         case .began, .changed:
-            isCodeLabelHidden = false
             let translation = sender.translation(in: view).x
+            isCodeLabelHidden = false
             constrainOfCodeLabel.constant += translation
             constraintOfColorSlider.constant += translation
             sender.setTranslation(.zero, in: view)
         case .ended, .cancelled:
-            if constrainOfCodeLabel.constant < -view.frame.width / 2 {
+            let velocity = sender.velocity(in: view).x
+            if velocity < 0 {
                 showEditing(duration: 0.3)
             } else {
                 hideEditing(duration: 0.3)
