@@ -35,13 +35,13 @@ class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate
 
     @IBAction func emailButtonTapped() {
         let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        sheet.addAction(UIAlertAction(title: "Write an email", style: .default, handler: { (action) in
+        sheet.addAction(UIAlertAction(title: sendMailString, style: .default, handler: { (action) in
             self.sendMail()
         }))
-        sheet.addAction(UIAlertAction(title: "Copy emall address", style: .default, handler: { (action) in
+        sheet.addAction(UIAlertAction(title: copyMailAddrString, style: .default, handler: { (action) in
             UIPasteboard.general.string = self.mailAddress
         }))
-        sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        sheet.addAction(UIAlertAction(title: negativeButtonString, style: .cancel, handler: nil))
         present(sheet, animated: true, completion: nil)
     }
     
@@ -55,8 +55,8 @@ class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate
             print("cannot send email")
             
             let dialog = LLDialog()
-            dialog.title = "Oops"
-            dialog.message = "Can't send email now."
+            dialog.title = titleOfCannotSendMailString
+            dialog.message = messageOfCannotSendMailString
             dialog.setNegativeButton(withTitle: "OK", target: nil, action: nil)
             dialog.show()
         }

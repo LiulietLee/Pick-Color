@@ -8,6 +8,7 @@
 
 import XCTest
 
+@available(iOS 9.0, *)
 class Pick_ColorUITests: XCTestCase {
 
     let app = XCUIApplication()

@@ -123,7 +123,7 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
     fileprivate func firstLaunch() {
         let dialog = LLDialog()
         dialog.title = "(=・ω・=)"
-        dialog.message = "Do you want to watch a short tutorial?"
+        dialog.message = messageOfWatchTutorialString
         dialog.setPositiveButton(withTitle: "Yes", target: self, action: #selector(watchTutorial))
         dialog.setNegativeButton(withTitle: "No")
         dialog.show()

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Pick_Color
+//@testable import Pick_Color
 
 class Pick_ColorTests: XCTestCase {
     

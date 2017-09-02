@@ -19,12 +19,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
         UIImage.gif(name: "tut4")
     ]
     
-    fileprivate let labels = [
-        "Zoom in or out with two fingers",
-        "Move around with two fingers",
-        "Pick color with one finger",
-        "Double-tap to reset the image's position",
-    ]
+    fileprivate let labels = [ tutorialStr1, tutorialStr2, tutorialStr3, tutorialStr4 ]
     
     override func viewDidLoad() {
         super.viewDidLoad()

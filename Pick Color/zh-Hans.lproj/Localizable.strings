@@ -1,0 +1,48 @@
+/* Message of can't send emal */
+"Can't send email now." = "现在无法发送邮件。";
+
+/* The title of negative button */
+"Cancel" = "取消";
+
+/* Just copy my email address */
+"Copy emall address" = "复制邮箱地址";
+
+/* Copyed message */
+"Copyed (｀・ω・´)" = "已复制 (｀・ω・´)";
+
+/* The title of delete Button */
+"Delete" = "删除";
+
+/* The message of clear dialog */
+"Do you really want to delete ALL the colors?" = "你真的要删掉所有保存的颜色么？";
+
+/* The message of whether user need to watch a tutorial */
+"Do you want to watch a short tutorial?" = "你想观看使用说明么？";
+
+/* No comment */
+"Done" = "完成";
+
+/* Tutorial text 4 */
+"Double-tap to reset the image's position" = "轻拍两次重置图片位置";
+
+/* Tutorial text 2 */
+"Move around with two fingers" = "双指移动图片";
+
+/* Title of can't send email */
+"Oops" = "噫";
+
+/* Tutorial text 3 */
+"Pick color with one finger" = "单指选取颜色";
+
+/* The title of clear dialog */
+"WARNING" = "警告";
+
+/* Send email directly */
+"Write an email" = "给我写邮件";
+
+/* Tutorial text 1 */
+"Zoom in or out with two fingers" = "双指放大或缩小图片";
+
+/* The message of nothing label */
+"nothing here~" = "一片荒芜";
+

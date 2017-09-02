@@ -72,10 +72,10 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func deleteButtonTapped(_ sender: UIBarButtonItem) {
         let dialog = LLDialog()
 
-        dialog.title = titleOfDialogString
-        dialog.message = messageOfDialogString
-        dialog.setPositiveButton(withTitle: titleOfPositiveButtonString, target: self, action: #selector(self.deleteAllItems))
-        dialog.setNegativeButton(withTitle: titleOfNegativeButtonString)
+        dialog.title = titleOfClearColorsString
+        dialog.message = messageOfClearColorsString
+        dialog.setPositiveButton(withTitle: deleteString, target: self, action: #selector(self.deleteAllItems))
+        dialog.setNegativeButton(withTitle: negativeButtonString)
 
         dialog.show()
     }

@@ -1,0 +1,108 @@
+
+/* Class = "UILabel"; text = "color name"; ObjectID = "0jp-dt-gy2"; */
+"0jp-dt-gy2.text" = "color name";
+
+/* Class = "UINavigationItem"; title = "Author"; ObjectID = "1tj-Z1-f2U"; */
+"1tj-Z1-f2U.title" = "Author";
+
+/* Class = "UILabel"; text = "Pick Color"; ObjectID = "43j-qL-8QF"; */
+"43j-qL-8QF.text" = "Pick Color";
+
+/* Class = "UITextField"; placeholder = "title here"; ObjectID = "8AW-f9-e4g"; */
+"8AW-f9-e4g.placeholder" = "title here";
+
+/* Class = "UIButton"; normalTitle = "Facebook"; ObjectID = "8sW-Nq-9RI"; */
+"8sW-Nq-9RI.normalTitle" = "Facebook";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "9NN-qc-8P8"; */
+"9NN-qc-8P8.normalTitle" = "Save";
+
+/* Class = "UIButton"; normalTitle = "E-mail"; ObjectID = "How-yQ-bjR"; */
+"How-yQ-bjR.normalTitle" = "E-mail";
+
+/* Class = "UILabel"; text = "You can find me at..."; ObjectID = "JH9-Mj-vWF"; */
+"JH9-Mj-vWF.text" = "You can find me at...";
+
+/* Class = "UILabel"; text = "UIColor(red: r,"; ObjectID = "Jzf-NU-2ev"; */
+"Jzf-NU-2ev.text" = "UIColor(red: r,";
+
+/* Class = "UILabel"; text = "Favorites"; ObjectID = "LRO-uF-vle"; */
+"LRO-uF-vle.text" = "Favorites";
+
+/* Class = "UILabel"; text = "1.0"; ObjectID = "NzY-Th-J7t"; */
+"NzY-Th-J7t.text" = "1.0";
+
+/* Class = "UILabel"; text = "1.0"; ObjectID = "PMr-2o-XFE"; */
+"PMr-2o-XFE.text" = "1.0";
+
+/* Class = "UINavigationItem"; title = "Favorites"; ObjectID = "XNl-0K-53D"; */
+"XNl-0K-53D.title" = "Favorites";
+
+/* Class = "UILabel"; text = "Rate PickColor"; ObjectID = "ZbB-WV-N2B"; */
+"ZbB-WV-N2B.text" = "Rate PickColor";
+
+/* Class = "UIButton"; normalTitle = "Copy"; ObjectID = "Ztu-b7-9rW"; */
+"Ztu-b7-9rW.normalTitle" = "Copy";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gtU-Ss-P8P"; */
+"gtU-Ss-P8P.text" = "Label";
+
+/* Class = "UILabel"; text = "1.0"; ObjectID = "hQU-gK-XW0"; */
+"hQU-gK-XW0.text" = "1.0";
+
+/* Class = "UIButton"; normalTitle = "Google+"; ObjectID = "hd0-TL-pe4"; */
+"hd0-TL-pe4.normalTitle" = "Google+";
+
+/* Class = "UIButton"; normalTitle = "pickColor();"; ObjectID = "heB-Ri-Baa"; */
+"heB-Ri-Baa.normalTitle" = "pickColor();";
+
+/* Class = "UILabel"; text = "project url"; ObjectID = "jVb-Dj-ff5"; */
+"jVb-Dj-ff5.text" = "project url";
+
+/* Class = "UINavigationItem"; title = "Source Code"; ObjectID = "knI-xm-VDJ"; */
+"knI-xm-VDJ.title" = "Source Code";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "mdq-jA-97V"; */
+"mdq-jA-97V.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Source Code"; ObjectID = "nVo-Hp-hCF"; */
+"nVo-Hp-hCF.text" = "Source Code";
+
+/* Class = "UIButton"; normalTitle = "Bilibili"; ObjectID = "ngu-1S-eCR"; */
+"ngu-1S-eCR.normalTitle" = "Bilibili";
+
+/* Class = "UIButton"; normalTitle = "Select an image"; ObjectID = "qpK-zf-ezd"; */
+"qpK-zf-ezd.normalTitle" = "Select an image";
+
+/* Class = "UILabel"; text = "alpha: a)"; ObjectID = "tRk-B6-U5S"; */
+"tRk-B6-U5S.text" = "alpha: a)";
+
+/* Class = "UILabel"; text = "Author"; ObjectID = "uPa-qD-6jf"; */
+"uPa-qD-6jf.text" = "Author";
+
+/* Class = "UILabel"; text = "green: g,"; ObjectID = "uXu-d0-jfi"; */
+"uXu-d0-jfi.text" = "green: g,";
+
+/* Class = "UINavigationItem"; title = "Pick Color"; ObjectID = "yfs-gy-uev"; */
+"yfs-gy-uev.title" = "Pick Color";
+
+/* Class = "UILabel"; text = "1.0"; ObjectID = "zg1-ld-1It"; */
+"zg1-ld-1It.text" = "1.0";
+
+/* Class = "UISegmentedControl"; zjv-SG-TFq.segmentTitles[0] = "Swift"; ObjectID = "zjv-SG-TFq"; */
+"zjv-SG-TFq.segmentTitles[0]" = "Swift";
+
+/* Class = "UISegmentedControl"; zjv-SG-TFq.segmentTitles[1] = "ObjC"; ObjectID = "zjv-SG-TFq"; */
+"zjv-SG-TFq.segmentTitles[1]" = "ObjC";
+
+/* Class = "UISegmentedControl"; zjv-SG-TFq.segmentTitles[2] = "C#"; ObjectID = "zjv-SG-TFq"; */
+"zjv-SG-TFq.segmentTitles[2]" = "C#";
+
+/* Class = "UISegmentedControl"; zjv-SG-TFq.segmentTitles[3] = "Java"; ObjectID = "zjv-SG-TFq"; */
+"zjv-SG-TFq.segmentTitles[3]" = "Java";
+
+/* Class = "UISegmentedControl"; zjv-SG-TFq.segmentTitles[4] = "CSS"; ObjectID = "zjv-SG-TFq"; */
+"zjv-SG-TFq.segmentTitles[4]" = "CSS";
+
+/* Class = "UILabel"; text = "blue: b,"; ObjectID = "zul-yt-rie"; */
+"zul-yt-rie.text" = "blue: b,";
