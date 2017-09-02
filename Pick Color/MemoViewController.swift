@@ -92,7 +92,7 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     fileprivate func setLabel() {
         nothingLabel.text = messageOfNothingLabelString
-        nothingLabel.textColor = UIColor(rgb: 0x66ccff)
+        nothingLabel.textColor = UIColor(rgb: 0x29b6f6)
         nothingLabel.font = UIFont(name: "Avenir", size: 32.0)
         nothingLabel.translatesAutoresizingMaskIntoConstraints = false
         nothingLabel.textAlignment = .center

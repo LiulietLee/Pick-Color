@@ -270,7 +270,7 @@
                                     <segment title="Java" width="60"/>
                                     <segment title="CSS" width="60"/>
                                 </segments>
-                                <color key="tintColor" red="0.40090259909629822" green="0.801006019115448" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.092523820699999995" green="0.7092021704" blue="0.97554463150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="languageChanged:" destination="8EA-kK-m3p" eventType="valueChanged" id="g4v-Gf-C4G"/>
                                 </connections>
@@ -301,7 +301,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Copy"/>
+                                <state key="normal" title="Copy">
+                                    <color key="titleColor" red="0.092523820699999995" green="0.7092021704" blue="0.97554463150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="8"/>
@@ -491,7 +493,7 @@
                                     <constraint firstAttribute="width" constant="90" id="DNv-iM-Gmd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
-                                <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.092523820699999995" green="0.7092021704" blue="0.97554463150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Cancel"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -508,7 +510,7 @@
                                     <constraint firstAttribute="width" constant="80" id="Kud-4p-grZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
-                                <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.092523820699999995" green="0.7092021704" blue="0.97554463150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Save"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -842,7 +844,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngu-1S-eCR">
                                 <rect key="frame" x="125.5" y="291.5" width="69" height="45"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
-                                <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.092523820698261261" green="0.70920217037200928" blue="0.97554463148117065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Bilibili"/>
                                 <connections>
                                     <action selector="openLinkWithAssociatedWith:" destination="dff-W8-uue" eventType="touchUpInside" id="Bfg-Tt-5TC"/>
@@ -851,7 +853,7 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd0-TL-pe4">
                                 <rect key="frame" x="110" y="238.5" width="100" height="45"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
-                                <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.092523820698261261" green="0.70920217037200928" blue="0.97554463148117065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Google+"/>
                                 <connections>
                                     <action selector="openLinkWithAssociatedWith:" destination="dff-W8-uue" eventType="touchUpInside" id="2dP-va-2zL"/>
@@ -860,7 +862,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sW-Nq-9RI">
                                 <rect key="frame" x="105.5" y="185.5" width="110" height="45"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
-                                <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.092523820698261261" green="0.70920217037200928" blue="0.97554463148117065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Facebook"/>
                                 <connections>
                                     <action selector="openLinkWithAssociatedWith:" destination="dff-W8-uue" eventType="touchUpInside" id="0WK-8u-5vU"/>
@@ -875,7 +877,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="How-yQ-bjR">
                                 <rect key="frame" x="125.5" y="344.5" width="69" height="45"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
-                                <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.092523820698261261" green="0.70920217037200928" blue="0.97554463148117065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="E-mail"/>
                                 <connections>
                                     <action selector="emailButtonTapped" destination="dff-W8-uue" eventType="touchUpInside" id="Wjs-hl-wlM"/>
