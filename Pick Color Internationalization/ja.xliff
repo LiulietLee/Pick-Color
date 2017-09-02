@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Pick Color/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body/>
+  </file>
+  <file original="Pick Color/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="0jp-dt-gy2.text">
+        <source>color name</source>
+        <target>color name</target>
+        <note>Class = "UILabel"; text = "color name"; ObjectID = "0jp-dt-gy2";</note>
+      </trans-unit>
+      <trans-unit id="1tj-Z1-f2U.title">
+        <source>Author</source>
+        <target>Author</target>
+        <note>Class = "UINavigationItem"; title = "Author"; ObjectID = "1tj-Z1-f2U";</note>
+      </trans-unit>
+      <trans-unit id="8AW-f9-e4g.placeholder">
+        <source>title here</source>
+        <target>title here</target>
+        <note>Class = "UITextField"; placeholder = "title here"; ObjectID = "8AW-f9-e4g";</note>
+      </trans-unit>
+      <trans-unit id="8sW-Nq-9RI.normalTitle">
+        <source>Facebook</source>
+        <target>Facebook</target>
+        <note>Class = "UIButton"; normalTitle = "Facebook"; ObjectID = "8sW-Nq-9RI";</note>
+      </trans-unit>
+      <trans-unit id="9NN-qc-8P8.normalTitle">
+        <source>Save</source>
+        <target>Save</target>
+        <note>Class = "UIButton"; normalTitle = "Save"; ObjectID = "9NN-qc-8P8";</note>
+      </trans-unit>
+      <trans-unit id="43j-qL-8QF.text">
+        <source>Pick Color</source>
+        <target>Pick Color</target>
+        <note>Class = "UILabel"; text = "Pick Color"; ObjectID = "43j-qL-8QF";</note>
+      </trans-unit>
+      <trans-unit id="How-yQ-bjR.normalTitle">
+        <source>E-mail</source>
+        <target>E-mail</target>
+        <note>Class = "UIButton"; normalTitle = "E-mail"; ObjectID = "How-yQ-bjR";</note>
+      </trans-unit>
+      <trans-unit id="JH9-Mj-vWF.text">
+        <source>You can find me at...</source>
+        <target>You can find me at...</target>
+        <note>Class = "UILabel"; text = "You can find me at..."; ObjectID = "JH9-Mj-vWF";</note>
+      </trans-unit>
+      <trans-unit id="Jzf-NU-2ev.text">
+        <source>UIColor(red: r,</source>
+        <target>UIColor(red: r,</target>
+        <note>Class = "UILabel"; text = "UIColor(red: r,"; ObjectID = "Jzf-NU-2ev";</note>
+      </trans-unit>
+      <trans-unit id="LRO-uF-vle.text">
+        <source>Favorites</source>
+        <target>Favorites</target>
+        <note>Class = "UILabel"; text = "Favorites"; ObjectID = "LRO-uF-vle";</note>
+      </trans-unit>
+      <trans-unit id="NzY-Th-J7t.text">
+        <source>1.0</source>
+        <target>1.0</target>
+        <note>Class = "UILabel"; text = "1.0"; ObjectID = "NzY-Th-J7t";</note>
+      </trans-unit>
+      <trans-unit id="PMr-2o-XFE.text">
+        <source>1.0</source>
+        <target>1.0</target>
+        <note>Class = "UILabel"; text = "1.0"; ObjectID = "PMr-2o-XFE";</note>
+      </trans-unit>
+      <trans-unit id="XNl-0K-53D.title">
+        <source>Favorites</source>
+        <target>Favorites</target>
+        <note>Class = "UINavigationItem"; title = "Favorites"; ObjectID = "XNl-0K-53D";</note>
+      </trans-unit>
+      <trans-unit id="ZbB-WV-N2B.text">
+        <source>Rate PickColor</source>
+        <target>Rate PickColor</target>
+        <note>Class = "UILabel"; text = "Rate PickColor"; ObjectID = "ZbB-WV-N2B";</note>
+      </trans-unit>
+      <trans-unit id="Ztu-b7-9rW.normalTitle">
+        <source>Copy</source>
+        <target>Copy</target>
+        <note>Class = "UIButton"; normalTitle = "Copy"; ObjectID = "Ztu-b7-9rW";</note>
+      </trans-unit>
+      <trans-unit id="gtU-Ss-P8P.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "gtU-Ss-P8P";</note>
+      </trans-unit>
+      <trans-unit id="hQU-gK-XW0.text">
+        <source>1.0</source>
+        <target>1.0</target>
+        <note>Class = "UILabel"; text = "1.0"; ObjectID = "hQU-gK-XW0";</note>
+      </trans-unit>
+      <trans-unit id="hd0-TL-pe4.normalTitle">
+        <source>Google+</source>
+        <target>Google+</target>
+        <note>Class = "UIButton"; normalTitle = "Google+"; ObjectID = "hd0-TL-pe4";</note>
+      </trans-unit>
+      <trans-unit id="heB-Ri-Baa.normalTitle">
+        <source>pickColor();</source>
+        <target>pickColor();</target>
+        <note>Class = "UIButton"; normalTitle = "pickColor();"; ObjectID = "heB-Ri-Baa";</note>
+      </trans-unit>
+      <trans-unit id="jVb-Dj-ff5.text">
+        <source>project url</source>
+        <target>project url</target>
+        <note>Class = "UILabel"; text = "project url"; ObjectID = "jVb-Dj-ff5";</note>
+      </trans-unit>
+      <trans-unit id="knI-xm-VDJ.title">
+        <source>Source Code</source>
+        <target>Source Code</target>
+        <note>Class = "UINavigationItem"; title = "Source Code"; ObjectID = "knI-xm-VDJ";</note>
+      </trans-unit>
+      <trans-unit id="mdq-jA-97V.normalTitle">
+        <source>Cancel</source>
+        <target>Cancel</target>
+        <note>Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "mdq-jA-97V";</note>
+      </trans-unit>
+      <trans-unit id="nVo-Hp-hCF.text">
+        <source>Source Code</source>
+        <target>Source Code</target>
+        <note>Class = "UILabel"; text = "Source Code"; ObjectID = "nVo-Hp-hCF";</note>
+      </trans-unit>
+      <trans-unit id="ngu-1S-eCR.normalTitle">
+        <source>Bilibili</source>
+        <target>Bilibili</target>
+        <note>Class = "UIButton"; normalTitle = "Bilibili"; ObjectID = "ngu-1S-eCR";</note>
+      </trans-unit>
+      <trans-unit id="qpK-zf-ezd.normalTitle">
+        <source>Select an image</source>
+        <target>Select an image</target>
+        <note>Class = "UIButton"; normalTitle = "Select an image"; ObjectID = "qpK-zf-ezd";</note>
+      </trans-unit>
+      <trans-unit id="tRk-B6-U5S.text">
+        <source>alpha: a)</source>
+        <target>alpha: a)</target>
+        <note>Class = "UILabel"; text = "alpha: a)"; ObjectID = "tRk-B6-U5S";</note>
+      </trans-unit>
+      <trans-unit id="uPa-qD-6jf.text">
+        <source>Author</source>
+        <target>Author</target>
+        <note>Class = "UILabel"; text = "Author"; ObjectID = "uPa-qD-6jf";</note>
+      </trans-unit>
+      <trans-unit id="uXu-d0-jfi.text">
+        <source>green: g,</source>
+        <target>green: g,</target>
+        <note>Class = "UILabel"; text = "green: g,"; ObjectID = "uXu-d0-jfi";</note>
+      </trans-unit>
+      <trans-unit id="yfs-gy-uev.title">
+        <source>Pick Color</source>
+        <target>Pick Color</target>
+        <note>Class = "UINavigationItem"; title = "Pick Color"; ObjectID = "yfs-gy-uev";</note>
+      </trans-unit>
+      <trans-unit id="zg1-ld-1It.text">
+        <source>1.0</source>
+        <target>1.0</target>
+        <note>Class = "UILabel"; text = "1.0"; ObjectID = "zg1-ld-1It";</note>
+      </trans-unit>
+      <trans-unit id="zjv-SG-TFq.segmentTitles[0]">
+        <source>Swift</source>
+        <target>Swift</target>
+        <note>Class = "UISegmentedControl"; zjv-SG-TFq.segmentTitles[0] = "Swift"; ObjectID = "zjv-SG-TFq";</note>
+      </trans-unit>
+      <trans-unit id="zjv-SG-TFq.segmentTitles[1]">
+        <source>ObjC</source>
+        <target>ObjC</target>
+        <note>Class = "UISegmentedControl"; zjv-SG-TFq.segmentTitles[1] = "ObjC"; ObjectID = "zjv-SG-TFq";</note>
+      </trans-unit>
+      <trans-unit id="zjv-SG-TFq.segmentTitles[2]">
+        <source>C#</source>
+        <target>C#</target>
+        <note>Class = "UISegmentedControl"; zjv-SG-TFq.segmentTitles[2] = "C#"; ObjectID = "zjv-SG-TFq";</note>
+      </trans-unit>
+      <trans-unit id="zjv-SG-TFq.segmentTitles[3]">
+        <source>Java</source>
+        <target>Java</target>
+        <note>Class = "UISegmentedControl"; zjv-SG-TFq.segmentTitles[3] = "Java"; ObjectID = "zjv-SG-TFq";</note>
+      </trans-unit>
+      <trans-unit id="zjv-SG-TFq.segmentTitles[4]">
+        <source>CSS</source>
+        <target>CSS</target>
+        <note>Class = "UISegmentedControl"; zjv-SG-TFq.segmentTitles[4] = "CSS"; ObjectID = "zjv-SG-TFq";</note>
+      </trans-unit>
+      <trans-unit id="zul-yt-rie.text">
+        <source>blue: b,</source>
+        <target>blue: b,</target>
+        <note>Class = "UILabel"; text = "blue: b,"; ObjectID = "zul-yt-rie";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Pick Color/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>PickColor</source>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>Pick-Color</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.6</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Pick Color/Localizable.strings" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Can't send email now.">
+        <source>Can't send email now.</source>
+        <note>Message of can't send emal</note>
+      </trans-unit>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <note>The title of negative button
+   Wrong taping</note>
+      </trans-unit>
+      <trans-unit id="Copy emall address">
+        <source>Copy emall address</source>
+        <note>Just copy my email address</note>
+      </trans-unit>
+      <trans-unit id="Copyed (｀・ω・´)">
+        <source>Copyed (｀・ω・´)</source>
+        <note>Copyed message</note>
+      </trans-unit>
+      <trans-unit id="Delete">
+        <source>Delete</source>
+        <note>The title of delete Button</note>
+      </trans-unit>
+      <trans-unit id="Do you really want to delete ALL the colors?">
+        <source>Do you really want to delete ALL the colors?</source>
+        <note>The message of clear dialog</note>
+      </trans-unit>
+      <trans-unit id="Do you want to watch a short tutorial?">
+        <source>Do you want to watch a short tutorial?</source>
+        <note>The message of whether user need to watch a tutorial</note>
+      </trans-unit>
+      <trans-unit id="Done">
+        <source>Done</source>
+        <note>No comment</note>
+      </trans-unit>
+      <trans-unit id="Double-tap to reset the image's position">
+        <source>Double-tap to reset the image's position</source>
+        <note>Tutorial text 4</note>
+      </trans-unit>
+      <trans-unit id="Move around with two fingers">
+        <source>Move around with two fingers</source>
+        <note>Tutorial text 2</note>
+      </trans-unit>
+      <trans-unit id="Oops">
+        <source>Oops</source>
+        <note>Title of can't send email</note>
+      </trans-unit>
+      <trans-unit id="Pick color with one finger">
+        <source>Pick color with one finger</source>
+        <note>Tutorial text 3</note>
+      </trans-unit>
+      <trans-unit id="WARNING">
+        <source>WARNING</source>
+        <note>The title of clear dialog</note>
+      </trans-unit>
+      <trans-unit id="Write an email">
+        <source>Write an email</source>
+        <note>Send email directly</note>
+      </trans-unit>
+      <trans-unit id="Zoom in or out with two fingers">
+        <source>Zoom in or out with two fingers</source>
+        <note>Tutorial text 1</note>
+      </trans-unit>
+      <trans-unit id="nothing here~">
+        <source>nothing here~</source>
+        <note>The message of nothing label</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Pick ColorTests/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Pick ColorUITests/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
