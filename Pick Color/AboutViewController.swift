@@ -57,7 +57,7 @@ class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate
             let dialog = LLDialog()
             dialog.title = titleOfCannotSendMailString
             dialog.message = messageOfCannotSendMailString
-            dialog.setNegativeButton(withTitle: "OK", target: nil, action: nil)
+            dialog.setNegativeButton(withTitle: " ")
             dialog.show()
         }
     }

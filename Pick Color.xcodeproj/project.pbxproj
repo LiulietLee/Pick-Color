@@ -36,10 +36,6 @@
 		4F88E1A71D8A821E007FA1E8 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */; };
 		4F88E1BC1D8A9692007FA1E8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88E1BA1D8A9692007FA1E8 /* Colors.swift */; };
 		4F88E1BD1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88E1BB1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift */; };
-		4FA336BB1F5A84BC00E4E263 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FA336BD1F5A84BC00E4E263 /* InfoPlist.strings */; };
-		4FA336C01F5A84BC00E4E263 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FA336C21F5A84BC00E4E263 /* InfoPlist.strings */; };
-		4FA336C51F5A84BD00E4E263 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FA336C71F5A84BD00E4E263 /* InfoPlist.strings */; };
-		4FA336CA1F5A84BD00E4E263 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FA336CC1F5A84BD00E4E263 /* Localizable.strings */; };
 		4FC5183A1D8AD71E007FFAD9 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC518391D8AD71E007FFAD9 /* MemoViewController.swift */; };
 		4FC518401D8AD7E9007FFAD9 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC5183F1D8AD7E9007FFAD9 /* MemoCell.swift */; };
 		4FE1FD481E4DE0B000E6C0FB /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1FD471E4DE0B000E6C0FB /* LocalizedStrings.swift */; };
@@ -116,16 +112,6 @@
 		4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		4F88E1BA1D8A9692007FA1E8 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4F88E1BB1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Colors+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		4FA336B31F5A81A900E4E263 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		4FA336B41F5A81A900E4E263 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		4FA336B51F5A81B000E4E263 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
-		4FA336B61F5A81B000E4E263 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		4FA336B71F5A81B500E4E263 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
-		4FA336B81F5A81B500E4E263 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		4FA336BC1F5A84BC00E4E263 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		4FA336C11F5A84BC00E4E263 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		4FA336C61F5A84BD00E4E263 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		4FA336CB1F5A84BD00E4E263 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4FC518391D8AD71E007FFAD9 /* MemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
 		4FC5183F1D8AD7E9007FFAD9 /* MemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		4FE1FD471E4DE0B000E6C0FB /* LocalizedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
@@ -206,7 +192,6 @@
 		4F011DC71D6C4A3400A0D2BD /* Pick ColorTests */ = {
 			isa = PBXGroup;
 			children = (
-				4FA336C71F5A84BD00E4E263 /* InfoPlist.strings */,
 				4F011DC81D6C4A3400A0D2BD /* Pick_ColorTests.swift */,
 				4F011DCA1D6C4A3400A0D2BD /* Info.plist */,
 			);
@@ -216,7 +201,6 @@
 		4F011DD21D6C4A3400A0D2BD /* Pick ColorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4FA336C21F5A84BC00E4E263 /* InfoPlist.strings */,
 				4F011DD31D6C4A3400A0D2BD /* Pick_ColorUITests.swift */,
 				4F011DD51D6C4A3400A0D2BD /* Info.plist */,
 			);
@@ -237,8 +221,6 @@
 		4F3A47F01D72AFF1009D7601 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				4FA336CC1F5A84BD00E4E263 /* Localizable.strings */,
-				4FA336BD1F5A84BC00E4E263 /* InfoPlist.strings */,
 				4FE1FD471E4DE0B000E6C0FB /* LocalizedStrings.swift */,
 				4F011DE11D6C4AF000A0D2BD /* Pick Color-Bridging-Header.h */,
 				4F011DB01D6C4A3400A0D2BD /* AppDelegate.swift */,
@@ -430,10 +412,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F011DBE1D6C4A3400A0D2BD /* LaunchScreen.storyboard in Resources */,
-				4FA336BB1F5A84BC00E4E263 /* InfoPlist.strings in Resources */,
 				4FE969331DA147D700DDDB9A /* Assets.xcassets in Resources */,
 				4F12E31D1F5056DA004F6667 /* tut2.gif in Resources */,
-				4FA336CA1F5A84BD00E4E263 /* Localizable.strings in Resources */,
 				4F12E31C1F5056DA004F6667 /* tut1.gif in Resources */,
 				4F12E31E1F5056DA004F6667 /* tut3.gif in Resources */,
 				4F011DB61D6C4A3400A0D2BD /* Main.storyboard in Resources */,
@@ -445,7 +425,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA336C51F5A84BD00E4E263 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +432,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA336C01F5A84BC00E4E263 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,9 +520,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				4F011DB51D6C4A3400A0D2BD /* Base */,
-				4FA336B31F5A81A900E4E263 /* zh-Hans */,
-				4FA336B51F5A81B000E4E263 /* zh-Hant */,
-				4FA336B71F5A81B500E4E263 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -553,43 +528,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				4F011DBD1D6C4A3400A0D2BD /* Base */,
-				4FA336B41F5A81A900E4E263 /* zh-Hans */,
-				4FA336B61F5A81B000E4E263 /* zh-Hant */,
-				4FA336B81F5A81B500E4E263 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		4FA336BD1F5A84BC00E4E263 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4FA336BC1F5A84BC00E4E263 /* zh-Hans */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4FA336C21F5A84BC00E4E263 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4FA336C11F5A84BC00E4E263 /* zh-Hans */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4FA336C71F5A84BD00E4E263 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4FA336C61F5A84BD00E4E263 /* zh-Hans */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4FA336CC1F5A84BD00E4E263 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4FA336CB1F5A84BD00E4E263 /* zh-Hans */,
-			);
-			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
