@@ -214,6 +214,10 @@ class PickColorViewController: UIViewController, UINavigationControllerDelegate,
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+
         switch segue.identifier! {
         case "showColor":
             let vc = segue.destination as! CurrentColorViewController

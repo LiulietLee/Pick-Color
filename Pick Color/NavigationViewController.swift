@@ -17,7 +17,6 @@ class NavigationViewController: UINavigationController {
         navigationBar.tintColor = .white
         navigationBar.titleTextAttributes = [
             NSForegroundColorAttributeName : UIColor.white,
-            NSFontAttributeName: UIFont(name: "Avenir", size: 20)!
         ]
     }
     

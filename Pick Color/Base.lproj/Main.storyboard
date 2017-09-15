@@ -16,7 +16,6 @@
         <array key="Avenir.ttc">
             <string>Avenir-Book</string>
             <string>Avenir-Heavy</string>
-            <string>Avenir-Roman</string>
         </array>
         <array key="Menlo.ttc">
             <string>Menlo-Regular</string>
@@ -43,13 +42,13 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heB-Ri-Baa">
-                                <rect key="frame" x="85" y="498" width="150" height="50"/>
+                                <rect key="frame" x="70" y="498" width="180" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Acm-u5-PUq"/>
+                                    <constraint firstAttribute="width" constant="180" id="Acm-u5-PUq"/>
                                     <constraint firstAttribute="height" constant="50" id="dVg-w0-x2O"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="pickColor();"/>
                                 <userDefinedRuntimeAttributes>
@@ -68,7 +67,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qpK-zf-ezd" secondAttribute="height" id="fvh-Db-Pag"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <size key="titleShadowOffset" width="2" height="4"/>
                                 <state key="normal" title="Select an image"/>
                                 <connections>
@@ -176,8 +175,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtU-Ss-P8P">
-                                <rect key="frame" x="16" y="120" width="288" height="34.5"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                <rect key="frame" x="32" y="120" width="256" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -187,10 +186,10 @@
                             <constraint firstItem="nr1-1U-Urc" firstAttribute="leading" secondItem="g8f-Te-Ttk" secondAttribute="leading" id="2wG-us-Tje"/>
                             <constraint firstItem="gtU-Ss-P8P" firstAttribute="top" secondItem="gmu-Yt-5Kc" secondAttribute="bottom" constant="100" id="JV8-0S-Op8"/>
                             <constraint firstItem="nr1-1U-Urc" firstAttribute="top" secondItem="g8f-Te-Ttk" secondAttribute="top" id="O7J-5a-hpg"/>
-                            <constraint firstItem="gtU-Ss-P8P" firstAttribute="leading" secondItem="g8f-Te-Ttk" secondAttribute="leadingMargin" id="R5S-Bg-eNy"/>
+                            <constraint firstItem="gtU-Ss-P8P" firstAttribute="leading" secondItem="g8f-Te-Ttk" secondAttribute="leadingMargin" constant="16" id="R5S-Bg-eNy"/>
                             <constraint firstAttribute="trailing" secondItem="nr1-1U-Urc" secondAttribute="trailing" id="S0g-o6-w8g"/>
                             <constraint firstItem="4mM-VH-dfS" firstAttribute="top" secondItem="nr1-1U-Urc" secondAttribute="bottom" id="fnj-0D-QBf"/>
-                            <constraint firstItem="gtU-Ss-P8P" firstAttribute="trailing" secondItem="g8f-Te-Ttk" secondAttribute="trailingMargin" id="uGF-kn-4Ha"/>
+                            <constraint firstItem="gtU-Ss-P8P" firstAttribute="trailing" secondItem="g8f-Te-Ttk" secondAttribute="trailingMargin" constant="-16" id="uGF-kn-4Ha"/>
                         </constraints>
                     </view>
                     <connections>
@@ -299,7 +298,7 @@
                                     <constraint firstAttribute="height" constant="50" id="3wU-bh-uFB"/>
                                     <constraint firstAttribute="width" constant="120" id="rvE-A3-mj4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <color key="tintColor" red="0.40090259909999998" green="0.80100601910000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Copy">
                                     <color key="titleColor" red="0.092523820699999995" green="0.7092021704" blue="0.97554463150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -477,7 +476,7 @@
                                     <constraint firstAttribute="height" constant="60" id="MJr-1Z-W5s"/>
                                 </constraints>
                                 <color key="textColor" red="0.23753800821982154" green="0.47453992236789688" blue="0.59218749999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
@@ -488,11 +487,11 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-jA-97V" customClass="MKButton" customModule="PickColor" customModuleProvider="target">
-                                <rect key="frame" x="16" y="112" width="90" height="45"/>
+                                <rect key="frame" x="16" y="112" width="90" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="DNv-iM-Gmd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <color key="tintColor" red="0.092523820699999995" green="0.7092021704" blue="0.97554463150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Cancel"/>
                                 <userDefinedRuntimeAttributes>
@@ -505,11 +504,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-qc-8P8" customClass="MKButton" customModule="PickColor" customModuleProvider="target">
-                                <rect key="frame" x="224" y="112" width="80" height="45"/>
+                                <rect key="frame" x="224" y="112" width="80" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Kud-4p-grZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <color key="tintColor" red="0.092523820699999995" green="0.7092021704" blue="0.97554463150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Save"/>
                                 <userDefinedRuntimeAttributes>
@@ -585,8 +584,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43j-qL-8QF">
-                                                    <rect key="frame" x="24" y="16" width="110" height="33"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
+                                                    <rect key="frame" x="24" y="19.5" width="100" height="26.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -608,8 +607,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRO-uF-vle">
-                                                    <rect key="frame" x="24" y="16" width="98" height="33"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
+                                                    <rect key="frame" x="24" y="19.5" width="89" height="26.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -631,8 +630,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPa-qD-6jf">
-                                                    <rect key="frame" x="24" y="16" width="75" height="33"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
+                                                    <rect key="frame" x="24" y="19.5" width="66" height="26.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -654,8 +653,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate PickColor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbB-WV-N2B">
-                                                    <rect key="frame" x="24" y="16" width="159" height="33"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
+                                                    <rect key="frame" x="24" y="19.5" width="144" height="26.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -674,8 +673,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVo-Hp-hCF">
-                                                    <rect key="frame" x="24" y="16" width="140" height="33"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
+                                                    <rect key="frame" x="24" y="19.5" width="127.5" height="26.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -744,7 +743,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fv-an-MPh">
-                                                    <rect key="frame" x="8" y="13" width="30" height="30"/>
+                                                    <rect key="frame" x="8" y="17.5" width="30" height="30"/>
                                                     <color key="backgroundColor" red="1" green="0.80000000000000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="7QG-27-wTO"/>
@@ -755,8 +754,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="color name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jp-dt-gy2">
-                                                    <rect key="frame" x="62" y="13" width="106" height="29"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                                    <rect key="frame" x="62" y="20.5" width="100" height="24"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -956,8 +955,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="project url" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVb-Dj-ff5">
-                                                    <rect key="frame" x="8" y="17" width="73" height="22"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                    <rect key="frame" x="8" y="18.5" width="106" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1025,6 +1024,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Yk2-5y-Ue1"/>
-        <segue reference="nsD-Ir-deh"/>
+        <segue reference="3Xw-7I-I2I"/>
     </inferredMetricsTieBreakers>
 </document>

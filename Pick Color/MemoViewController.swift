@@ -120,8 +120,10 @@ class MemoViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+
         if segue.identifier == "detail" {
             if let vc = segue.destination as? CurrentColorViewController {
                 let cell = sender as! MemoCell
