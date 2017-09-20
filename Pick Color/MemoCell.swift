@@ -15,7 +15,8 @@ class MemoCell: MKTableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        colorLabel.layer.cornerRadius = 15.0
+        let r = colorLabel.bounds.size.width * 0.5
+        colorLabel.layer.cornerRadius = r
         colorLabel.layer.masksToBounds = true
     }
 

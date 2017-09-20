@@ -16,7 +16,7 @@ class NavigationViewController: UINavigationController {
         navigationBar.barTintColor = UIColor(rgb: 0x29b6f6)
         navigationBar.tintColor = .white
         navigationBar.titleTextAttributes = [
-            NSForegroundColorAttributeName : UIColor.white,
+            NSAttributedStringKey.foregroundColor : UIColor.white,
         ]
     }
     
