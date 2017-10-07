@@ -75,7 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4F011DAD1D6C4A3400A0D2BD /* pickColor();.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "pickColor();.app"; path = PickColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F011DAD1D6C4A3400A0D2BD /* PickColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F011DB01D6C4A3400A0D2BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F011DB51D6C4A3400A0D2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F011DB81D6C4A3400A0D2BD /* Pick_Color.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pick_Color.xcdatamodel; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 		4F011DAE1D6C4A3400A0D2BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F011DAD1D6C4A3400A0D2BD /* pickColor();.app */,
+				4F011DAD1D6C4A3400A0D2BD /* PickColor.app */,
 				4F011DC41D6C4A3400A0D2BD /* Pick ColorTests.xctest */,
 				4F011DCF1D6C4A3400A0D2BD /* Pick ColorUITests.xctest */,
 			);
@@ -317,7 +317,7 @@
 			);
 			name = "Pick Color";
 			productName = "Pick Color";
-			productReference = 4F011DAD1D6C4A3400A0D2BD /* pickColor();.app */;
+			productReference = 4F011DAD1D6C4A3400A0D2BD /* PickColor.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4F011DC31D6C4A3400A0D2BD /* Pick ColorTests */ = {
