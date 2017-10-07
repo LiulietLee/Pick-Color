@@ -36,6 +36,7 @@
 		4F88E1A71D8A821E007FA1E8 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */; };
 		4F88E1BC1D8A9692007FA1E8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88E1BA1D8A9692007FA1E8 /* Colors.swift */; };
 		4F88E1BD1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88E1BB1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift */; };
+		4FA4585C1F88BA85005B1102 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA4585B1F88BA85005B1102 /* MenuCell.swift */; };
 		4FC5183A1D8AD71E007FFAD9 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC518391D8AD71E007FFAD9 /* MemoViewController.swift */; };
 		4FC518401D8AD7E9007FFAD9 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC5183F1D8AD7E9007FFAD9 /* MemoCell.swift */; };
 		4FE1FD481E4DE0B000E6C0FB /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1FD471E4DE0B000E6C0FB /* LocalizedStrings.swift */; };
@@ -112,6 +113,7 @@
 		4F88E1A61D8A821E007FA1E8 /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		4F88E1BA1D8A9692007FA1E8 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4F88E1BB1D8A9692007FA1E8 /* Colors+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Colors+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4FA4585B1F88BA85005B1102 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		4FC518391D8AD71E007FFAD9 /* MemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
 		4FC5183F1D8AD7E9007FFAD9 /* MemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		4FE1FD471E4DE0B000E6C0FB /* LocalizedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				4F3A9D051D7AFD4D00B4A90A /* PickerView.swift */,
 				4F1B21921E91FDFA00481669 /* ProjectUrlCell.swift */,
 				4F6ABF9E1DA27FAC00D46BFF /* SelectImageView.swift */,
+				4FA4585B1F88BA85005B1102 /* MenuCell.swift */,
 				4F12E3161F5056C3004F6667 /* Gifs */,
 				4FE969051DA0A70E00DDDB9A /* Material Design */,
 			);
@@ -448,6 +451,7 @@
 				4F6ABFA11DA293BF00D46BFF /* ImageManager.swift in Sources */,
 				4FE9691F1DA0AA4E00DDDB9A /* MKImageView.swift in Sources */,
 				4FE9691A1DA0AA4E00DDDB9A /* MKButton.swift in Sources */,
+				4FA4585C1F88BA85005B1102 /* MenuCell.swift in Sources */,
 				4F88E1BC1D8A9692007FA1E8 /* Colors.swift in Sources */,
 				4F88E1A71D8A821E007FA1E8 /* SaveViewController.swift in Sources */,
 				4FE969201DA0AA4E00DDDB9A /* MKLayer.swift in Sources */,
