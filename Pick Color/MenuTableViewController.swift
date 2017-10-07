@@ -15,7 +15,7 @@ class MenuTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 3 {
+        if indexPath.row == 4 {
             if #available(iOS 10.3, *) {
                 return
             }
@@ -33,7 +33,7 @@ class MenuTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if #available(iOS 10.3, *) {
-            tableView.cellForRow(at: IndexPath(row: 3, section: 0))?.isHidden = true
+            tableView.cellForRow(at: IndexPath(row: 4, section: 0))?.isHidden = true
         }
     }
     

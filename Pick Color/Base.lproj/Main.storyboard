@@ -575,7 +575,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
-                            <tableViewSection id="M1v-IT-NCS">
+                            <tableViewSection id="FPc-Ys-xgW">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7IX-2L-In6" customClass="MKTableViewCell" customModule="PickColor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
@@ -646,28 +646,8 @@
                                             <segue destination="6HT-BV-cxV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="k2Z-7o-G90"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dWm-aU-MQ2" customClass="MKTableViewCell" customModule="PickColor" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="195" width="320" height="65"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dWm-aU-MQ2" id="aNI-of-N9D">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate PickColor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbB-WV-N2B">
-                                                    <rect key="frame" x="24" y="21" width="128" height="24"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ZbB-WV-N2B" firstAttribute="centerY" secondItem="aNI-of-N9D" secondAttribute="centerY" id="G42-aL-yMN"/>
-                                                <constraint firstItem="ZbB-WV-N2B" firstAttribute="leading" secondItem="aNI-of-N9D" secondAttribute="leadingMargin" constant="16" id="z8v-nW-MLU"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0qk-cM-f70" customClass="MKTableViewCell" customModule="PickColor" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="260" width="320" height="65"/>
+                                        <rect key="frame" x="0.0" y="195" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0qk-cM-f70" id="vnb-dE-4HI">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
@@ -688,6 +668,26 @@
                                         <connections>
                                             <segue destination="an2-xA-Twn" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="MN4-8f-TNi"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dWm-aU-MQ2" customClass="MKTableViewCell" customModule="PickColor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="260" width="320" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dWm-aU-MQ2" id="aNI-of-N9D">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate PickColor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbB-WV-N2B">
+                                                    <rect key="frame" x="24" y="21" width="128" height="24"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZbB-WV-N2B" firstAttribute="centerY" secondItem="aNI-of-N9D" secondAttribute="centerY" id="G42-aL-yMN"/>
+                                                <constraint firstItem="ZbB-WV-N2B" firstAttribute="leading" secondItem="aNI-of-N9D" secondAttribute="leadingMargin" constant="16" id="z8v-nW-MLU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
