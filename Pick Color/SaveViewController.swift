@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import StoreKit
 
 protocol SaveViewControllerDelegate: class {
     func colorSaved(color: Colors)
@@ -46,6 +47,9 @@ class SaveViewController: UIViewController {
     }
 
     @IBAction func saveButtonTapped() {
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        }
         defer { goBack() }
         guard let title = textField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
         if title != "" {
