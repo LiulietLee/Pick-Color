@@ -1,6 +1,8 @@
 # Pick Color
 > The best way for programmers to get the color  
 
+[中文版本](https://github.com/CaptainYukinoshitaHachiman/Pick-Color/blob/master/README_zh.md)
+
 Are you a programmer? Do you need to set colors for the UI elements in your project often? Are you always worrying about ‘what color should I use’ or ‘creating color in XX language sucks’? If the answers to the questions above are all ‘YES’, then here is the best solution for you.
 
 ## Features
